@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Worklog Tuần 11 on Báo cáo thực tập</title>
-    <link>https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.11-week11/</link>
+    <link>https://tai-isme.github.io/workshop-template/vi/1-worklog/1.11-week11/</link>
     <description>Recent content in Worklog Tuần 11 on Báo cáo thực tập</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://thienluhoan.github.io/workshop-template/vi/1-worklog/1.11-week11/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tai-isme.github.io/workshop-template/vi/1-worklog/1.11-week11/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
