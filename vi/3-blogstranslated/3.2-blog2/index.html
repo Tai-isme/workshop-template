@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.151.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 2 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1760677039" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1760677039" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1760677039" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1760677039" rel="stylesheet">
+    <link href="../../../css/theme.css?1760677039" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1760677039" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1760677039" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1760677039"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.2-blog2/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1760677039"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1760677039"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1760677039"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12 </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.5-blog5/">
+     <b> 3.6. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.3-event3/">
+     <b> 4.2. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Các bước chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/"
+  title="Truy cập S3 từ VPC"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/">
+     <b> 5.3. </b> Truy cập S3 từ VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title="Tạo một Gateway Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     <b> 5.3.1 </b> Tạo một Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title="Kiểm tra Gateway Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     <b> 5.3.2 </b> Kiểm tra Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/"
+  title="Truy cập S3 từ môi trường truyền thống"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/">
+     <b> 5.4. </b> Truy cập S3 từ môi trường truyền thống 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title="Chuẩn bị tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     <b> 5.4.1 </b> Chuẩn bị tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title="Tạo một S3 Interface endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     <b> 5.4.2 </b> Tạo một S3 Interface endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title="Kiểm tra Interface Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     <b> 5.4.3 </b> Kiểm tra Interface Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title="Mô phỏng On-premises DNS "
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     <b> 5.4.4 </b> Mô phỏng On-premises DNS  
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-policy/"
+  title="VPC Endpoint Policies"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-policy/">
+     <b> 5.5 </b> VPC Endpoint Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.2-blog2/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.2-blog2/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 2
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#chiến-lược-di-chuyển">Chiến lược di chuyển</a></li>
+    <li><a href="#các-bước-di-chuyển">Các bước di chuyển</a></li>
+    <li><a href="#những-thách-thức--cách-khắc-phục">Những thách thức &amp; cách khắc phục</a></li>
+    <li><a href="#lợi-ích-chính">Lợi ích chính</a></li>
+    <li><a href="#hiệu-suất-bottlerocket-so-với-al2">Hiệu suất: Bottlerocket so với AL2</a></li>
+    <li><a href="#tăng-cường-bảo-mật-al2-vs-bottlerocket">Tăng cường bảo mật: AL2 vs Bottlerocket</a></li>
+    <li><a href="#kết-luận-ý-nghĩa-rộng-hơn-cho-doanh-nghiệp-vận-hành-eks-quy-mô-lớn">Kết luận: Ý nghĩa rộng hơn cho doanh nghiệp vận hành EKS quy mô lớn</a></li>
+    <li><a href="#về-tác-giả">Về tác giả</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 2
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="hiện-đại-hóa-hạ-tầng-kubernetes-của-snowflake-corporate-với-bottlerocket-và-karpenter">Hiện đại hóa hạ tầng Kubernetes của Snowflake Corporate với Bottlerocket và Karpenter</h1>
+<p><small><em>Bởi Sameeksha Garg, Gaurav Singodia, Jagdish Pawar, RK Sai (Ravikiran Koduri), và Sayan Moitra | ngày 18 tháng 4 năm 2025 | Trong <a href="https://aws.amazon.com/blogs/opensource/category/compute/amazon-kubernetes-service/">Amazon Elastic Kubernetes Service</a>, <a href="https://aws.amazon.com/blogs/opensource/category/post-types/customer-solutions/">Customer Solutions</a>, <a href="https://aws.amazon.com/blogs/opensource/category/open-source/">Open Source</a></em></small></p>
+<p><a href="https://www.snowflake.com/en/">Snowflake</a> Corporate IT Cloud Operations đã đạt đến một bước ngoặt quan trọng trong tiến trình phát triển hạ tầng điện toán đám mây. Việc quản lý các tải công việc dạng container trên <a href="https://aws.amazon.com/eks/">Amazon Elastic Kubernetes Service (Amazon EKS)</a> đòi hỏi một hệ điều hành hiện đại, an toàn và hiệu quả. Hệ thống hiện tại, sử dụng trên <a href="https://aws.amazon.com/amazon-linux-2/?amazon-linux-whats-new.sort-by=item.additionalFields.postDateTime&amp;amazon-linux-whats-new.sort-order=desc">Amazon Linux 2 (AL2)</a>, vẫn hoạt động tốt nhưng lại xuất hiện một số thách thức. Việc tăng cường bảo mật đòi hỏi phải cập nhật thường xuyên, gây áp lực vận hành. Đảm bảo có những bản cập nhật an toàn và nhất quán trên quy mô lớn các node là điều khó khăn. Thêm vào đó, thời gian khởi động cho các node AL2 khá lâu, dẫn đến hiệu quả mở rộng thấp. Sau khi đánh giá toàn diện, <a href="https://aws.amazon.com/bottlerocket/?amazon-bottlerocket-whats-new.sort-by=item.additionalFields.postDateTime&amp;amazon-bottlerocket-whats-new.sort-order=desc">Bottlerocket</a>, hệ điều hành tối ưu cho container của AWS, đã được lựa chọn là giải pháp lý tưởng để giải quyết các khó khăn này.</p>
+<h2 id="chiến-lược-di-chuyển">Chiến lược di chuyển</h2>
+<p>Việc chuyển từ AL2 sang Bottlerocket không đơn thuần là một thay đổi kỹ thuật mà còn là một quyết định chiến lược để đảm bảo hệ thống Kubernetes của Snowflake Corporate trong tương lai. Xét đến quy mô và độ phức tạp của các tải công việc, chiến lược di chuyển được thiết kế đảm bảo không có thời gian chết (zero downtime), ít gián đoạn, và mở rộng tự động liền mạch. Để đạt được, Snowflake Corporate đã lựa chọn <a href="https://karpenter.sh/">Karpenter</a> – bộ tự động mở rộng cluster Kubernetes mã nguồn mở, cùng với <a href="https://docs.aws.amazon.com/eks/latest/userguide/create-node-pool.html">NodePool</a> và <a href="https://docs.aws.amazon.com/eks/latest/userguide/create-node-class.html">NodeClass</a> để hỗ trợ việc cấp phát node động. Quá trình di chuyển được thực hiện theo từng giai đoạn nhằm giảm thiểu các rủi ro và đảm bảo tính ổn định.</p>
+<h2 id="các-bước-di-chuyển">Các bước di chuyển</h2>
+<p>Quá trình di chuyển bắt đầu bằng việc chuẩn bị cụm (cluster). Các <a href="https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami-bottlerocket.html">AMI Bottlerocket</a> đã được tích hợp vào môi trường EKS bằng cách sửa đổi cấu hình NodePool và NodeClass để sử dụng Bottlerocket làm họ AMI mặc định. Các chính sách AWS Identity and Access Management (IAM) được tối ưu hóa để phù hợp với mô hình bảo mật của Bottlerocket, tuân thủ nguyên tắc phân quyền tối thiểu.</p>
+<p>Sơ đồ kiến trúc này minh họa chiến lược di chuyển:<br>
+<img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2025/04/17/Bottlerocket-EKS-architecture.png" alt=""></p>
+<p>Triển khai Karpenter đã thay thế phương pháp cấp phát tài nguyên tĩnh truyền thống, cho phép khởi tạo node đúng thời điểm cần thiết. Việc xác thực các tải công việc được thực hiện bằng cách sử dụng môi trường staging để kiểm thử trên các node Bottlerocket trước khi đưa vào production. Việc giám sát hiệu năng được triển khai thông qua <a href="https://github.com/fluent/fluentd">Fluentd</a> và <a href="https://www.datadoghq.com/">Datadog</a> nhằm theo dõi các chỉ số thời gian thực, đồng thời các kiểm tra tuân thủ bảo mật giúp đảm bảo hạ tầng bất biến của Bottlerocket phù hợp với các chính sách bảo mật của Snowflake Corporate.</p>
+<p>Việc triển khai được thực hiện theo từng giai đoạn, bắt đầu với các ứng dụng không trạng thái. Node affinity, pod anti-affinity và category được sử dụng để đảm bảo phân phối tải công việc tối ưu. Việc giới thiệu từ từ các node Bottlerocket giúp workload chuyển dịch suôn sẻ cùng với các instance AL2 hiện hữu. Quá trình cordon và drain các node hỗ trợ loại bỏ dần các instance AL2 mà không gây gián đoạn dịch vụ.</p>
+<p>Cuối cùng, các giải pháp giám sát và tối ưu hóa nâng cao đã được triển khai. Việc tự động mở rộng với Karpenter giúp điều chỉnh động nhóm node của cluster. Điều chỉnh hiệu suất được thực hiện dựa trên các tải công việc thực tế, đồng thời cải tiến khả năng quan sát cung cấp các thông tin chi tiết về sức khỏe của hệ thống, cho phép phát hiện và xử lý chủ động các sự cố.</p>
+<p><strong>Ví dụ định nghĩa NodeClass và liên kết với NodePool:</strong></p>
+<div style="overflow-x: auto; overflow-y: auto; max-height: 500px; border: 1px solid #ccc; border-radius: 6px; padding: 10px;">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">karpenter.k8s.aws/v1alpha5</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">NodeClass</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">bottlerocket-nodeclass</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">amiFamily</span>: <span style="color:#ae81ff">Bottlerocket</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">instanceProfile</span>: <span style="color:#e6db74">&#34;KarpenterNodeInstanceProfile&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">securityGroupSelector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">aws-ids</span>: [<span style="color:#e6db74">&#34;sg-0123456789&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Example of defining a NodePool</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">karpenter.k8s.aws/v1alpha5</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">NodePool</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">bottlerocket-nodepool</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">nodeClassRef</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">bottlerocket-nodeclass</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">limits</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">resources</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">cpu</span>: <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ttlSecondsAfterEmpty</span>: <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Example of applying node affinity to schedule workloads on Bottlerocket nodes</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">bottlerocket-app</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">app</span>: <span style="color:#ae81ff">bottlerocket-app</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">bottlerocket-app</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">affinity</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">nodeAffinity</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">requiredDuringSchedulingIgnoredDuringExecution</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">nodeSelectorTerms</span>:
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">matchExpressions</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">key</span>: <span style="color:#ae81ff">karpenter.k8s.aws/node-pool</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">operator</span>: <span style="color:#ae81ff">In</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">values</span>:
+</span></span><span style="display:flex;"><span>                - <span style="color:#ae81ff">bottlerocket-nodepool</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">app</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">my-app-image:latest</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Example of using pod anti-affinity to spread workloads across different nodes</span>:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">workload-deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">app</span>: <span style="color:#ae81ff">critical-app</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">critical-app</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">affinity</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">podAntiAffinity</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">requiredDuringSchedulingIgnoredDuringExecution</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">labelSelector</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">matchExpressions</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">key</span>: <span style="color:#ae81ff">app</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">operator</span>: <span style="color:#ae81ff">In</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">values</span>:
+</span></span><span style="display:flex;"><span>                - <span style="color:#ae81ff">critical-app</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">topologyKey</span>: <span style="color:#e6db74">&#34;kubernetes.io/hostname&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">workload</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">workload-image:latest</span>
+</span></span></code></pre></div><p><strong>Ví dụ định nghĩa NodePool:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">karpenter.k8s.aws/v1alpha5</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">NodePool</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">bottlerocket-nodepool</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">nodeClassRef</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">bottlerocket-nodeclass</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">limits</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">resources</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">cpu</span>: <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ttlSecondsAfterEmpty</span>: <span style="color:#ae81ff">30</span>
+</span></span></code></pre></div><p><strong>Ví dụ áp dụng node affinity để schedule workload lên node Bottlerocket:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">bottlerocket-app</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">app</span>: <span style="color:#ae81ff">bottlerocket-app</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">bottlerocket-app</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">affinity</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">nodeAffinity</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">requiredDuringSchedulingIgnoredDuringExecution</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">nodeSelectorTerms</span>:
+</span></span><span style="display:flex;"><span>            - <span style="color:#f92672">matchExpressions</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">key</span>: <span style="color:#ae81ff">karpenter.k8s.aws/node-pool</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">operator</span>: <span style="color:#ae81ff">In</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">values</span>:
+</span></span><span style="display:flex;"><span>                - <span style="color:#ae81ff">bottlerocket-nodepool</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">app</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">my-app-image:latest</span>
+</span></span></code></pre></div><p><strong>Ví dụ sử dụng pod anti-affinity để phân tán workload:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">workload-deployment</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">replicas</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">matchLabels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">app</span>: <span style="color:#ae81ff">critical-app</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">labels</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">app</span>: <span style="color:#ae81ff">critical-app</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">affinity</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">podAntiAffinity</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">requiredDuringSchedulingIgnoredDuringExecution</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">labelSelector</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">matchExpressions</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">key</span>: <span style="color:#ae81ff">app</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">operator</span>: <span style="color:#ae81ff">In</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">values</span>:
+</span></span><span style="display:flex;"><span>                - <span style="color:#ae81ff">critical-app</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">topologyKey</span>: <span style="color:#e6db74">&#34;kubernetes.io/hostname&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">workload</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">image</span>: <span style="color:#ae81ff">workload-image:latest</span>
+</span></span></code></pre></div></div>
+<h2 id="những-thách-thức--cách-khắc-phục">Những thách thức &amp; cách khắc phục</h2>
+<p>Mặc dù Bottlerocket mang lại nhiều lợi ích, quá trình di chuyển vẫn xuất hiện những thách thức nhất định. Một số workload ban đầu gặp vấn đề tương thích do hệ thống file bất biến của Bottlerocket. Để khắc phục, các image ứng dụng đã được chỉnh sửa để tuân thủ hoàn toàn tiêu chuẩn container và áp dụng cấu hình read-only khi phù hợp. Bottlerocket cũng yêu cầu cấu hình lại vai trò IAM để phù hợp với mô hình bảo mật mới; điều này được giải quyết bằng việc triển khai kiểm soát quyền truy cập chi tiết và tích hợp IAM với Karpenter. Để giảm thiểu rủi ro, workloads được di chuyển theo từng phần, đảm bảo hiệu năng ứng dụng duy trì ổn định trước khi loại bỏ hoàn toàn các node AL2.</p>
+<h2 id="lợi-ích-chính">Lợi ích chính</h2>
+<p>Quá trình di chuyển đã mang lại sự cải thiện vượt trội về bảo mật, hiệu năng và hiệu quả vận hành. Bảo mật được nâng cao nhờ các node bất biến, ngăn chặn thay đổi trái phép và loại bỏ hiện tượng trôi cấu hình. Mức độ lỗ hổng được giảm mạnh nhờ loại bỏ các trình quản lý gói, truy cập shell và SSH, hạn chế nguy cơ tấn công. Cập nhật tự động và nguyên tử đảm bảo các node luôn được vá bảo mật mà không phải dừng hệ thống.</p>
+<p>Thời gian khởi động node nhanh hơn nhờ tối ưu hóa quá trình khởi tạo, giúp các node mới gia nhập cluster nhanh chóng và tăng hiệu quả tự động mở rộng, bảo đảm workload được sắp lại nhanh hơn. Hiệu quả vận hành nâng cao thông qua việc scaling động với Karpenter, cấp phát tài nguyên đúng khi cần, tránh cấp phát dư thừa. Về chi phí, Bottlerocket với hệ điều hành nhẹ cùng khả năng cấp phát thông minh của Karpenter đã giúp tiết kiệm đáng kể nguồn lực.</p>
+<h2 id="hiệu-suất-bottlerocket-so-với-al2">Hiệu suất: Bottlerocket so với AL2</h2>
+<p>Bottlerocket nhất quán mang lại tốc độ node readiness nhanh hơn. Các benchmark sơ bộ cho thấy Bottlerocket rút ngắn thời gian node readiness khoảng 5 giây so với AL2. Ngoài ra, cơ chế native container image caching của Bottlerocket giúp giảm khoảng 36 giây cho mỗi pod trên một node mới, đồng thời các pod chưa thể lên lịch sẽ khởi chạy nhanh hơn so với AL2 khoảng 40 giây.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2025/04/17/Bottlerocket-AL2-performance-chart.png" alt=""></p>
+<h2 id="tăng-cường-bảo-mật-al2-vs-bottlerocket">Tăng cường bảo mật: AL2 vs Bottlerocket</h2>
+<p>So sánh trực tiếp về các cải tiến bảo mật cho thấy lý do vì sao Bottlerocket là lựa chọn vượt trội:</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2025/04/17/Feature-comparison-chart.png" alt=""></p>
+<p><strong>Bài học rút ra</strong><br>
+Quá trình di chuyển đã mang lại nhiều bài học giá trị. Bảo mật và hiệu quả vận hành luôn song hành; thiết kế bất biến của Bottlerocket giúp tăng cường bảo mật cho Snowflake Corporate. Việc tự động hóa đơn giản hóa quy trình, khi Karpenter hỗ trợ mở rộng thời gian thực đã loại bỏ nhu cầu can thiệp thủ công. Việc di chuyển theo từng bước giúp giảm rủi ro, đồng thời triển khai qua từng giai đoạn cho phép tinh chỉnh cấu hình mà không ảnh hưởng đến môi trường production.</p>
+<h2 id="kết-luận-ý-nghĩa-rộng-hơn-cho-doanh-nghiệp-vận-hành-eks-quy-mô-lớn">Kết luận: Ý nghĩa rộng hơn cho doanh nghiệp vận hành EKS quy mô lớn</h2>
+<p>Việc di chuyển thành công hạ tầng Kubernetes của Snowflake Corporate sang Bottlerocket và Karpenter đã tạo ra một mô hình tiêu chuẩn mới mà toàn ngành có thể tham khảo. Những lợi ích nổi bật như tăng cường bảo mật, rút ngắn thời gian khởi tạo node và tối ưu vận hành có thể được áp dụng rộng rãi tại các doanh nghiệp quản trị Kubernetes quy mô lớn. Trong tương lai, có thể tiếp tục nâng cấp với điều phối workload dựa trên AI, tích hợp sâu hơn với các công cụ quan sát hệ thống và khám phá Kubernetes serverless sử dụng Bottlerocket. Việc áp dụng <a href="https://github.com/bottlerocket-os/bottlerocket">Bottlerocket</a> và <a href="https://github.com/aws/karpenter-provider-aws">Karpenter</a> giúp Snowflake Corporate không chỉ nâng cao bảo mật mà còn tăng hiệu năng nhờ khả năng mở rộng động, nhấn mạnh sức mạnh của các giải pháp cloud-native hiện đại trong việc xây dựng môi trường Kubernetes hiệu suất cao, ổn định và bền vững.</p>
+<h2 id="về-tác-giả">Về tác giả</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2025/04/18/sameeksha-garg.png" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>Sameeksha Garg</strong> <br> Sameeksha Garg là Quản lý Tài khoản Kỹ thuật (Technical Account Manager) tại AWS, cam kết hỗ trợ và thúc đẩy hành trình lên đám mây cho các khách hàng doanh nghiệp toàn cầu của AWS. Cô có hơn 7 năm kinh nghiệm trong ngành, bao gồm các lĩnh vực như bảo mật đám mây, vận hành đám mây, quản lý cơ sở hạ tầng đám mây và chăm sóc khách hàng doanh nghiệp. Sameeksha đặc biệt đam mê các công nghệ bảo mật đám mây và luôn nỗ lực giúp khách hàng đảm bảo an toàn cho khối lượng công việc của họ trên nền tảng đám mây.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2025/04/18/Gaurav-Singodia.png" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>Gaurav Singodia</strong> <br> Gaurav Singodia là một lãnh đạo kỹ thuật cao cấp tại Snowflake với thành tích nổi bật trong việc thúc đẩy đổi mới sáng tạo và tăng trưởng nhờ tư duy khởi nghiệp. Hiện tại, ông dẫn dắt một tổ chức toàn cầu đa dạng bao gồm các nhóm SRE (Đảm bảo độ tin cậy của hệ thống), Kỹ sư hệ thống, Kỹ sư phần mềm, Hạ tầng dữ liệu, Nền tảng nhận diện, AI/ML và Phân tích, với trọng tâm lớn vào việc duy trì chất lượng cao và đạt được khả năng mở rộng trên tất cả các lĩnh vực.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2025/04/18/jagdish-pawar.png" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>Jagdish Pawar</strong> <br> Jagdish Pawar có hơn 18 năm kinh nghiệm lãnh đạo trong các công ty khởi nghiệp công nghệ, doanh nghiệp đang phát triển và các tập đoàn lớn. Ông có chuyên môn về xây dựng và dẫn dắt các nhóm liên chức năng, quản lý sản phẩm, kỹ thuật và quản lý vận hành điện toán đám mây với độ tin cậy cao, an toàn và khả năng mở rộng lớn.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/e1822db470e60d090affd0956d743cb0e7cdf113/2024/03/01/RKSai.jpeg" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>RK Sai (Ravikiran Koduri)</strong> <br> RK Sai (Ravikiran Koduri) là Trưởng nhóm Hỗ trợ Doanh nghiệp tại AWS. Trong vai trò cố vấn kỹ thuật, ông giúp các Nhà cung cấp phần mềm độc lập (ISV) triển khai vận hành các khối lượng công việc với quy mô lớn. RK Sai là người truyền cảm hứng về AWS Deep Racer, các dịch vụ AI và Quản lý tài chính đám mây. Trong thời gian rảnh, ông luôn cố gắng biến ý nghĩa trừu tượng về sự viên mãn thành điều cụ thể trong cuộc sống.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2025/04/18/sayan-moitra.png" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>Sayan Moitra</strong> <br> Sayan Moitra là kỹ sư DevOps cấp cao chuyên về kỹ thuật đám mây, DevOps và đảm bảo độ tin cậy hệ thống (SRE), với thế mạnh trong việc triển khai hạ tầng và ứng dụng. Anh sở hữu nhiều chứng chỉ AWS và CKAD, đồng thời được công nhận về chuyên môn trong lĩnh vực điện toán không máy chủ (serverless computing). Sayan có niềm đam mê học hỏi liên tục và giải quyết các vấn đề phức tạp.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.1-blog1/" title="Blog 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/3.3-blog3/" title="Blog 3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1760677039"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1760677039"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1760677039"></script>
+    <script src="../../../js/jquery.sticky.js?1760677039"></script>
+    <script src="../../../js/featherlight.min.js?1760677039"></script>
+    <script src="../../../js/highlight.pack.js?1760677039"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1760677039"></script>
+    <script src="../../../js/learn.js?1760677039"></script>
+    <script src="../../../js/hugo-learn.js?1760677039"></script>
+
+    <link href="../../../mermaid/mermaid.css?1760677039" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1760677039"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

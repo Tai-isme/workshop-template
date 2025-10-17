@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.151.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 3 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1760677039" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1760677039" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1760677039" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1760677039" rel="stylesheet">
+    <link href="../../../css/theme.css?1760677039" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1760677039" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1760677039" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1760677039"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.3-blog3/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1760677039"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1760677039"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1760677039"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12 </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.5-blog5/">
+     <b> 3.6. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.3-event3/">
+     <b> 4.2. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Các bước chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/"
+  title="Truy cập S3 từ VPC"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/">
+     <b> 5.3. </b> Truy cập S3 từ VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title="Tạo một Gateway Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     <b> 5.3.1 </b> Tạo một Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title="Kiểm tra Gateway Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     <b> 5.3.2 </b> Kiểm tra Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/"
+  title="Truy cập S3 từ môi trường truyền thống"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/">
+     <b> 5.4. </b> Truy cập S3 từ môi trường truyền thống 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title="Chuẩn bị tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     <b> 5.4.1 </b> Chuẩn bị tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title="Tạo một S3 Interface endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     <b> 5.4.2 </b> Tạo một S3 Interface endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title="Kiểm tra Interface Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     <b> 5.4.3 </b> Kiểm tra Interface Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title="Mô phỏng On-premises DNS "
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     <b> 5.4.4 </b> Mô phỏng On-premises DNS  
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-policy/"
+  title="VPC Endpoint Policies"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-policy/">
+     <b> 5.5 </b> VPC Endpoint Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.3-blog3/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.3-blog3/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 3
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#các-thách-thức-với-broker-nhắn-tin-iot-tự-quản-lý">Các thách thức với broker nhắn tin IoT tự quản lý﻿</a></li>
+    <li><a href="#chi-phí-cao">Chi phí cao﻿</a></li>
+    <li><a href="#phù-hợp-năng-lực-tính-toán">Phù hợp năng lực tính toán﻿</a></li>
+    <li><a href="#các-thách-thức-bảo-mật-chưa-được-giải-quyết">Các thách thức bảo mật chưa được giải quyết﻿</a></li>
+    <li><a href="#sự-đổi-mới-chậm-lại">Sự đổi mới chậm lại﻿</a></li>
+    <li><a href="#kịch-bản-khách-hàng-và-yêu-cầu">Kịch bản khách hàng và yêu cầu﻿</a></li>
+    <li><a href="#kiến-trúc">Kiến trúc﻿</a></li>
+    <li><a href="#yêu-cầu-kỹ-thuật-cho-giải-pháp-mới">Yêu cầu kỹ thuật cho giải pháp mới﻿</a></li>
+    <li><a href="#tính-năng-của-aws-iot-core-cho-di-chuyển-phức-tạp">Tính năng của AWS IoT Core cho di chuyển phức tạp﻿</a></li>
+    <li><a href="#các-tính-năng-then-chốt-cho-di-chuyển-phức-tạp">Các tính năng then chốt cho di chuyển phức tạp﻿</a></li>
+    <li><a href="#kiến-trúc-mục-tiêu">Kiến trúc mục tiêu﻿</a></li>
+    <li><a href="#chiến-lược-di-chuyển">Chiến lược di chuyển﻿</a></li>
+    <li><a href="#giai-đoạn-0-chuẩn-bị">Giai đoạn 0: Chuẩn bị﻿</a></li>
+    <li><a href="#lớp-chuyển-tiếp-gồm-hai-thành-phần-chủ-yếu">Lớp chuyển tiếp gồm hai thành phần chủ yếu:﻿</a></li>
+    <li><a href="#giai-đoạn-1-di-chuyển-backend">Giai đoạn 1: Di chuyển backend﻿</a></li>
+    <li><a href="#lớp-chuyển-tiếp-thiết-bị-đến-backend">Lớp chuyển tiếp thiết bị đến backend﻿</a></li>
+    <li><a href="#lớp-chuyển-tiếp-backend-đến-thiết-bị">Lớp chuyển tiếp backend đến thiết bị﻿</a></li>
+    <li><a href="#giai-đoạn-2-di-chuyển-thiết-bị">Giai đoạn 2: Di chuyển thiết bị﻿</a></li>
+    <li><a href="#giai-đoạn-3-dọn-dẹp">Giai đoạn 3: Dọn dẹp﻿</a></li>
+    <li><a href="#kết-luận">Kết luận﻿</a></li>
+    <li><a href="#về-tác-giả">Về tác giả﻿</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 3
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="di-chuyển-liền-mạch-chuyển-đổi-bảo-mật-các-đội-thiết-bị-iot-lớn-sang-aws">Di chuyển liền mạch: Chuyển đổi bảo mật các đội thiết bị IoT lớn sang AWS﻿</h1>
+<p><small><em>Bởi Andrea Sichel and Katja-Maja Kroedel | Ngày 15 tháng 4 năm 2025 | Trong các chủ đề: <a href="https://aws.amazon.com/blogs/iot/category/learning-levels/advanced-300/">Advanced (300)</a>, <a href="https://aws.amazon.com/blogs/iot/category/internet-of-things/aws-iot-platform/">AWS IoT Core</a>, <a href="https://aws.amazon.com/blogs/iot/category/internet-of-things/aws-iot-device-management/">AWS IoT Device Management</a>, <a href="https://aws.amazon.com/blogs/iot/category/post-types/best-practices/">Best Practices</a>, <a href="https://aws.amazon.com/blogs/iot/category/learning-levels/intermediate-200/">Intermediate (200)</a>, <a href="https://aws.amazon.com/blogs/iot/category/internet-of-things/">Internet of Things</a>, <a href="https://aws.amazon.com/blogs/iot/category/enterprise-strategy/migration-enterprise-strategy/">Migration</a>, <a href="https://aws.amazon.com/blogs/iot/category/post-types/technical-how-to/">Technical How-to</a></em></small></p>
+<p>Di chuyển các đội thiết bị IoT quy mô lớn lên đám mây là một trong những chuyển đổi kỹ thuật phức tạp nhất mà các tổ chức ngày nay phải đối mặt. Mặc dù các <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html">lợi ích của việc di chuyển lên đám mây</a> là rõ ràng, con đường dẫn đến triển khai thành công đòi hỏi phải lên kế hoạch và thực hiện cẩn thận. Trong một <a href="https://aws.amazon.com/blogs/iot/seamless-migration-to-aws-iot-core/">bài viết trước</a>, chúng tôi đã phân tích các lý do chính để di chuyển sang AWS IoT Core. Bài viết này sẽ chia sẻ một chiến lược đã được kiểm nghiệm cho việc chuyển đổi các đội thiết bị IoT với hàng trăm triệu thiết bị sang <a href="https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html">AWS IoT Core</a>, giải quyết các thách thức phổ biến, phác họa một kịch bản di chuyển cụ thể và đi sâu vào các tính năng của AWS IoT Core hỗ trợ các ca di chuyển phức tạp.</p>
+<h2 id="các-thách-thức-với-broker-nhắn-tin-iot-tự-quản-lý">Các thách thức với broker nhắn tin IoT tự quản lý﻿</h2>
+<p>Nhiều tổ chức bắt đầu hành trình IoT của mình với các broker nhắn tin tự quản lý. Dù phương pháp này mang lại sự kiểm soát và linh hoạt ban đầu, nó thường trở nên ngày càng thách thức hơn khi số lượng thiết bị tăng lên. Hiểu rõ các thách thức này là điều quan trọng trước khi bắt đầu quá trình di chuyển lên đám mây.</p>
+<h2 id="chi-phí-cao">Chi phí cao﻿</h2>
+<p>Tác động tài chính của việc duy trì và vận hành hạ tầng IoT tự quản lý vượt xa chi phí lưu trữ cơ bản. Các tổ chức thường gặp khó khăn với việc lên kế hoạch năng lực không hiệu quả, cần đội ngũ kỹ sư riêng để quản lý hạ tầng. Những đội ngũ này phải luôn cân đối các ưu tiên giữa các phòng ban khác nhau và duy trì độ tin cậy của hệ thống. Chi phí cho việc giám sát, bảo mật và tuân thủ càng làm tình hình tài chính thêm phức tạp.</p>
+<h2 id="phù-hợp-năng-lực-tính-toán">Phù hợp năng lực tính toán﻿</h2>
+<p>Một trong những khía cạnh khó khăn nhất của việc quản lý hạ tầng IoT là đáp ứng tài nguyên tính toán với nhu cầu tải công việc. Các thời kỳ sử dụng cao điểm đòi hỏi phải có năng lực dư thừa để duy trì hiệu suất, trong khi các thời điểm sử dụng thấp dẫn đến phân bổ tài nguyên lãng phí. Thách thức này càng nghiêm trọng hơn với các triển khai toàn cầu, nơi các mô hình sử dụng khác nhau theo khu vực và múi giờ. Các tổ chức thường phải chọn giữa việc cấp phát dư thừa để đảm bảo độ tin cậy, hoặc mạo hiểm với các vấn đề hiệu suất khi xảy ra đột biến bất ngờ.</p>
+<h2 id="các-thách-thức-bảo-mật-chưa-được-giải-quyết">Các thách thức bảo mật chưa được giải quyết﻿</h2>
+<p>Bảo mật có lẽ là thách thức quan trọng nhất trong việc triển khai IoT quy mô lớn. Quản lý hàng triệu thiết bị kết nối cần các giao thức bảo mật tinh vi, gồm quản lý chứng chỉ, phát hiện mối đe dọa theo thời gian thực, cơ chế cập nhật và truyền dữ liệu an toàn. Khi các yêu cầu quy định phát triển, các tổ chức buộc phải liên tục cập nhật thực tiễn bảo mật mà vẫn phải duy trì dịch vụ không gián đoạn. Yêu cầu này ngày càng phức tạp hơn khi đội thiết bị mở rộng và phân bố địa lý.</p>
+<h2 id="sự-đổi-mới-chậm-lại">Sự đổi mới chậm lại﻿</h2>
+<p>Có lẽ chi phí tiềm ẩn lớn nhất từ broker tự quản là ảnh hưởng tới đổi mới. Các đội kỹ thuật dành quá nhiều thời gian để duy trì hạ tầng hiện có thay vì phát triển tính năng mới hoặc cải thiện trải nghiệm khách hàng. Gánh nặng duy trì này dẫn tới chậm ra mắt sản phẩm và bỏ lỡ cơ hội thị trường, ảnh hưởng đến vị thế cạnh tranh của tổ chức.</p>
+<h2 id="kịch-bản-khách-hàng-và-yêu-cầu">Kịch bản khách hàng và yêu cầu﻿</h2>
+<p>Hãy cùng xét một kịch bản di chuyển minh họa việc các môi trường IoT phức tạp cũng có thể chuyển đổi thành công sang AWS IoT Core.﻿</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/IOTB-840-Customer-Scenario-1-scaled.jpg" alt=""></p>
+<p align="center"><em>Hình 1: Kịch bản khách hàng trước khi di chuyển</em></p>
+<h2 id="kiến-trúc">Kiến trúc﻿</h2>
+<p>Hình dung một khách hàng với thiết lập sau, minh họa trong hình 1:﻿</p>
+<ul>
+<li>
+<p><strong>10 triệu thiết bị</strong>: Kết nối hàng ngày từ nhiều vị trí trên toàn thế giới.﻿</p>
+</li>
+<li>
+<p><strong>Giải pháp triển khai tại chỗ</strong>: Thiết bị ban đầu kết nối broker và dịch vụ backend tại chỗ, thực hiện logic cho ứng dụng người dùng nội bộ hoặc hỗ trợ.﻿</p>
+</li>
+<li>
+<p><strong>Máy chủ DNS</strong>: Được sử dụng để kết nối đến broker MQTT tự quản lý.﻿</p>
+</li>
+<li>
+<p><strong>Hơn 80 dịch vụ backend</strong>: Kiến trúc vi dịch vụ phân tán với 20–100 instance mỗi dịch vụ.﻿</p>
+</li>
+<li>
+<p><strong>API Gateway</strong>: Các ứng dụng tiêu thụ dữ liệu tương tác với backend qua API gateway.﻿</p>
+</li>
+</ul>
+<h2 id="yêu-cầu-kỹ-thuật-cho-giải-pháp-mới">Yêu cầu kỹ thuật cho giải pháp mới﻿</h2>
+<p>Giải pháp mới phải đáp ứng yêu cầu kỹ thuật nghiêm ngặt để đảm bảo chuyển đổi liền mạch:﻿</p>
+<ul>
+<li>
+<p><strong>Cập nhật thiết bị không cần tương tác</strong>: Đội thiết bị phải chuyển đổi mà không cần thay đổi firmware hoặc tác động thủ công, vì không thể cập nhật trên hiện trường trong thời gian di chuyển mong đợi.</p>
+</li>
+<li>
+<p><strong>Khả năng tương thích giao thức</strong>: Hỗ trợ liền mạch cả giao thức MQTT3 và MQTT5, do đội thiết bị gồm nhiều thế hệ phần cứng dùng các phiên bản giao thức khác nhau.</p>
+</li>
+<li>
+<p><strong>Phân phối tin nhắn nâng cao</strong>: Dịch vụ backend cần chức năng subscription chia sẻ để cân bằng tải hiệu quả và đảm bảo xử lý tin nhắn nhất quán giữa các instance dịch vụ.</p>
+</li>
+</ul>
+<h2 id="tính-năng-của-aws-iot-core-cho-di-chuyển-phức-tạp">Tính năng của AWS IoT Core cho di chuyển phức tạp﻿</h2>
+<p><a href="https://aws.amazon.com/iot-core/features/">AWS IoT Core</a> cung cấp bộ tính năng được thiết kế riêng để hỗ trợ các ca di chuyển phức tạp như đã minh họa ở trên.﻿</p>
+<p>AWS IoT Core vận hành dựa trên mô hình trách nhiệm chia sẻ, xác định ranh giới bảo mật và vận hành. AWS quản lý và bảo mật hạ tầng gốc, gồm trung tâm dữ liệu vật lý, bảo trì dịch vụ và độ sẵn sàng dịch vụ. Khách hàng chịu trách nhiệm bảo mật ứng dụng, triển khai bảo mật ở mức thiết bị, quản lý chứng chỉ và phát triển logic kinh doanh trên AWS IoT Core.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/IOTB-840-IoT-Core-Features.jpg" alt=""></p>
+<p align="center"><em>Hình 2: Các tính năng cốt lõi của AWS IoT</em></p>
+<p>Dưới đây là một số khả năng chính (các dịch vụ được tô đậm là đặc biệt phù hợp với kiến trúc của khách hàng):</p>
+<ul>
+<li>
+<p>Dịch vụ nhận diện: <a href="https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html">Xác thực thiết bị nâng cao bằng chứng chỉ X.509</a>, <a href="https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-your-own.html">hỗ trợ các Tổ chức cấp chứng chỉ (CA) tùy chỉnh</a>, và kiểm soát truy cập chi tiết thông qua các <a href="http://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html">AWS IoT policies</a>.</p>
+</li>
+<li>
+<p><a href="https://aws.amazon.com/iot-core/features/">Gateway thiết bị</a>: Khả năng kết nối mở rộng linh hoạt, hỗ trợ hàng triệu kết nối đồng thời, đa giao thức (HTTPS, MQTT, MQTT qua WebSockets, và LoRaWAN), cùng khả năng cân bằng tải tự động.</p>
+</li>
+<li>
+<p>Broker tin nhắn: <a href="https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html">Phân phối tin nhắn độ trễ thấp</a> với hỗ trợ MQTT 3.1.1, MQTT 5, subscription chia sẻ, chức năng lưu trữ tin nhắn.﻿</p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry.html">Registry</a>: Danh mục thiết bị toàn diện với quản lý metadata linh hoạt, nhóm thiết bị động, tích hợp với AWS IoT Device Management.﻿</p>
+</li>
+</ul>
+<h2 id="các-tính-năng-then-chốt-cho-di-chuyển-phức-tạp">Các tính năng then chốt cho di chuyển phức tạp﻿</h2>
+<p>AWS IoT Core cung cấp một bộ tính năng mạnh mẽ giúp đơn giản hóa các quá trình di chuyển đội thiết bị IoT phức tạp, đồng thời giải quyết những thách thức thường gặp khi nâng cấp lên giải pháp AWS IoT Core do AWS quản lý. Một khía cạnh quan trọng của phương án di chuyển theo từng giai đoạn là các kỹ thuật này cho phép các dịch vụ backend và thiết bị thực hiện di chuyển theo tốc độ riêng của mình, từ đó giảm thiểu tối đa thời gian gián đoạn và ngừng hoạt động. Hãy cùng tìm hiểu chi tiết một số khả năng quan trọng, liên quan trực tiếp đến kịch bản di chuyển của khách hàng được nêu ở phần trước:</p>
+<ul>
+<li>
+<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-endpoints-configurable-custom.html">Custom domain</a><strong>:</strong> Tính năng này nổi bật như một yếu tố then chốt cho việc migration quy mô lớn. Nó loại bỏ một trong những rào cản lớn nhất khi migration bằng cách cho phép tổ chức sử dụng domain hiện tại với endpoint AWS IoT Core. Điều này đồng nghĩa thiết bị có thể tiếp tục hoạt động với cấu hình sẵn có, từ đó giảm đáng kể rủi ro và độ phức tạp của quá trình migration. Ngoài ra, người dùng còn có thể <a href="https://docs.aws.amazon.com/iot/latest/developerguide/iot-endpoints-tls-config.html">cấu hình các policy và phiên bản TLS</a> cũng như <a href="https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html">các giao thức, cổng kết nối</a> cho endpoint sử dụng.</p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html">Hỗ trợ MQTT (MQTT 3 và MQTT 5)</a><strong>:</strong> Trong các hệ thống IoT đa dạng, thiết bị thường sử dụng nhiều phiên bản MQTT khác nhau. AWS IoT Core hỗ trợ cả MQTT 3.1.1 và MQTT 5, cho phép các thiết bị sử dụng các phiên bản MQTT khác nhau vẫn có thể kết nối, đảm bảo quá trình migration diễn ra suôn sẻ mà không cần nâng cấp đồng loạt toàn bộ thiết bị lên chuẩn MQTT mới nhất ngay lập tức.</p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-your-own.html">Bring your own certificate authority (CA)</a><strong>:</strong> Việc giữ nguyên hạ tầng bảo mật hiện tại rất quan trọng trong quá trình migration. AWS IoT Core cho phép bạn đăng ký CA đang dùng lên AWS, tạo lập chuỗi tin cậy giữa thiết bị và AWS IoT Core mà không cần phải cấp lại certificate mới cho thiết bị. Điều này loại bỏ nhu cầu quay vòng certificate trong suốt quá trình migration.</p>
+</li>
+</ul>
+<p>Gần đây, AWS IoT Core cập nhật thêm các tính năng tăng cường quá trình di chuyển và nâng cao hiệu năng:﻿</p>
+<ul>
+<li>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2024/11/aws-iot-core-capabilities-mqtt-messages-simplify-permission-management/">Message enrichment with registry metadata</a>: Lan truyền các thuộc tính thiết bị lưu trong registry cùng mỗi thông điệp gửi đi, giúp loại bỏ nhu cầu dùng AWS Lambda hoặc các instance xử lý để truy xuất thông tin này từ nguồn khác.</p>
+</li>
+<li>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2024/11/aws-iot-core-capabilities-mqtt-messages-simplify-permission-management/">Thing-to-connection association</a>: &ldquo;thing&rdquo; là một entry trong registry chứa các thuộc tính mô tả thiết bị. Chính sách xác định các thao tác mà thiết bị có thể thực hiện trên AWS IoT. Tính năng mới cho phép sử dụng biến trong chính sách với bất kỳ định dạng client ID, giải quyết được vấn đề migration khi client ID không tuân thủ quy tắc về tên &ldquo;thing&rdquo; của AWS IoT Core. Khi cấu hình xong, có thể sử dụng nhiều client ID cho mỗi certificate và &ldquo;thing&rdquo;, linh hoạt mà không cần thay đổi định danh hay cấu hình thiết bị đang có.</p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/auto-register-device-cert.html#configure-auto-reg-first-connect">Client ID in just-in-time registration (JITR)</a>: Thực hiện xác thực bảo mật bổ sung trong quá trình JITR nhờ nhận được thông tin client ID.</p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/customize-client-auth.html">Custom client certificate validation</a>: Cho phép xác thực chứng chỉ khách hàng (client certificate) một cách tùy chỉnh thông qua hàm AWS Lambda khi thiết bị kết nối. Điều này hỗ trợ tích hợp với các dịch vụ kiểm tra chứng thực bên ngoài như OCSP (<a href="https://www.rfc-editor.org/rfc/rfc6960.html">Online Certificate Status Protocol</a>), giúp tăng cường kiểm soát bảo mật cho toàn bộ quá trình xác thực thiết bị.</p>
+</li>
+<li>
+<p><a href="https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-509cert.html">Custom authentication with X.509 client certificates</a>: Mở rộng xác thực certificate bằng Lambda, cho phép chỉ định chính sách động cho thiết bị khi kết nối. Tính năng này bổ sung cho chức năng Custom Authorizer vốn đã hỗ trợ JWT token và username/password.</p>
+</li>
+<li>
+<p><a href="https://aws.amazon.com/about-aws/whats-new/2024/10/aws-iot-core-tls-alpn-requirement-custom-authorizer-capabilities/">ALPN TLS extension removal</a>: Extension ALPN của TLS không còn bắt buộc phải có trong quá trình bắt tay bảo mật  (<a href="https://docs.aws.amazon.com/iot/latest/developerguide/transport-security.html">Transport Layer Security</a> handshake) , giúp loại bỏ rào cản đối với những thiết bị không hỗ trợ ALPN.</p>
+</li>
+</ul>
+<p>Các tính năng trên mang lại sự linh hoạt, bảo mật và hiệu quả cao hơn khi quản lý đội thiết bị IoT trên AWS IoT Core. Bằng cách tận dụng chúng, tổ chức có thể giảm tối đa độ phức tạp và rủi ro khi di chuyển đội thiết bị lớn, đảm bảo chuyển đổi liền mạch sang nền tảng IoT trên đám mây hiện đại, an toàn, mở rộng được.</p>
+<h2 id="kiến-trúc-mục-tiêu">Kiến trúc mục tiêu﻿</h2>
+<p>Kiến trúc mục tiêu gồm di chuyển 10 triệu thiết bị kết nối AWS IoT Core qua <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html#:~:text=Amazon%20Route%2053%20is%20a,DNS%20routing%2C%20and%20health%20checking.">Amazon Route 53</a> (hoặc bất kỳ máy chủ DNS nào). Các dịch vụ backend, API gateway và ứng dụng tiêu thụ vẫn giữ nguyên.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/IOTB-840-Target-Architecture-scaled.jpg" alt=""></p>
+<p align="center"><em>Hình 3: Kiến trúc mục tiêu</em></p>
+<h2 id="chiến-lược-di-chuyển">Chiến lược di chuyển﻿</h2>
+<p>Ý tưởng là xây dựng chiến lược di chuyển dựa trên năm trụ cột chính nhằm đảm bảo quá trình chuyển đổi diễn ra suôn sẻ. Quá trình này bắt đầu bằng cách duy trì phương pháp tiếp cận không rủi ro thông qua việc lập kế hoạch và kiểm thử cẩn thận, đồng thời kiểm soát hoạt động với tài liệu và giám sát đầy đủ. Chiến lược nhấn mạnh việc giữ cho mức độ sai sót ở mức tối thiểu thông qua các bước thực hiện và xác nhận chính xác.</p>
+<p>Phù hợp với các nguyên tắc chiến lược đã nêu, nên áp dụng phương pháp tiếp cận theo từng giai đoạn.Mỗi giai đoạn có mục tiêu và các phụ thuộc cụ thể, cho phép theo dõi tiến độ một cách chặt chẽ và linh hoạt điều chỉnh khi cần thiết.</p>
+<p>Hãy cùng đi sâu vào từng giai đoạn, làm rõ động lực các quyết định và minh hoạ thực tế.﻿</p>
+<h2 id="giai-đoạn-0-chuẩn-bị">Giai đoạn 0: Chuẩn bị﻿</h2>
+<p>Giai đoạn chuẩn bị đặt nền móng cho di chuyển thành công. Trọng tâm là thiết lập cầu nối giữa hạ tầng hiện tại và AWS IoT Core, đảm bảo vận hành liên tục trong suốt quá trình.</p>
+<p>Trung tâm của giai đoạn này là triển khai lớp chuyển tiếp (republish). Thành phần này đóng vai trò trung gian, hỗ trợ giao tiếp hai chiều giữa broker tự quản lý và AWS IoT Core — như một đường hầm bảo mật cho phép tin nhắn chuyển động liền mạch giữa hai hệ.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/IOTB-840-Prep-Phase-Arch-1-scaled.jpg" alt=""></p>
+<p align="center"><em>Hình 4: Kiến trúc của Giai đoạn Chuẩn bị</em></p>
+<h2 id="lớp-chuyển-tiếp-gồm-hai-thành-phần-chủ-yếu">Lớp chuyển tiếp gồm hai thành phần chủ yếu:﻿</h2>
+<ul>
+<li>
+<p>Thiết bị đến backend (Device to backend): Thành phần này thu nhận các thông điệp từ thiết bị đang kết nối với broker do bạn tự quản lý và chuyển tiếp chúng đến AWS IoT Core. Việc triển khai luồng này trước cho phép bắt đầu quá trình chuyển dịch các dịch vụ backend, trong khi thiết bị vẫn tiếp tục kết nối với broker hiện tại.</p>
+</li>
+<li>
+<p>Backend đến thiết bị (Backend to device): Được triển khai song song, thành phần này đảm bảo các thông điệp từ các dịch vụ backend mới đã được chuyển dịch vẫn đến được các thiết bị còn kết nối với broker tự quản lý. Khả năng truyền thông hai chiều này giúp duy trì tính toàn vẹn của hệ thống trong suốt quá trình chuyển đổi.</p>
+</li>
+</ul>
+<p>Khuyên dùng triển khai lớp chuyển tiếp bằng dịch vụ container như <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html">Amazon Elastic Container Service</a> (ECS) hoặc các phương án tính toán khác phù hợp. Mã nguồn thành phần này đơn giản: đăng ký một chủ đề trên broker rồi publish sang broker kia. Deployment bằng container giúp linh hoạt scale up/down tùy nhu cầu di chuyển.</p>
+<h2 id="giai-đoạn-1-di-chuyển-backend">Giai đoạn 1: Di chuyển backend﻿</h2>
+<p>Giai đoạn này tập trung di chuyển dịch vụ backend từ broker tự quản lý sang AWS IoT Core. Hãy cùng xem cách tận dụng lớp chuyển tiếp để di chuyển backend từng bước mà không mất thông tin.</p>
+<h2 id="lớp-chuyển-tiếp-thiết-bị-đến-backend">Lớp chuyển tiếp thiết bị đến backend﻿</h2>
+<p>Trong quá trình di chuyển backend, duy trì phân phối tin nhắn đều qua các subscription chia sẻ là tối quan trọng để tránh quá tải subscriber. Lớp chuyển tiếp tích hợp mượt mà với instance có sẵn, dùng mô hình subscription chia sẻ, đảm bảo phân phối tin nhắn cân bằng. Khi tin nhắn đi qua lớp này sang instances đã di chuyển, kiểm soát kỹ từng thành phần để ngăn quá tải. Tiến trình cẩn trọng giúp di chuyển từ từ, giữ nguyên mô hình phân phối tin nhắn và ổn định hệ thống.</p>
+<h2 id="lớp-chuyển-tiếp-backend-đến-thiết-bị">Lớp chuyển tiếp backend đến thiết bị﻿</h2>
+<p>BTD triển khai cấp cluster ECS của Amazon, kết nối tới AWS IoT Core để tiêu thụ tin nhắn. Khác lớp DTB, tất cả instances BTD có thể triển khai đồng thời vì mỗi instance xử lý chủ đề thiết bị riêng biệt, không lo quá tải. Điều này giúp đẩy nhanh di chuyển backend mà vẫn đảm bảo tin nhắn tới thiết bị.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/IOTB-840-BTD-Rep-Layer-ServiceA.jpg" alt=""></p>
+<p align="center"><em>Hình 5: Kiến trúc trực quan hóa Lớp xuất bản lại thiết bị từ phía sau cho quá trình di chuyển dịch vụ A</em></p>
+<p>Trong quá trình di chuyển backend, khuyến nghị thiết lập <a href="https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html">AWS IoT Core rule</a> để lưu tin nhắn vào <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html">Amazon S3</a> như lớp backup quan trọng. Việc lưu backup cho phép phục hồi và xử lý lại nếu có sự cố ngoài dự kiến, đảm bảo không mất dữ liệu từ thiết bị.</p>
+<p>Với lớp chuyển tiếp hoạt động ổn định, tiến trình di chuyển theo từng bước hệ thống như sau:﻿</p>
+<ol>
+<li>
+<p>Giới thiệu instance DTB đầu tiên﻿</p>
+</li>
+<li>
+<p>Kiểm tra luồng tin nhắn qua instance này đến AWS IoT Core và về thiết bị﻿</p>
+</li>
+<li>
+<p>Loại bỏ instance backend chưa di chuyển tương ứng﻿</p>
+</li>
+<li>
+<p>Tiếp tục lần lượt với tất cả instance backend﻿</p>
+</li>
+</ol>
+<p>Phương pháp này giúp chuyển đổi mượt mà toàn bộ dịch vụ backend sang AWS IoT Core. Chiến lược tương tự áp dụng cho các dịch vụ nền tảng khác, đảm bảo liên tục vận hành qua toàn bộ quá trình.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/IOTB-840-Backend-Migration-Completed-Arch.jpg" alt=""></p>
+<p align="center"><em>Hình 6: Kiến trúc trực quan hóa quá trình hoàn tất di chuyển phần phụ trợ sang AWS IoT</em></p>
+<h2 id="giai-đoạn-2-di-chuyển-thiết-bị">Giai đoạn 2: Di chuyển thiết bị﻿</h2>
+<p>Giai đoạn này đặc biệt cần chú ý chi tiết vì ảnh hưởng trực tiếp đến trải nghiệm người dùng và kết nối thiết bị.﻿</p>
+<p>Chìa khóa để di chuyển thiết bị thành công là chiến lược <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-weighted.html">định tuyến DNS có trọng số</a> (hay chiến lược tùy chọn), ví dụ dịch vụ Amazon Route 53 (hoặc bất kỳ DNS nào). Phương án này cho phép điều tiết chi tiết quá trình chuyển đổi:</p>
+<ol>
+<li>
+<p>Bắt đầu với tỷ lệ nhỏ (thường 1–2%) lưu lượng chuyển sang AWS IoT Core.﻿</p>
+</li>
+<li>
+<p>Giám sát kết nối thiết bị, chuyển giao tin nhắn, khả năng vượt ngưỡng throttling và tỷ lệ lỗi dựa vào <a href="https://docs.aws.amazon.com/iot/latest/developerguide/metrics_dimensions.html">metric AWS IoT và dimension</a> trong Amazon CloudWatch.﻿</p>
+</li>
+<li>
+<p>Tăng dần tỷ lệ dựa trên chỉ số hiệu năng.﻿</p>
+</li>
+<li>
+<p>Duy trì khả năng đảo ngược lưu lượng nhanh khi cần.﻿</p>
+</li>
+</ol>
+<p>Giai đoạn này khai thác chức năng <a href="https://docs.aws.amazon.com/iot/latest/developerguide/jit-provisioning.html">đăng ký tự động thời gian thực của AWS IoT Core</a>, tự động cấp phát tài nguyên kết nối thiết bị. Tự động hóa này tối giảm gánh nặng vận hành khi di chuyển quy mô lớn.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/IOTB-840-Device-Migr-Arch.jpg" alt=""></p>
+<p align="center"><em>Hình 7: Kiến trúc trực quan hóa quá trình di chuyển thiết bị</em></p>
+<p>Sau khi hoàn tất di chuyển thiết bị, lớp chuyển tiếp vẫn hoạt động, tiếp tục chuyển tin nhắn về broker tự quản lý. Thiết kế này làm đường quay lại thiết yếu – nếu có sự cố, có thể ngay lập tức chuyển lưu lượng về broker cũ mà vẫn duy trì giao tiếp tin nhắn giữa thiết bị và backend.</p>
+<h2 id="giai-đoạn-3-dọn-dẹp">Giai đoạn 3: Dọn dẹp﻿</h2>
+<p>Giai đoạn dọn dẹp hoàn tất quá trình di chuyển. Lớp chuyển tiếp được loại bỏ trước, tách biệt broker tự quản lý. Sau khi hệ thống giám sát và các thành phần phụ xác nhận không còn lưu lượng đến broker cũ, và toàn bộ hệ thống vận hành ổn định qua AWS IoT Core, tiến hành kết thúc hoạt động broker — hoàn tất di chuyển.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/IOTB-840-Finished-Migr-Arch-scaled.jpg" alt=""></p>
+<p align="center"><em>Hình 8: Kiến trúc trực quan hóa quá trình di chuyển hoàn tất khớp với kiến ​​trúc mục tiêu</em></p>
+<p>Trình tự được kiểm soát này giúp quá trình chuyển đổi diễn ra mượt mà, đồng thời duy trì sự ổn định của hệ thống trong suốt giai đoạn chuyển đổi cuối cùng.</p>
+<h2 id="kết-luận">Kết luận﻿</h2>
+<p>Các tổ chức có thể di chuyển thành công đội thiết bị IoT lớn lên AWS IoT Core theo phương pháp từng giai đoạn và tuân thủ chiến lược năm trụ cột. Mô hình này giảm thiểu rủi ro, cung cấp các cơ chế failback ở mọi giai đoạn. Tiến trình chuẩn bị, di chuyển backend, di chuyển thiết bị và dọn dẹp đảm bảo chuyển đổi có quy trình và bảo mật, cho phép cả backend và thiết bị di chuyển với tốc độ riêng, duy trì tính ổn định vận hành.</p>
+<p>Để có phân tích chi tiết, tương tác trực quan về hành trình di chuyển, mời theo dõi loạt video hướng dẫn trên kênh YouTube AWS IoT: <a href="https://www.youtube.com/watch?v=7uKqfoeCVM0">Phần 1</a> và <a href="https://www.youtube.com/watch?v=FxZo2OM-d7k&amp;t=510s">Phần 2</a>. Các video này cung cấp thêm các góc nhìn và minh hoạ thực tế cho các khái niệm trong bài. Để biết thêm các case khách hàng và đối tác đã di chuyển lên AWS IoT, hãy xem <a href="https://aws.amazon.com/blogs/iot/seamless-migration-to-aws-iot-core/">bài blog này</a>.</p>
+<p>Hãy nhớ, chuyển đổi IoT thành công không chỉ đơn thuần là di chuyển hệ thống — mà là xây dựng nền tảng cho mở rộng trong tương lai, đồng thời đảm bảo liên tục kinh doanh suốt quá trình chuyển đổi.</p>
+<h2 id="về-tác-giả">Về tác giả﻿</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/ansichel-bio.jpg" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>Andrea Sichel</strong> <br> <a href="https://www.linkedin.com/in/andreasichel/">Andrea Sichel</a> là Kiến trúc sư giải pháp IoT chuyên sâu tại Amazon Web Services, nơi ông hỗ trợ khách hàng trong hành trình ứng dụng đám mây lĩnh vực IoT. Bằng sự tò mò và triết lý đặt khách hàng lên hàng đầu, ông phát triển các giải pháp sáng tạo và luôn cập nhật công nghệ mới nhất. Andrea thích đối mặt các bài toán phức tạp và giúp tổ chức mở rộng tầm nhìn về chuyển đổi IoT. Ngoài công việc, Andrea huấn luyện đội bóng đá cho con trai và đam mê nhiếp ảnh. Khi không ở trên sân bóng hay sau máy ảnh, ông thường bơi lội để duy trì sự cân bằng giữa công việc và cuộc sống.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/f6e1126cedebf23e1463aee73f9df08783640400/2025/04/14/Katja-1.png" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>Katja-Maja Kroedel</strong> <br> <a href="https://www.linkedin.com/in/katja-maja-kr%C3%B6del-927794198/">Katja-Maja Kroedel</a> là chuyên gia vận động về cơ sở dữ liệu và IoT tại AWS. Cô giúp khách hàng khai thác tối đa tiềm năng của công nghệ đám mây. Với nền tảng kỹ thuật máy tính và kinh nghiệm sâu rộng về IoT &amp; databases, cô cộng tác chặt chẽ với khách hàng về định hướng áp dụng đám mây, chiến lược và di chuyển hệ thống trong những lĩnh vực này. Katja yêu thích công nghệ đổi mới, xây dựng và thử nghiệm với dịch vụ như AWS IoT Core, AWS RDS.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.2-blog2/" title="Blog 2"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/3.4-blog4/" title="Blog 4" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1760677039"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1760677039"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1760677039"></script>
+    <script src="../../../js/jquery.sticky.js?1760677039"></script>
+    <script src="../../../js/featherlight.min.js?1760677039"></script>
+    <script src="../../../js/highlight.pack.js?1760677039"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1760677039"></script>
+    <script src="../../../js/learn.js?1760677039"></script>
+    <script src="../../../js/hugo-learn.js?1760677039"></script>
+
+    <link href="../../../mermaid/mermaid.css?1760677039" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1760677039"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

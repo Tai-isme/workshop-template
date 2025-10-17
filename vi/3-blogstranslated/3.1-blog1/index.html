@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.151.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 1 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1760677039" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1760677039" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1760677039" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1760677039" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1760677039" rel="stylesheet">
+    <link href="../../../css/theme.css?1760677039" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1760677039" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1760677039" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1760677039"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.1-blog1/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1760677039"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1760677039"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1760677039"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12 </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.5-blog5/">
+     <b> 3.6. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.3-event3/">
+     <b> 4.2. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequiste/"
+  title="Các bước chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequiste/">
+     <b> 5.2. </b> Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/"
+  title="Truy cập S3 từ VPC"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/">
+     <b> 5.3. </b> Truy cập S3 từ VPC 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+  title="Tạo một Gateway Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/">
+     <b> 5.3.1 </b> Tạo một Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+  title="Kiểm tra Gateway Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/">
+     <b> 5.3.2 </b> Kiểm tra Gateway Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/"
+  title="Truy cập S3 từ môi trường truyền thống"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/">
+     <b> 5.4. </b> Truy cập S3 từ môi trường truyền thống 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+  title="Chuẩn bị tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/">
+     <b> 5.4.1 </b> Chuẩn bị tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+  title="Tạo một S3 Interface endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/">
+     <b> 5.4.2 </b> Tạo một S3 Interface endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+  title="Kiểm tra Interface Endpoint"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/">
+     <b> 5.4.3 </b> Kiểm tra Interface Endpoint 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+  title="Mô phỏng On-premises DNS "
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/">
+     <b> 5.4.4 </b> Mô phỏng On-premises DNS  
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-policy/"
+  title="VPC Endpoint Policies"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-policy/">
+     <b> 5.5 </b> VPC Endpoint Policies 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.1-blog1/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.1-blog1/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 1
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#các-thành-phần-kiến-trúc">Các thành phần kiến trúc</a></li>
+    <li><a href="#thành-phần-chính-của-cụm-hpc-bao-gồm">Thành phần chính của cụm HPC bao gồm:</a></li>
+    <li><a href="#quy-trình-gửi-công-việc-mô-phỏng">Quy trình gửi công việc mô phỏng</a></li>
+    <li><a href="#bước-1-tạo-cụm-hpc">Bước 1: Tạo cụm HPC</a></li>
+    <li><a href="#bước-2-gửi-công-việc-đến-cụm">Bước 2: Gửi công việc đến cụm</a></li>
+    <li><a href="#bước-3-theo-dõi-việc-tự-động-mở-rộng-nút">Bước 3: Theo dõi việc tự động mở rộng nút</a></li>
+    <li><a href="#bước-4-lấy-kết-quả-và-shutdown-cụm">Bước 4: Lấy kết quả và shutdown cụm</a></li>
+    <li><a href="#khuyến-nghị-loại-amazon-ec2-cho-các-ứng-dụng-ansys">Khuyến nghị loại Amazon EC2 cho các ứng dụng Ansys</a></li>
+    <li><a href="#kết-luận">Kết luận</a></li>
+    <li><a href="#về-tác-giả">Về tác giả﻿</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 1
+            </h1>
+          
+
+        
+
+
+
+	<!-- 
+<div
+  class="notices warning"
+  
+>
+  <p>⚠️ <strong>Lưu ý:</strong> Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng <strong>không sao chép nguyên văn</strong> cho bài báo cáo của bạn kể cả warning này.</p>
+
+</div>
+ -->
+<h1 id="tối-ưu-hóa-quy-trình-làm-việc-hpc-với-các-cụm-tự-động-mở-rộng-trong-ansys-gateway-vận-hành-bởi-aws">Tối ưu hóa quy trình làm việc HPC với các cụm tự động mở rộng trong Ansys Gateway vận hành bởi AWS</h1>
+<p><small><em>Bởi Dnyanesh Digraskar và Trent Andrus | Vào 22 tháng 4 năm 2025 | trong <a href="https://aws.amazon.com/blogs/hpc/category/compute/aws-parallel-cluster/">AWS ParallelCluster</a>, <a href="https://aws.amazon.com/blogs/hpc/category/high-performance-computing/">High Performance Computing</a>, <a href="https://aws.amazon.com/blogs/hpc/category/post-types/partner-solutions/">Partner solutions</a>.</em></small></p>
+<p><small><em>Được đóng góp bởi Dnyanesh Digraskar, Kiến trúc sư Giải pháp Đối tác HPC tại AWS, và Trent Andrus, Chuyên gia Sản phẩm tại Ansys.</em></small></p>
+<p><a href="https://www.ansys.com/products/cloud/ansys-gateway">Ansys Gateway vận hành bởi AWS</a> là một giải pháp kỹ thuật đám mây (gọi tắt là “Ansys Gateway” trong phần còn lại của bài viết) được lưu trữ trên AWS Marketplace. Sản phẩm này cung cấp cho khách hàng giao diện liền mạch để chạy mô phỏng Ansys trong tài khoản Amazon Web Services (AWS) của mình. Khách hàng có thể triển khai nhanh các ứng dụng Ansys đã được xác thực, tinh chỉnh trên hạ tầng HPC mà AWS khuyến nghị. <a href="https://aws.amazon.com/solutions/case-studies/equipe-cycliste-groupama-fdj-case-study/">Groupama FDJ</a> và <a href="https://www.ansys.com/resource-center/case-study/ansys-turntide-technologies">Turntide Technologies</a> sử dụng Ansys Gateway để tăng tốc các công việc thiết kế kỹ thuật và mô phỏng. So với hạ tầng on-premise, Groupama FDJ đạt tốc độ mô phỏng nhanh hơn 17 lần khi thiết kế xe đạp đua, còn Turntide Technologies tăng tốc mô phỏng thiết kế động cơ điện lên 7 lần.</p>
+<p>Sau phiên bản phát hành đầu tiên của Ansys Gateway, một số phản hồi từ người dùng liên quan đến việc cần kiểm soát nhiều hơn trong quy trình tạo cụm HPC. Để giải quyết vấn đề này, Ansys Gateway nay đã tích hợp tính năng cụm tự động mở rộng từ phiên bản 2024 R2 trở đi. Điều này cho phép cấp phát tài nguyên tính toán động dựa trên hàng đợi công việc Slurm. Bên cạnh quy trình tạo cụm được nâng cấp, Ansys Gateway nay hỗ trợ các dịch vụ AWS như <a href="https://aws.amazon.com/fsx/lustre/">Amazon FSx for Lustre</a>, <a href="https://aws.amazon.com/fsx/openzfs/">Amazon FSx for OpenZFS</a> và <a href="https://aws.amazon.com/efs/">Amazon Elastic File System (EFS)</a>. Các dịch vụ này thường được sử dụng để hỗ trợ nhiều loại quy trình làm việc HPC khác nhau. Với khả năng tự mở rộng, EFS là lựa chọn khởi đầu tuyệt vời cho đa số khách hàng. Đối với các mô phỏng lớn có nhiều thao tác I/O, các hệ thống tệp chia sẻ hiệu năng cao như FSx for Lustre và OpenZFS giúp tránh nghẽn cổ chai I/O. Trong môi trường tính toán hỗn hợp Windows và Linux, OpenZFS có thể truy cập được từ cả hai nền tảng.</p>
+<p>Mở rộng tài nguyên HPC cho các mô phỏng kỹ thuật là một thách thức phức tạp. Tính mở rộng phản ánh khả năng hạ tầng HPC cung cấp tài nguyên tính toán tỷ lệ thuận với nhu cầu khối lượng công việc. Thông thường, các mô phỏng gắn kết chặt chẽ như phần mềm mô phỏng chất lỏng <a href="https://www.ansys.com/products/fluids/ansys-fluent">Ansys Fluent</a>, phần mềm mô phỏng động lực học phi tuyến <a href="https://www.ansys.com/products/structures/ansys-ls-dyna">Ansys LS-DYNA</a>, hay phần mềm phân tích phần tử hữu hạn cấu trúc <a href="https://www.ansys.com/products/structures/ansys-mechanical">Ansys Mechanical</a> đều có thể mở rộng trên nhiều lõi và đạt hiệu năng tuyến tính gần như tuyệt đối (tùy thuộc vào benchmark). Với các cụm tự động mở rộng, người dùng có thể quản lý tài nguyên hiệu quả dựa trên nhu cầu khối lượng công việc và loại bỏ các “nút thắt cổ chai” phần cứng trong lúc cao điểm.</p>
+<p>Bài blog này mô tả kiến trúc, quy trình làm việc và các khuyến nghị về Amazon EC2 khi chạy các ứng dụng Ansys trong Ansys Gateway.</p>
+<h2 id="các-thành-phần-kiến-trúc">Các thành phần kiến trúc</h2>
+<p>Các thành phần kiến trúc của Ansys Gateway, bao gồm Mặt kiểm soát (Control Plane) và Mặt ứng dụng (Application Plane), đã được mô tả chi tiết trong bài <a href="https://aws.amazon.com/blogs/apn/accelerate-your-ansys-simulations-with-ansys-gateway-powered-by-aws/">blog</a> năm 2023.</p>
+<p>Từ phiên bản này trở đi, Ansys Gateway tích hợp với <a href="https://aws.amazon.com/hpc/parallelcluster/">AWS ParallelCluster</a>, một công cụ quản lý cụm mã nguồn mở. <a href="https://slurm.schedmd.com/overview.html">Slurm</a> được sử dụng như bộ điều phối công việc để tự động cấp phát các nút tính toán khi các công việc được xếp hàng đợi và giải phóng khi không còn cần thiết nữa. Hình 1 dưới đây minh họa sơ đồ kiến trúc triển khai AWS ParallelCluster trong VPC của khách hàng Ansys Gateway. Sơ đồ kiến trúc triển khai AWS ParallelCluster trong Amazon <a href="https://aws.amazon.com/vpc/">Virtual Private Cloud</a> (VPC) của khách hàng Ansys Gateway được minh họa ở Hình 1.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig1.png" alt=""></p>
+<p align="center"><em>Hình 1: Kiến trúc triển khai HPC của Ansys Gateway dựa trên AWS ParallelCluster. Đây là lớp ứng dụng được triển khai trong tài khoản AWS của khách hàng.</em></p>
+<h2 id="thành-phần-chính-của-cụm-hpc-bao-gồm">Thành phần chính của cụm HPC bao gồm:</h2>
+<ul>
+<li><strong>Nút quản lý (Head Node)</strong> –  Quản lý quy trình công việc và trạng thái cụm.</li>
+<li><strong>Bộ điều khiển Slurm</strong> – Bộ điều phối sử dụng Slurm workload manager.</li>
+<li><strong>Các nút tính toán động</strong> – Được cung cấp và chấm dứt dựa trên nhu cầu khối lượng công việc. Ví dụ: khởi chạy các loại phiên bản Amazon EC2 như C6i, Hpc6a, Hpc7a cho khối lượng công việc dựa trên CPU và P5, G6e để tăng tốc GPU.</li>
+<li><strong>Lưu trữ</strong> <strong>– Amazon EFS</strong> hoặc <a href="https://aws.amazon.com/ebs/">Amazon Elastic Block Store</a> (EBS) để cài đặt ứng dụng và dữ liệu công việc liên tục có thể hoạt động như bộ gắn Hệ thống tệp mạng (NFS) hoặc Amazon FSx cho Lustre và Amazon FSx cho OpenZFS cho khối lượng công việc hiệu suất cao.</li>
+<li><strong>Hàng đợi cụm</strong> – Hàng đợi công việc hỗ trợ nhiều loại phiên bản cho nhiều loại khối lượng công việc khác nhau, chẳng hạn như: hàng đợi phiên bản được tối ưu hóa điện toán để chạy mô phỏng CFD và sự cố; hàng đợi phiên bản được tối ưu hóa bộ nhớ để chạy mô phỏng FEA hoặc NVH; Hàng đợi phiên bản được tối ưu hóa GPU để chạy mô phỏng hướng đồ họa. Bạn nên chạy ứng dụng trên các loại phiên bản đồng nhất với tất cả các nút điện toán có thiết kế giống nhau để đạt được hiệu suất tối ưu.</li>
+<li><strong>Mạng nâng cao</strong> – <a href="https://aws.amazon.com/hpc/efa/">Amazon Elastic Fabric Adapter (EFA)</a> là giao diện mạng nâng cao dành cho các phiên bản Amazon EC2 để chạy các ứng dụng yêu cầu liên lạc giữa các nút ở mức độ cao trên quy mô lớn.</li>
+</ul>
+<p>AWS ParallelCluster mang lại sự linh hoạt lớn cho Ansys Gateway trong định nghĩa tài nguyên tính toán và hàng đợi. Một hàng đợi có thể chứa nhiều tài nguyên tính toán, và mỗi tài nguyên lại có thể có nhiều loại instance EC2. Ví dụ: một hàng đợi có tài nguyên tính toán với các loại instance như r6i.32xlarge, r6in.32xlarge, r6id.32xlarge. Thông thường, cụm sẽ cố gắng cấp phát loại instance rẻ nhất trước, nếu không đủ thì chuyển sang loại kế tiếp. Đây là cách giúp giải quyết tạm thời vấn đề thiếu hụt tài nguyên.</p>
+<p>Nhờ các cụm mở rộng động, người dùng Ansys Gateway giờ đây có thể có quy trình mô phỏng dựa trên job (theo hàng đợi) thay vì mỗi cluster cho một mô phỏng như truyền thống. Với cluster tĩnh, tài nguyên có thể lãng phí vào thời gian thấp điểm, dẫn đến chi phí không cần thiết. Cluster tĩnh cũng có thể không phù hợp với mọi loại công việc, khiến bạn phải resize hoặc tạo cluster mới với các loại instance khác nhau, gây downtime và chi phí ngoài dự kiến.</p>
+<h2 id="quy-trình-gửi-công-việc-mô-phỏng">Quy trình gửi công việc mô phỏng</h2>
+<p>Phần này sẽ mô tả quy trình từng bước thực hiện trên giao diện Ansys Gateway để tạo các cụm HPC mở rộng động nhằm chạy các mô phỏng Ansys. Giả định rằng bạn đã đăng nhập vào Ansys Gateway và có quyền truy cập vào không gian làm việc để gửi các công việc mô phỏng.</p>
+<h2 id="bước-1-tạo-cụm-hpc">Bước 1: Tạo cụm HPC</h2>
+<p>Việc tạo cụm mở rộng động thực hiện theo các bước sau:</p>
+<ol>
+<li>Chọn loại lưu trữ (giữa Amazon EFS, Amazon FSx for OpenZFS và Amazon FSx for Lustre)</li>
+<li>Chọn các gói ứng dụng Ansys cần cài đặt</li>
+<li>Định nghĩa các hàng đợi tính toán của cụm và chọn tài nguyên</li>
+</ol>
+<p>Cũng như khi tạo bất kỳ tài nguyên nào, bạn bắt đầu bằng cách chọn một tenant (tức là workspace đã đăng ký) trong Ansys Gateway như minh họa ở Hình 2a. Sau đó, hãy tạo mới hoặc chọn một project space chưa có cụm mở rộng động. Project space này phải có chỉ báo ở cột Releases là “24R2+” như minh họa ở Hình 2b.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig2a-1.png" alt=""></p>
+<p align="center"><em>Hình 2a: Trang chủ của Ansys Gateway. Người dùng có thể chọn một tenant để truy cập vào các project space của họ. Có hai tùy chọn tenant được hiển thị, mỗi tenant đều có tên và ID riêng.</em></p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig2b.png" alt=""></p>
+<p align="center"><em>Hình 2b: Trang chủ các project space của Ansys Gateway. Một project space có tiêu đề “Gateway Autoscaling Cluster Demonstration” được hiển thị.</em></p>
+<p>Trong project space này, hãy tạo một tài nguyên mới và chọn “Autoscaling Cluster” từ danh sách thả xuống như minh họa ở Hình 3.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig3.png" alt=""></p>
+<p align="center"><em>Hình 3: Một project space trống với danh sách thả xuống đang mở, gợi ý người dùng tạo một máy tính để bàn ảo mới hoặc các cụm (clusters).</em></p>
+<p>Sau khi chọn “Autoscaling Cluster” từ danh sách thả xuống, trình hướng dẫn tạo mới sẽ cho phép bạn thiết lập một số tính năng chính của cụm. Đầu tiên là loại lưu trữ, tiếp theo là các ứng dụng cần cài đặt, và cuối cùng là các hàng đợi tài nguyên tính toán. Theo mặc định, một ổ đĩa Amazon Elastic File System (EFS) sẽ được gắn vào cụm HPC và sẵn sàng cho các tài nguyên trong project space. Trong Hình 4, một vị trí lưu trữ thứ hai tùy chọn được định nghĩa cho đường dẫn cài đặt sản phẩm.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig4.png" alt=""></p>
+<p align="center"><em>Hình 4: Các tùy chọn lưu trữ của trình hướng dẫn tạo cụm. Theo mặc định, một hệ thống tệp EFS sẽ được tạo và gắn vào cụm. Ngoài ra, một vùng lưu trữ thứ hai là Amazon FSx for OpenZFS cũng được thiết lập, với dung lượng 256 GiB và băng thông 2048 MiB/s/TiB. Tên lưu trữ và đường dẫn mount cũng được người dùng cung cấp.</em></p>
+<p>Khi đã xác định xong các tùy chọn lưu trữ, bạn có thể chọn các gói ứng dụng muốn cài đặt. Trong Hình 5, Ansys Structures được chọn.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig5-1.png" alt=""></p>
+<p align="center"><em>Hình 5: Bước chọn các ứng dụng mô phỏng để cài đặt trong trình hướng dẫn tạo cụm.</em></p>
+<p>Trong quá trình tạo cụm, trình hướng dẫn có thể tự động triển khai một máy chủ chạy Ansys HPC Platform Services (HPS), như minh họa ở Hình 6. Khi sử dụng HPS, người dùng có thể đơn giản hóa đáng kể việc gửi công việc mô phỏng nhờ khả năng upload, submit, theo dõi và tải kết quả trực tiếp từ máy trạm mà không cần tự chuyển file lên đám mây hoặc viết script gửi công việc. Lưu ý rằng HPS được cung cấp dưới dạng container và sử dụng Docker để triển khai. Để biết thêm thông tin về thiết lập và sử dụng HPS, tham khảo tài liệu Ansys <a href="https://ansyshelp.ansys.com/public/account/secured?returnurl=account/secured?returnurl=../../../Views/Secured/prod_page.html?pn=Ansys%20HPC%20Platform%20Services&amp;pid=HpcPlatformServices&amp;lang=en">HPC Platform Services</a>.</p>
+<p>Vị trí cài đặt HPS cần trùng với nơi cài sản phẩm Ansys (ví dụ: đều cài trên ổ FSx for OpenZFS).</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig6.png" alt=""></p>
+<p align="center"><em>Hình 6: Bước thiết lập Ansys HPC Platform Services (HPS) trong trình hướng dẫn tạo cụm. Theo mặc định, một máy ảo nền tảng Linux sẽ được tạo cho người dùng và các dịch vụ HPS sẽ tự động được triển khai.</em></p>
+<p>Tiếp theo, trình hướng dẫn giúp người dùng tạo hàng đợi gửi công việc. Người dùng có thể chỉ định cả số lượng nút tĩnh và động theo giới hạn hạn <a href="https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html">ngạch dịch vụ AWS</a> của họ. Có thể xác định tối đa mười hàng đợi cho một cụm.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig7.png" alt=""></p>
+<p align="center"><em>Hình 7: Sau khi nhấn nút “Add queue”, người dùng sẽ chọn ứng dụng cho hàng đợi này, đặt tên hàng đợi, chọn số lượng nút tĩnh (luôn sẵn sàng), số lượng nút động tối đa, các tùy chọn nâng cao (như EFA, placement group, v.v.), và cuối cùng là loại hoặc các loại instance muốn dùng. Quy trình này được lặp lại cho từng hàng đợi.</em></p>
+<p><em>Ứng dụng liên kết với một hàng đợi được chọn từ danh sách thả xuống. Thông thường, nên đặt tên hàng đợi sao cho thể hiện rõ ứng dụng và phiên bản mà hàng đợi đó dùng, ví dụ như “mech242”.</em></p>
+<p>Sau khi đã định nghĩa các hàng đợi mong muốn, bạn có thể đặt tên và tạo cụm. Khi quá trình tạo cụm hoàn tất, bạn sẽ thấy một huy hiệu “Running” báo hiệu rằng mọi tài nguyên và dịch vụ đã được triển khai. Các tài nguyên tính toán sẽ vẫn ở trạng thái offline cho đến khi có công việc được gửi. Từ project space, nhấp vào cụm sẽ hiển thị trang tổng quan với thông tin về head node, HPS node, các hàng đợi và các nút tính toán đã cấp phát. Xem Hình 8a và 8b để biết chi tiết về thông tin sau khi cụm được tạo.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig8a.png" alt=""></p>
+<p align="center"><em>Hình 8a: Trang tổng quan sau khi tạo cụm, hiển thị thông tin chi tiết về head node và HPS node.</em></p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig8b.png" alt=""></p>
+<p align="center"><em>Hình 8b: Trang tổng quan cụm hiển thị: các hàng đợi đang có theo tên (một hàng đợi có tên mech242), số lượng nút đã cấp phát (0/10), ứng dụng liên kết (Ansys Structure 2024 R2); danh sách các ứng dụng cùng vị trí cài đặt (Ansys Structures trên Amazon FSx for Open ZFS); danh sách các vị trí lưu trữ được gắn (EFS mặc định, OpenZFS) kèm tên, loại và đường dẫn mount.</em></p>
+<h2 id="bước-2-gửi-công-việc-đến-cụm">Bước 2: Gửi công việc đến cụm</h2>
+<p>Khi cụm đã được tạo, bạn có thể tận dụng quy trình gửi công việc đơn giản hóa mà HPS cung cấp. Ví dụ với Ansys Mechanical ở Hình 9, việc kết nối tới máy chủ HPS chỉ đơn giản là nhập địa chỉ IP của server HPS theo định dạng <a href="https://example.com">https://example.com</a>:port/hps. Tham khảo Hình 9 để biết địa chỉ của máy chủ HPS.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig9.png" alt=""></p>
+<p align="center"><em>Hình 9: Cửa sổ thiết lập quy trình giải bài toán (Solve Process Settings) của Ansys Mechanical.</em></p>
+<p>Đối với những người dùng quen thuộc với dòng lệnh Linux, bạn vẫn có thể gửi công việc bằng các lệnh Slurm tiêu chuẩn như srun, sbatch và salloc. Tham khảo <a href="https://ansyshelp.ansys.com/account/secured?returnurl=../../../Views/Secured/CSP/v000/en/gateway_ru/ru/configure_resources_for_a_slurm_cluster_workflow.html?q=slurm">tài liệu Ansys Help</a> để biết thêm thông tin về cách gửi công việc bằng Slurm.</p>
+<h2 id="bước-3-theo-dõi-việc-tự-động-mở-rộng-nút">Bước 3: Theo dõi việc tự động mở rộng nút</h2>
+<p>Sau khi submit job, người dùng truy cập giao diện giám sát công việc HPS trên trang cluster của Ansys Gateway để theo dõi trạng thái job (Pending, Running, Evaluated), xem file log và tải về file kết quả.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig10-1.png" alt=""></p>
+<p align="center"><em>Hình 10: Giao diện giám sát công việc của HPS. Người dùng có thể truy cập giao diện này từ trình duyệt web để xem trạng thái công việc (Pending, Running, Evaluated), theo dõi các file log và tải về từng file riêng lẻ.</em></p>
+<p><strong>Sử dụng các lệnh Slurm để vận hành cụm (cluster operations)</strong></p>
+<p>Những người dùng quen thuộc với việc giám sát thông qua các lệnh Slurm vẫn có thể làm như vậy. Công việc được gửi qua HPS có thể nhìn thấy thông qua lệnh &ldquo;squeue&rdquo; trong Hình 11 (sau khi kết nối tới Linux VDI trong workspace). Nút được yêu cầu đang ở trạng thái configuring (CF), có nghĩa là nó đang được mở rộng quy mô.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig11.png" alt=""></p>
+<p align="center"><em>Hình 11: Truy vấn Slurm bằng lệnh “squeue” trên dòng lệnh Linux. Lệnh này trả về danh sách các công việc kèm các thông tin như trạng thái công việc và tài nguyên được cấp phát.</em></p>
+<p>Tương tự, có thể xem số lượng nút đã cấp phát bằng lệnh “sinfo -s” như trong Hình 12. A/I/O/T thể hiện số lượng nút Đang sẵn sàng/Đang chờ rỗi/Đang offline/Tổng số nút.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig12.png" alt=""></p>
+<p align="center"><em>Hình 12: Truy vấn Slurm bằng lệnh “sinfo” để xem danh sách các hàng đợi đang có. Kết quả trả về gồm một hàng đợi kèm thông tin về tên và số lượng nút đang sử dụng.</em></p>
+<p>Người dùng cũng có thể gửi công việc bằng các lệnh Slurm như “srun,” “sbatch,” và “salloc” như minh họa ở Hình 13. Script gửi công việc đã được tích hợp sẵn trong gói cài đặt ứng dụng trên Ansys Gateway.</p>
+<p><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/HPCBlog-359-fig13.png" alt=""></p>
+<p align="center"><em>Hình 13: Gửi công việc trực tiếp tới Slurm bằng lệnh “salloc” và theo dõi trạng thái bằng lệnh “squeue”.</em></p>
+<h2 id="bước-4-lấy-kết-quả-và-shutdown-cụm">Bước 4: Lấy kết quả và shutdown cụm</h2>
+<p>Nếu gửi job bằng HPS, có thể tải file kết quả trực tiếp về máy cá nhân từ ổ lưu trữ chung của cụm. Nếu gửi bằng lệnh Slurm sử dụng ổ tạm trên instance, cần copy file kết quả về ổ lưu trữ khi job hoàn thành. Mặc định, các nút động sẽ online thêm 10 phút sau khi chạy xong, sau đó tự động dừng nếu không có việc mới.</p>
+<h2 id="khuyến-nghị-loại-amazon-ec2-cho-các-ứng-dụng-ansys">Khuyến nghị loại Amazon EC2 cho các ứng dụng Ansys</h2>
+<p>Ansys Gateway hỗ trợ quy trình tạo cluster nâng cao cho các ứng dụng:</p>
+<ul>
+<li><a href="https://www.ansys.com/products/electronics">Ansys Electronics Desktop</a></li>
+<li><a href="https://www.ansys.com/products/fluids">Ansys Fluids</a></li>
+<li><a href="https://www.ansys.com/products/structures/ansys-ls-dyna">Ansys LS-DYNA</a></li>
+<li><a href="https://www.ansys.com/products/optics/fdtd">Ansys Lumerical</a></li>
+<li><a href="https://www.ansys.com/products/semiconductors/ansys-pathfinder-sc%27">Ansys Pathfinder-SC</a></li>
+<li><a href="https://www.ansys.com/products/optics/ansys-speos">Ansys Speos</a></li>
+<li><a href="https://www.ansys.com/products/structures">Ansys Structures</a></li>
+<li><a href="https://www.ansys.com/products/semiconductors/ansys-totem">Ansys Totem-SC</a></li>
+</ul>
+<p>Các quy trình thiết lập chi tiết cho từng ứng dụng đều có trong tài liệu Ansys help <a href="https://ansyshelp.ansys.com/public/account/secured?returnurl=../../../Views/Secured/CSP/v000/en/gateway_ru/ru/recommended_configurations_by_application.html">Recommended Configurations by Application</a>, thuộc phần Recommended Usage Guide. Sau khi đã tìm hiểu quy trình nâng cao để tạo cụm HPC trên Ansys Gateway, bạn hãy tham khảo Bảng 1 để biết các khuyến nghị chung về các loại instance Amazon EC2 thường dùng khi chạy các ứng dụng Ansys trên Ansys Gateway. Xem thêm danh sách chi tiết các loại instance được đề xuất tại <a href="https://ansyshelp.ansys.com/public/account/secured?returnurl=../../../Views/Secured/CSP/v000/en/gateway_ru/ru/recommended_instance_types_for_hpc.html">Ansys Help page</a>.
+<br></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th colspan="7">Amazon EC2 Instances</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Specifications</strong></td>
+<td><strong>HPC6id</strong></td>
+<td><strong>HPC7a / HPC6a</strong></td>
+<td><strong>C6i*</strong></td>
+<td><strong>P5+</strong></td>
+<td><strong>P4d+</strong></td>
+<td><strong>G6e</strong></td>
+<td><strong>G5</strong></td>
+</tr>
+<tr>
+<td>Processor</td>
+<td>Intel Ice Lake</td>
+<td>AMD EPYC</td>
+<td>Intel Ice Lake</td>
+<td>NVIDIA H100</td>
+<td>NVIDIA A100</td>
+<td>L40S</td>
+<td>NVIDIA A10G</td>
+</tr>
+<tr>
+<td>Instance Size^</td>
+<td>32xlarge</td>
+<td>96xlarge / 48xlarge</td>
+<td>32xlarge</td>
+<td>48xlarge</td>
+<td>24xlarge</td>
+<td>48xlarge</td>
+<td>48xlarge</td>
+</tr>
+<tr>
+<td>Physical Cores</td>
+<td>64</td>
+<td>192 / 96</td>
+<td>64</td>
+<td>96</td>
+<td>48</td>
+<td>96</td>
+<td>96</td>
+</tr>
+<tr>
+<td>RAM per node (GiB)</td>
+<td>1024</td>
+<td>768 / 384</td>
+<td>256</td>
+<td>2048</td>
+<td>1152</td>
+<td>1536</td>
+<td>768</td>
+</tr>
+<tr>
+<td>Memory per core (GiB)</td>
+<td>16</td>
+<td>4 – 32 (HPC7a) / 4 (HPC6a)</td>
+<td>4</td>
+<td>24</td>
+<td>24</td>
+<td>16</td>
+<td>8</td>
+</tr>
+<tr>
+<td>EFA Bandwidth (GB/s)</td>
+<td>200</td>
+<td>300 / 100</td>
+<td>50</td>
+<td>3200</td>
+<td>400</td>
+<td>400</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Number of GPUs</td>
+<td></td>
+<td></td>
+<td></td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>RAM per GPU (GB)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>640 HBM3</td>
+<td>40 HBM2</td>
+<td>48</td>
+<td>24</td>
+</tr>
+<tr>
+<td>Target Ansys Apps^</td>
+<td>Electronics Desktop, Fluids, LS-DYNA, Lumerical, Structures</td>
+<td>Fluids, LS-DYNA, Structures</td>
+<td>Electronics Desktop, Fluids, LS-DYNA, Lumerical, Pathfinder, Speos, Structures, Totem-SC</td>
+<td>Fluids</td>
+<td>Fluids</td>
+<td>Fluids, Structures, HFSS</td>
+<td>Fluids, Discovery</td>
+</tr>
+<tr>
+<td>Physics Description</td>
+<td>Implicit, Explicit, CFD codes</td>
+<td>Explicit, CFD codes</td>
+<td>Implicit, Explicit, CFD, Optics codes</td>
+<td>CFD codes</td>
+<td>Implicit, Explicit, CFD codes</td>
+<td>Implicit, Explicit, CFD codes</td>
+<td>Interactive modeling and simulations</td>
+</tr>
+<tr>
+<td colspan="8"><em>*Bật Elastic Fabric Adapter (EFA) để tăng tốc độ giao tiếp giữa các nút. Tắt Simultaneous Multithreading (SMT) nhằm đảm bảo hiệu suất CPU ổn định. ^ Các ứng dụng HPC thường sẽ hoạt động hiệu quả hơn khi sử dụng toàn bộ instance ở kích thước tối đa, nhờ có các tính năng như EFA. Không thể chạy ngay trên Ansys Gateway mà đòi hỏi người dùng phải cấu hình thêm các gói NVIDIA bổ sung.</em></td>
+</tr>
+</tbody>
+</table>
+<p><small><em>Bảng 1: Khuyến nghị loại instance Amazon EC2 cho các ứng dụng Ansys khác nhau.</em></small></p>
+<h2 id="kết-luận">Kết luận</h2>
+<p>Ansys Gateway vận hành trên AWS hiện nay đã tích hợp với AWS ParallelCluster, giúp người dùng triển khai các cụm HPC theo nhu cầu để chạy mô phỏng Ansys trên AWS. Điều này cho phép các kỹ sư thực hiện các mô phỏng quy mô lớn một cách hiệu quả, đồng thời tối ưu hóa chi phí điện toán đám mây. Nhờ tự động điều chỉnh tài nguyên theo khối lượng công việc mô phỏng, Ansys Gateway giúp giảm thiểu thời gian máy tính nhàn rỗi và đảm bảo khả năng mở rộng tối ưu cho các tác vụ HPC.</p>
+<p>Để bắt đầu với Ansys Gateway, hãy truy cập <a href="https://aws.amazon.com/marketplace/pp/prodview-6pnus4ypotnw4?sr=0-1&amp;ref_=beagle&amp;applicationId=AWSMPContessa">Ansys Gateway trên AWS Marketplace</a> để triển khai môi trường HPC trên đám mây chỉ với vài cú nhấp chuột. Trải nghiệm ngay hôm nay để cảm nhận lợi ích của mô phỏng kỹ thuật hiệu năng cao, linh hoạt trên AWS.</p>
+<h2 id="về-tác-giả">Về tác giả﻿</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2021/03/31/dnyanesh.png" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>Dnyanesh Digraskar</strong> <br> Dnyanesh Digraskar là Kiến trúc sư Giải pháp Đối tác HPC Cấp cao tại AWS. Anh phụ trách chiến lược triển khai HPC với các đối tác phần mềm độc lập (ISV) của AWS, nhằm hỗ trợ họ xây dựng các giải pháp có khả năng mở rộng và tuân theo kiến trúc tốt. Anh có hơn mười lăm năm kinh nghiệm trong các lĩnh vực CFD, CAE, mô phỏng số và HPC. Dnyanesh có bằng Thạc sĩ Kỹ thuật Cơ khí từ Đại học Massachusetts, Amherst.</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><img src="https://d2908q01vomqb2.cloudfront.net/e6c3dd630428fd54834172b8fd2735fed9416da4/2025/04/21/trent-andrus-profile.png" width="500" style="display:block; margin:auto;"/></td>
+          <td style="text-align: left"><strong>Trent Andrus</strong> <br> Trent là Chuyên gia Sản phẩm tại Ansys, tập trung vào các chủ đề liên quan đến HPC và điện toán đám mây. Với niềm đam mê cập nhật các tiến bộ về hiệu năng phần cứng và phần mềm, anh hướng đến việc chuyển hóa kiến thức của mình thành những giải pháp giúp HPC trở nên dễ tiếp cận hơn cho mọi người dùng. Ngoài công việc, Trent là một người đam mê đạp xe và thường xuyên tập luyện để cải thiện hiệu suất của chính mình.</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/" title="Các bài blogs đã dịch"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/3.2-blog2/" title="Blog 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1760677039"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1760677039"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1760677039"></script>
+    <script src="../../../js/jquery.sticky.js?1760677039"></script>
+    <script src="../../../js/featherlight.min.js?1760677039"></script>
+    <script src="../../../js/highlight.pack.js?1760677039"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1760677039"></script>
+    <script src="../../../js/learn.js?1760677039"></script>
+    <script src="../../../js/hugo-learn.js?1760677039"></script>
+
+    <link href="../../../mermaid/mermaid.css?1760677039" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1760677039"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
