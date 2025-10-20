@@ -15,21 +15,21 @@
     <title>Proposal :: Internship Report</title>
 
     
-    <link href="../css/nucleus.css?1760697459" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1760697459" rel="stylesheet">
-    <link href="../css/hybrid.css?1760697459" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1760697459" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1760697459" rel="stylesheet">
-    <link href="../css/auto-complete.css?1760697459" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1760697459" rel="stylesheet">
-    <link href="../css/theme.css?1760697459" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1760697459" rel="stylesheet">
+    <link href="../css/nucleus.css?1760993539" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1760993539" rel="stylesheet">
+    <link href="../css/hybrid.css?1760993539" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1760993539" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1760993539" rel="stylesheet">
+    <link href="../css/auto-complete.css?1760993539" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1760993539" rel="stylesheet">
+    <link href="../css/theme.css?1760993539" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1760993539" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1760697459" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1760993539" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1760697459"></script>
+    <script src="../js/jquery-3.3.1.min.js?1760993539"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1760697459"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1760697459"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1760993539"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1760993539"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tai-isme.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1760697459"></script>
+<script type="text/javascript" src="../js/search.js?1760993539"></script>
  
   </div>
 
@@ -998,7 +998,7 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#a-unified-aws-serverless-solution-for-real-time-weather-monitoring">A Unified AWS Serverless Solution for Real-Time Weather Monitoring</a>
+    <li><a href="#aws-serverless-solution-for-learning-center-management-project">AWS Serverless solution for learning center management project</a>
       <ul>
         <li><a href="#1-executive-summary">1. Executive Summary</a></li>
         <li><a href="#2-problem-statement">2. Problem Statement</a></li>
@@ -1007,7 +1007,6 @@
         <li><a href="#benefits-and-return-on-investment">Benefits and Return on Investment</a></li>
         <li><a href="#3-solution-architecture">3. Solution Architecture</a></li>
         <li><a href="#aws-services-used">AWS Services Used</a></li>
-        <li><a href="#component-design">Component Design</a></li>
         <li><a href="#4-technical-implementation">4. Technical Implementation</a></li>
         <li><a href="#5-timeline--milestones">5. Timeline &amp; Milestones</a></li>
         <li><a href="#6-budget-estimation">6. Budget Estimation</a></li>
@@ -1040,124 +1039,200 @@
 
 
 
-	
-<div
-  class="notices warning"
-  
->
-  <p>⚠️ <strong>Note:</strong> The information below is for reference purposes only. Please <strong>do not copy verbatim</strong> for your report, including this warning.</p>
-
-</div>
-
-<p>In this section, you need to summarize the contents of the workshop that you <strong>plan</strong> to conduct.</p>
-<h1 id="iot-weather-platform-for-lab-research">IoT Weather Platform for Lab Research</h1>
-<h2 id="a-unified-aws-serverless-solution-for-real-time-weather-monitoring">A Unified AWS Serverless Solution for Real-Time Weather Monitoring</h2>
+	<h1 id="teaching-center-management-system">Teaching Center Management System</h1>
+<h2 id="aws-serverless-solution-for-learning-center-management-project">AWS Serverless solution for learning center management project</h2>
 <h3 id="1-executive-summary">1. Executive Summary</h3>
-<p>The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.</p>
+<p>To address the challenges in operating an education center, the Teaching Center Management System is designed to integrate all core business operations: Human Resource Management (HRM), Student Information System (SIS), Customer Relationship Management (CRM), Education Payment, and Parent Connection. The goal is to optimize management processes, improve operational efficiency, and enhance the overall learning experience.</p>
+<p>In the future, the system aims to expand with advanced technologies such as Artificial Intelligence (AI) and the Internet of Things (IoT) to personalize learning paths, develop virtual learning assistants, and modernize the infrastructure with smart classrooms and automated facility management.</p>
 <h3 id="2-problem-statement">2. Problem Statement</h3>
 <h3 id="whats-the-problem">What’s the Problem?</h3>
-<p>Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.</p>
+<p>Educational centers today face difficulties in managing both online and offline classes in a unified way. Processes such as course registration, attendance tracking, progress monitoring, and result reporting are still mostly done manually or across multiple separate platforms, leading to inconsistency and poor data control.</p>
+<p>In addition, there is a lack of a centralized system to store and analyze learning data in real time. Relying on third-party solutions is not only costly but also complex and hard to customize to specific needs. As the number of students and classes grows, current systems lack scalability and automation, reducing operational efficiency and the overall learning experience.</p>
 <h3 id="the-solution">The Solution</h3>
-<p>The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.</p>
+<p>The Teaching Center Management System platform is deployed based on AWS Serverless architecture, helping to optimize costs, automatically scale, and ensure high availability.</p>
+<p>Users access the system through Amazon Route 53 and Amazon CloudFront, improving page loading speed and protecting against DDoS attacks. The web interface is statically hosted on Amazon S3, providing fast and stable content delivery.</p>
+<p>User authentication is performed through Amazon Cognito, ensuring security for student, teacher, parent, and administrator accounts. After logging in, user requests are processed through Amazon API Gateway, triggering AWS Lambda to execute core business logic such as account management, class management, course registration, attendance tracking, result updates, and schedule lookup. All data is stored in Amazon DynamoDB.</p>
+<p>Documents, lecture videos, and assignments are stored in Amazon S3; system logs are sent to Amazon CloudWatch Logs for monitoring. CloudWatch Alarms and Amazon SNS automatically send alerts when errors or abnormal activities are detected. AWS Secrets Manager protects sensitive information such as API keys or service connection details.</p>
+<p>The development and deployment process is automated through the AWS CodePipeline – CodeBuild – CloudFormation chain, ensuring seamless CI/CD, reducing configuration errors, and shortening deployment time. AWS CloudTrail and Amazon GuardDuty record API activities, detect threats, and protect the system from security risks.</p>
+<p>The solution provides a unified, secure, scalable, and cost-optimized platform, helping education centers efficiently manage both online and on-site training activities, improving the learning experience and teaching efficiency.</p>
 <h3 id="benefits-and-return-on-investment">Benefits and Return on Investment</h3>
-<p>The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.</p>
+<ul>
+<li><em>Accelerated development and deployment</em>: Automated CI/CD (CodePipeline, CodeBuild, CloudFormation) reduces the time to release new features from several days to just a few hours.</li>
+<li><em>Optimized operational cost</em>: Serverless architecture (Lambda, DynamoDB, API Gateway) charges only per request, saving 40–60% compared to traditional EC2-based systems.</li>
+<li><em>Comprehensive security</em>: GuardDuty, CloudTrail, and Secrets Manager help detect risks early, minimizing the chance of data leaks or attacks.</li>
+<li><em>High access performance</em>: CloudFront CDN and Route 53 increase access speed, reducing latency by 50–70% compared to regular hosting.</li>
+<li><em>Flexible scalability</em>: The system automatically scales based on traffic, without manual intervention.</li>
+<li><em>Proactive monitoring</em>: CloudWatch + SNS provide real-time alerts, enabling the technical team to handle incidents promptly.</li>
+</ul>
 <h3 id="3-solution-architecture">3. Solution Architecture</h3>
-<p>The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:</p>
-<p><img src="../images/2-Proposal/edge_architecture.jpeg" alt="IoT Weather Station Architecture"></p>
-<p><img src="../images/2-Proposal/platform_architecture.jpeg" alt="IoT Weather Platform Architecture"></p>
+<p><img src="../images/2-Proposal/project1_architecture_diagram.png" alt="Teaching center management"></p>
+<p><em>Detailed description</em></p>
+<ul>
+<li>
+<p>Application Flow</p>
+<ul>
+<li>Users access the system through a domain name, where Route 53 resolves the domain into an IP address to map it to CloudFront.</li>
+<li>CloudFront delivers static web content (frontend) from Amazon S3 to users quickly.</li>
+<li>API Gateway receives and manages all API requests from CloudFront.</li>
+<li>API Gateway integrates with Amazon Cognito to authenticate users via JWT tokens. API Gateway uses Cognito to verify the JWT token included in the user’s request before allowing API access.</li>
+<li>After successful authentication, API Gateway triggers a Lambda function (the main processing component of the application).</li>
+<li>If Lambda needs to access sensitive information (such as database passwords or third-party API keys), it calls Secrets Manager to retrieve those secrets.</li>
+<li>The Lambda function executes business logic, queries, and stores data in Amazon DynamoDB (a NoSQL database).</li>
+<li>Lambda automatically records execution logs and sends them to CloudWatch Logs. These logs include requests, errors, and metrics for monitoring and troubleshooting.</li>
+</ul>
+</li>
+<li>
+<p>Security Flow</p>
+<ul>
+<li>AWS CloudTrail records every API action in the account.</li>
+<li>AWS GuardDuty continuously analyzes log sources such as CloudTrail, VPC Flow Logs, and DNS Logs from Route 53 to detect malicious activity (e.g., compromised IAM credentials, unusual IP access). When detected, GuardDuty generates a Finding and triggers alerts or automated responses via SNS or Lambda.</li>
+</ul>
+</li>
+<li>
+<p>Monitoring Flow</p>
+<ul>
+<li>CloudWatch Logs collect logs from Lambda.</li>
+<li>CloudWatch Metrics are created from CloudWatch Logs using Metric Filters, and CloudWatch Alarms are configured based on these metrics to detect issues and send alerts.</li>
+<li>SNS automatically sends notifications via email or registered endpoints when incidents occur.</li>
+<li>CloudTrail records all API calls that happen in the account (e.g., who deleted an S3 bucket, who accessed Secrets Manager). This data is used for administrative activity tracking and security incident investigation. CloudTrail works alongside CloudWatch to log all API actions for auditing and security purposes.</li>
+</ul>
+</li>
+<li>
+<p>CI/CD Flow</p>
+<ul>
+<li>The application’s source code is stored in a GitHub repository.</li>
+<li>After connecting and configuring GitHub with CodePipeline, when the source code on GitHub is updated, CodePipeline automatically receives a webhook event to fetch the latest code. It orchestrates the entire CI/CD process with defined stages: Source – Build – Deploy.</li>
+<li>CodeBuild retrieves the source from CodePipeline. CodeBuild runs the <code>buildspec.yml</code> file to install dependencies, run unit tests, and build the application into an artifact (zip, image, etc.).</li>
+<li>After CodeBuild completes, CodePipeline triggers CloudFormation to automatically create or update all resources (e.g., API Gateway, Lambda, DynamoDB, S3, IAM Roles, etc.) in the AWS environment.</li>
+</ul>
+</li>
+</ul>
 <h3 id="aws-services-used">AWS Services Used</h3>
-<ul>
-<li><strong>AWS IoT Core</strong>: Ingests MQTT data from 5 stations, scalable to 15.</li>
-<li><strong>AWS Lambda</strong>: Processes data and triggers Glue jobs (two functions).</li>
-<li><strong>Amazon API Gateway</strong>: Facilitates web app communication.</li>
-<li><strong>Amazon S3</strong>: Stores raw data in a data lake and processed outputs (two buckets).</li>
-<li><strong>AWS Glue</strong>: Crawlers catalog data, and ETL jobs transform and load it.</li>
-<li><strong>AWS Amplify</strong>: Hosts the Next.js web interface.</li>
-<li><strong>Amazon Cognito</strong>: Secures access for lab users.</li>
-</ul>
-<h3 id="component-design">Component Design</h3>
-<ul>
-<li><strong>Edge Devices</strong>: Raspberry Pi collects and filters sensor data, sending it to IoT Core.</li>
-<li><strong>Data Ingestion</strong>: AWS IoT Core receives MQTT messages from the edge devices.</li>
-<li><strong>Data Storage</strong>: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.</li>
-<li><strong>Data Processing</strong>: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.</li>
-<li><strong>Web Interface</strong>: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.</li>
-<li><strong>User Management</strong>: Amazon Cognito manages user access, allowing up to 5 active accounts.</li>
-</ul>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Services</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Frontend &amp; Routing</strong></td>
+          <td>Route 53, CloudFront, S3</td>
+          <td>Domain routing, content delivery, static hosting</td>
+      </tr>
+      <tr>
+          <td><strong>Backend &amp; Logic</strong></td>
+          <td>API Gateway, Lambda, DynamoDB, Secrets Manager, Cognito</td>
+          <td>Serverless logic, data, authentication</td>
+      </tr>
+      <tr>
+          <td><strong>Security &amp; Monitoring</strong></td>
+          <td>GuardDuty, CloudWatch Logs, CloudWatch Alarms, CloudWatch Metrics, SNS, CloudTrail</td>
+          <td>Threat detection, alerting, auditing</td>
+      </tr>
+      <tr>
+          <td><strong>CI/CD &amp; IaC</strong></td>
+          <td>CodePipeline, CodeBuild, CloudFormation, SAM</td>
+          <td>Automated deployment and infrastructure management</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="4-technical-implementation">4. Technical Implementation</h3>
-<p><strong>Implementation Phases</strong>
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:</p>
+<p><strong>Implementation Phases</strong></p>
 <ul>
-<li>Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)</li>
-<li>Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).</li>
-<li>Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).</li>
-<li>Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).</li>
+<li>
+<p>Development Stage</p>
+<ul>
+<li>Complete business logic and main flows for Lambda functions.</li>
+<li>Write the <code>template.yaml</code> file describing resources: API Gateway, Lambda Functions, DynamoDB, Cognito.</li>
+<li>Use AWS SAM CLI to deploy code and <code>template.yaml</code> to LocalStack for local testing.</li>
+</ul>
+</li>
+<li>
+<p>Deployment Stage</p>
+<ul>
+<li>Use AWS SAM CLI to deploy code and <code>template.yaml</code> to the actual AWS environment.</li>
+<li>Configure AWS CodePipeline and AWS CodeBuild to automate the CI/CD process.</li>
+</ul>
+</li>
 </ul>
 <p><strong>Technical Requirements</strong></p>
 <ul>
-<li>Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.</li>
-<li>Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.</li>
+<li>Have an AWS account using the Free Tier to deploy and use resources normally.</li>
+<li>The <code>template.yaml</code> file must be properly configured to fully describe all services.</li>
+<li>The system must have an automatic rollback mechanism in case of deployment failure.</li>
 </ul>
 <h3 id="5-timeline--milestones">5. Timeline &amp; Milestones</h3>
 <p><strong>Project Timeline</strong></p>
 <ul>
-<li>Pre-Internship (Month 0): 1 month for planning and old station review.</li>
-<li>Internship (Months 1-3): 3 months.
+<li>
+<p><em>Before Internship (Week 0):</em> Study AWS services to prepare for the project. Conduct surveys and analyze requirements of real education centers (HR, Training, Admissions).</p>
+</li>
+<li>
+<p><em>Internship (Week 1–12):</em></p>
 <ul>
-<li>Month 1: Study AWS and upgrade hardware.</li>
-<li>Month 2: Design and adjust architecture.</li>
-<li>Month 3: Implement, test, and launch.</li>
+<li>Week 1–3: Design the system, user interface, and overall architecture; prepare documentation (proposal, diagrams, SAM templates).</li>
+<li>Week 4–8: Develop core modules (student, teacher, and class management; user authentication). Perform local testing with LocalStack.</li>
+<li>Week 9–11: Integrate modules, complete the CI/CD pipeline, and deploy the system to the actual AWS environment.</li>
+<li>Week 12: Conduct overall testing, evaluate results, finalize reports, and propose future development directions.</li>
 </ul>
 </li>
-<li>Post-Launch: Up to 1 year for research.</li>
+<li>
+<p><em>Post-Internship (Expansion Phase – After Week 12):</em> Upgrade the system, optimize performance, and integrate AI (personalized learning analytics) and IoT (smart classroom management).</p>
+</li>
 </ul>
 <h3 id="6-budget-estimation">6. Budget Estimation</h3>
-<p>You can find the budget estimation on the <a href="https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01">AWS Pricing Calculator</a>.<br>
-Or you can download the <a href="../attachments/budget_estimation.pdf">Budget Estimation File</a>.</p>
+<p>You can find the budget estimation on the <a href="https://calculator.aws/#/estimate?id=5fb7f30041d4dc0a491e40534f60126aec07a177">AWS Pricing Calculator</a>.<br>
+Or you can download the budget estimation file <a href="../files/2-Proposal/project_1_estimate.pdf">pdf</a> | <a href="../files/2-Proposal/project_1_estimate.csv">csv</a> | <a href="../files/2-Proposal/project_1_estimate.json">json</a>.</p>
 <h3 id="infrastructure-costs">Infrastructure Costs</h3>
 <ul>
-<li>AWS Services:
-<ul>
-<li>AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).</li>
-<li>S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).</li>
-<li>Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).</li>
-<li>AWS Amplify: $0.35/month (256 MB, 500 ms requests).</li>
-<li>Amazon API Gateway: $0.01/month (2,000 requests).</li>
-<li>AWS Glue ETL Jobs: $0.02/month (2 DPUs).</li>
-<li>AWS Glue Crawlers: $0.07/month (1 crawler).</li>
-<li>MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).</li>
+<li>S3 Standard: 0.32 USD/month (10 GB, 5,000 PUT requests, 100,000 GET requests)</li>
+<li>CloudFront: 1.33 USD/month (10 GB, Data transfer out to origin 0.1 GB, Number of HTTPS requests 100,000)</li>
+<li>Amazon API Gateway: 0.38 USD/month (300,000 requests)</li>
+<li>AWS Lambda Function – Include Free Tier: 0.00 USD/month (100,000 requests, 512 MB storage)</li>
+<li>Amazon DynamoDB: 0.62 USD/month (2 GB data storage, 50,000 writes, 200,000 reads)</li>
+<li>Amazon Cognito Lite Tier: 0.00 USD/month (500 MAUs)</li>
+<li>Amazon CloudWatch: 2.10 USD/month (3 custom metrics, 1 GB logs, 1 dashboard, 2 alarms)</li>
+<li>Amazon GuardDuty: 0.00 USD/month (Free 30 days per region)</li>
+<li>Amazon Route 53: 0.90 USD/month (1 hosted zone, 1M standard DNS queries)</li>
+<li>AWS Secrets Manager: 0.40 USD/month (1 secret)</li>
+<li>AWS CloudTrail: 0.00 USD/month (1 trail)</li>
+<li>Amazon SNS: 0.00 USD/month (1M requests, 1M Lambda deliveries)</li>
+<li>AWS CloudFormation: 0.00 USD/month</li>
+<li>AWS CodeBuild: 0.25 USD/month (on-demand EC2 general1.small, 5 builds/month)</li>
+<li>AWS CodePipeline: 0.00 USD/month (100 minutes/month)</li>
 </ul>
-</li>
-</ul>
-<p>Total: $0.7/month, $8.40/12 months</p>
-<ul>
-<li>Hardware: $265 one-time (Raspberry Pi 5 and sensors).</li>
-</ul>
+<p><em>Total</em>: 6.30 USD/month, 75.60 USD/12 months</p>
 <h3 id="7-risk-assessment">7. Risk Assessment</h3>
 <h4 id="risk-matrix">Risk Matrix</h4>
 <ul>
-<li>Network Outages: Medium impact, medium probability.</li>
-<li>Sensor Failures: High impact, low probability.</li>
-<li>Cost Overruns: Medium impact, low probability.</li>
+<li>AWS configuration errors (IAM, Lambda, API Gateway, Cognito): High impact, medium probability</li>
+<li>Exceeding AWS Free Tier limits: Medium impact, low probability</li>
+<li>Data loss on S3/DynamoDB: High impact, low probability</li>
+<li>Integration errors between AWS services: Medium impact, low probability</li>
 </ul>
 <h4 id="mitigation-strategies">Mitigation Strategies</h4>
 <ul>
-<li>Network: Local storage on Raspberry Pi with Docker.</li>
-<li>Sensors: Regular checks and spares.</li>
-<li>Cost: AWS budget alerts and optimization.</li>
+<li>AWS configuration: Carefully check <code>template.yaml</code> and test deployment on LocalStack before deploying to production.</li>
+<li>Exceeding Free Tier limits: Monitor costs regularly, set up billing alerts, and optimize resources.</li>
+<li>Data loss: Enable S3 Versioning and perform regular DynamoDB backups.</li>
+<li>Service integration errors: Ensure all services operate in the same Region, verify IAM roles and cross-service permissions.</li>
 </ul>
 <h4 id="contingency-plans">Contingency Plans</h4>
 <ul>
-<li>Revert to manual methods if AWS fails.</li>
-<li>Use CloudFormation for cost-related rollbacks.</li>
+<li>Deployment errors: Roll back using AWS SAM CLI or restore previous Lambda versions.</li>
+<li>Budget overruns: Pause non-essential services, optimize architecture and resource usage.</li>
 </ul>
 <h3 id="8-expected-outcomes">8. Expected Outcomes</h3>
-<h4 id="technical-improvements">Technical Improvements:</h4>
-<p>Real-time data and analytics replace manual processes.<br>
-Scalable to 10-15 stations.</p>
-<h4 id="long-term-value">Long-term Value</h4>
-<p>1-year data foundation for AI research.<br>
-Reusable for future projects.</p>
+<ul>
+<li>The teaching center management system was successfully deployed on the <strong>AWS Serverless</strong> platform, ensuring stable, secure, and scalable operations.</li>
+<li>Operational costs are optimized by leveraging the <strong>AWS Free Tier</strong> and serverless architecture, reducing initial infrastructure investment.</li>
+<li>High access performance is ensured, with fast response times and flexible scalability.</li>
+<li>Data security is maintained through backup mechanisms, versioning, and strict access control.</li>
+<li>CI/CD integration enables automated deployment, testing, and rollback, ensuring an efficient and reliable development process.</li>
+</ul>
 
 
 
@@ -1874,19 +1949,19 @@ Reusable for future projects.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1760697459"></script>
-    <script src="../js/perfect-scrollbar.min.js?1760697459"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1760697459"></script>
-    <script src="../js/jquery.sticky.js?1760697459"></script>
-    <script src="../js/featherlight.min.js?1760697459"></script>
-    <script src="../js/highlight.pack.js?1760697459"></script>
+    <script src="../js/clipboard.min.js?1760993539"></script>
+    <script src="../js/perfect-scrollbar.min.js?1760993539"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1760993539"></script>
+    <script src="../js/jquery.sticky.js?1760993539"></script>
+    <script src="../js/featherlight.min.js?1760993539"></script>
+    <script src="../js/highlight.pack.js?1760993539"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1760697459"></script>
-    <script src="../js/learn.js?1760697459"></script>
-    <script src="../js/hugo-learn.js?1760697459"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1760993539"></script>
+    <script src="../js/learn.js?1760993539"></script>
+    <script src="../js/hugo-learn.js?1760993539"></script>
 
-    <link href="../mermaid/mermaid.css?1760697459" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1760697459"></script>
+    <link href="../mermaid/mermaid.css?1760993539" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1760993539"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

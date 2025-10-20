@@ -1,0 +1,239 @@
+{
+	"Name": "My Estimate",
+	"Total Cost": {
+		"monthly": "6.30",
+		"upfront": "0.00",
+		"12 months": "75.60"
+	},
+	"Metadata": {
+		"Currency": "USD",
+		"Locale": "en_US",
+		"Created On": "10/21/2025",
+		"Legal Disclaimer": "AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",
+		"Share Url": "https://calculator.aws/#/estimate?id=cb985888955ca11196eeed8323848a63fed81bd1"
+	},
+	"Groups": {
+		"Services": [
+			{
+				"Service Name": "S3 Standard",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.32",
+					"upfront": "0.00",
+					"12 months": "3.84"
+				},
+				"Properties": {
+					"S3 Standard storage": "10 GB per month",
+					"PUT, COPY, POST, LIST requests to S3 Standard": "5000",
+					"GET, SELECT, and all other requests from S3 Standard": "100000"
+				}
+			},
+			{
+				"Service Name": "Amazon CloudFront",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "1.33",
+					"upfront": "0.00",
+					"12 months": "15.96"
+				},
+				"Properties": {
+					"Number of requests (HTTPS)": "100000 per month",
+					"Data transfer out to internet": "10 GB per month",
+					"Data transfer out to origin": "0.1 GB per month"
+				}
+			},
+			{
+				"Service Name": "Amazon API Gateway",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.38",
+					"upfront": "0.00",
+					"12 months": "4.50"
+				},
+				"Properties": {
+					"HTTP API requests units": "millions",
+					"Average size of each request": "34 KB",
+					"REST API request units": "millions",
+					"Cache memory size (GB)": "None",
+					"WebSocket message units": "thousands",
+					"Average message size": "32 KB",
+					"Requests": "0.3 per month"
+				}
+			},
+			{
+				"Service Name": "AWS Lambda",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.00",
+					"upfront": "0.00",
+					"12 months": "0.00"
+				},
+				"Properties": {
+					"Architecture": "x86",
+					"Invoke Mode": "Buffered",
+					"Amount of ephemeral storage allocated": "512 MB",
+					"Number of requests": "100000 per month"
+				}
+			},
+			{
+				"Service Name": "DynamoDB on-demand capacity",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.62",
+					"upfront": "0.00",
+					"12 months": "7.44"
+				},
+				"Properties": {
+					"Table class": "Standard",
+					"Average item size (all attributes)": "1 KB",
+					"Data storage size": "2 GB"
+				}
+			},
+			{
+				"Service Name": "Amazon Cognito",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.00",
+					"upfront": "0.00",
+					"12 months": "0.00"
+				},
+				"Properties": {
+					"Optimization Rate for Token Requests": "0",
+					"Optimization Rate for App Clients": "0",
+					"Advanced security features": "Disabled",
+					"Number of monthly active users (MAU)": "500"
+				}
+			},
+			{
+				"Service Name": "Amazon CloudWatch",
+				"Description": "Monitoring dñ án Web Application",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "2.10",
+					"upfront": "0.00",
+					"12 months": "25.25"
+				},
+				"Properties": {
+					"Number of Metrics (includes detailed and custom metrics)": "3",
+					"Standard Logs: Data Ingested": "1 GB",
+					"Number of Dashboards": "1",
+					"Number of Standard Resolution Alarm Metrics": "2",
+					"Number of High Resolution Alarm Metrics": "1",
+					"Number of vCPUs monitored by Database Insights": "0 per hour",
+					"Number of Aurora Capacity Units (ACUs) monitored by Database Insights": "0 per hour",
+					"Infrequent Access Logs: Data Ingested": "0 GB",
+					"Infrequent Access Logs Delivered to CloudWatch Logs": "0 GB",
+					"Logs Delivered to S3: Data Ingested": "0 GB",
+					"Number of composite alarms": "0"
+				}
+			},
+			{
+				"Service Name": "Amazon Route 53",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.90",
+					"upfront": "0.00",
+					"12 months": "10.80"
+				},
+				"Properties": {
+					"Hosted Zones": "1"
+				}
+			},
+			{
+				"Service Name": "AWS Secrets Manager",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.40",
+					"upfront": "0.00",
+					"12 months": "4.80"
+				},
+				"Properties": {
+					"Number of secrets": "1",
+					"Average duration of each secret": "30 days",
+					"Number of API calls": "1 per month"
+				}
+			},
+			{
+				"Service Name": "AWS CloudTrail",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.00",
+					"upfront": "0.00",
+					"12 months": "0.00"
+				},
+				"Properties": {
+					"Management events units": "millions",
+					"Write management trails": "1",
+					"Read management trails": "1",
+					"Data events units": "millions",
+					"S3 trails": "1",
+					"Lambda trails": "1",
+					"Insight events units": "millions",
+					"Trails with Insight events": "1",
+					"Write management events": "per month",
+					"Read management events": "per month"
+				}
+			},
+			{
+				"Service Name": "Standard topics",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.00",
+					"upfront": "0.00",
+					"12 months": "0.00"
+				},
+				"Properties": {
+					"DT Inbound: Not selected": "0 TB per month",
+					"DT Outbound: Not selected": "0 TB per month",
+					"Requests": "1 million per month",
+					"Amazon Web Services Lambda": "1 million per month",
+					"HTTP/HTTPS Notifications": "million per month",
+					"EMAIL/EMAIL-JSON Notifications": "million per month",
+					"SQS Notifications": "1 million per month"
+				}
+			},
+			{
+				"Service Name": "AWS CodeBuild",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.25",
+					"upfront": "0.00",
+					"12 months": "3.00"
+				},
+				"Properties": {
+					"AWS CodeBuild Compute Type": "On-Demand EC2",
+					"Number of builds in a month": "1",
+					"Search Instance Type": "general1.small",
+					"Operating system": "Linux",
+					"Number of instances": "1",
+					"Number of sandboxes": "1"
+				}
+			},
+			{
+				"Service Name": "AWS CodePipeline",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "0.00",
+					"upfront": "0.00",
+					"12 months": "0.00"
+				},
+				"Properties": {
+					"Number of action execution minutes used in pipeline of type V2 per account per month": "100"
+				}
+			}
+		]
+	}
+}
