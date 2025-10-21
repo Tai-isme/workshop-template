@@ -15,21 +15,21 @@
     <title>Bản đề xuất :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1760995065" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1760995065" rel="stylesheet">
-    <link href="../../css/hybrid.css?1760995065" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1760995065" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1760995065" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1760995065" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1760995065" rel="stylesheet">
-    <link href="../../css/theme.css?1760995065" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1760995065" rel="stylesheet">
+    <link href="../../css/nucleus.css?1761047708" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1761047708" rel="stylesheet">
+    <link href="../../css/hybrid.css?1761047708" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1761047708" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1761047708" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1761047708" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1761047708" rel="stylesheet">
+    <link href="../../css/theme.css?1761047708" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1761047708" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1760995065" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1761047708" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1760995065"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1761047708"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1760995065"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1760995065"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1761047708"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1761047708"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tai-isme.github.io\/workshop-template\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1760995065"></script>
+<script type="text/javascript" src="../../js/search.js?1761047708"></script>
  
   </div>
 
@@ -1045,7 +1045,7 @@
 <p>Bên cạnh đó, thiếu một hệ thống tập trung để lưu trữ và phân tích dữ liệu học tập theo thời gian thực. Việc phụ thuộc vào các giải pháp bên thứ ba không chỉ tốn kém mà còn phức tạp, khó tùy chỉnh theo nhu cầu. Khi quy mô học viên và lớp học tăng, hệ thống hiện tại thiếu khả năng mở rộng và tự động hóa, làm giảm hiệu quả vận hành cũng như trải nghiệm của người học.</p>
 <p><strong>Giải pháp</strong></p>
 <p>Nền tảng Teaching Center Management System được triển khai dựa trên kiến trúc AWS Serverless, giúp tối ưu chi phí, tự động mở rộng và đảm bảo tính sẵn sàng cao.</p>
-<p>Người dùng truy cập hệ thống thông qua Amazon Route 53 và Amazon CloudFront, tăng tốc độ tải trang và bảo vệ khỏi tấn công DDoS. Giao diện web được lưu trữ tĩnh trên Amazon S3, cung cấp nội dung nhanh và ổn định.</p>
+<p>Người dùng truy cập hệ thống thông qua Amazon Route 53, yêu cầu đi qua AWS WAF để lọc các tấn công trước khi phân phối qua CloudFront, tăng tốc độ tải trang và bảo vệ khỏi DDoS. Nội dung web tĩnh được lưu trên S3 và phân phối nhanh chóng qua CloudFront.</p>
 <p>Xác thực người dùng được thực hiện qua Amazon Cognito, đảm bảo an toàn cho tài khoản học viên, giảng viên, phụ huynh và quản trị viên. Sau khi đăng nhập, yêu cầu từ người dùng được xử lý qua Amazon API Gateway, kích hoạt AWS Lambda để thực thi các logic nghiệp vụ chính như quản lý tài khoản, lớp học, đăng ký khóa, điểm danh, cập nhật kết quả và tra cứu lịch học. Toàn bộ dữ liệu được lưu trữ trong Amazon DynamoDB.</p>
 <p>Các tài liệu, video bài giảng và bài tập được lưu trong Amazon S3; log hệ thống được gửi tới Amazon CloudWatch Logs để giám sát. CloudWatch Alarms và Amazon SNS tự động gửi cảnh báo khi phát hiện lỗi hoặc hoạt động bất thường. AWS Secrets Manager bảo vệ thông tin nhạy cảm như API key hoặc thông tin kết nối dịch vụ.</p>
 <p>Quy trình phát triển và triển khai được tự động hóa thông qua chuỗi AWS CodePipeline – CodeBuild – CloudFormation, đảm bảo CI/CD liền mạch, giảm lỗi cấu hình và rút ngắn thời gian triển khai. AWS CloudTrail và Amazon GuardDuty ghi nhận hoạt động API, phát hiện mối đe dọa và bảo vệ hệ thống khỏi rủi ro bảo mật.</p>
@@ -1054,55 +1054,139 @@
 <ul>
 <li><em>Tăng tốc độ phát triển và triển khai</em>: CI/CD tự động (CodePipeline, CodeBuild, CloudFormation) giúp giảm thời gian phát hành tính năng mới từ vài ngày xuống còn vài giờ.</li>
 <li><em>Tối ưu chi phí vận hành</em>: Kiến trúc Serverless (Lambda, DynamoDB, API Gateway) chỉ tính phí khi có request, tiết kiệm 40–60% chi phí so với EC2 truyền thống.</li>
-<li><em>Bảo mật toàn diện</em>: GuardDuty, CloudTrail và Secrets Manager giúp phát hiện sớm rủi ro, giảm thiểu nguy cơ rò rỉ dữ liệu hoặc tấn công.</li>
-<li><em>Hiệu suất truy cập cao</em>: CloudFront CDN và Route 53 giúp tăng tốc độ truy cập, giảm độ trễ 50–70% so với hosting thông thường.</li>
+<li><em>Bảo mật toàn diện</em>: AWS WAF, GuardDuty, CloudTrail và Secrets Manager giúp phát hiện sớm rủi ro, lọc các tấn công web, và bảo vệ dữ liệu nhạy cảm.</li>
+<li><em>Hiệu suất truy cập cao</em>: CloudFront CDN kết hợp Route 53 giúp tăng tốc độ truy cập, giảm độ trễ 50–70%, trong khi WAF bảo vệ hệ thống khỏi các tấn công web trước khi phân phối nội dung.</li>
 <li><em>Khả năng mở rộng linh hoạt</em>: Hệ thống tự động mở rộng theo lưu lượng, không cần can thiệp thủ công.</li>
 <li><em>Giám sát chủ động</em>: CloudWatch + SNS cung cấp cảnh báo real-time, giúp đội ngũ kỹ thuật xử lý sự cố kịp thời.</li>
 </ul>
 <h3 id="3-kiến-trúc-giải-pháp">3. Kiến trúc giải pháp</h3>
 <p><img src="../../images/2-Proposal/project1_architecture_diagram_vi.png" alt="Teaching center management"></p>
-<p><em>Mô tả chi tiết</em></p>
-<ul>
+<h4 id="mô-tả-chi-tiết">Mô tả chi tiết</h4>
+<ol>
 <li>
-<p>Application Flow</p>
+<p><strong>User Request Flow</strong></p>
 <ul>
-<li>Người dùng truy cập vào hệ thống thông qua tên miền, Route53 phân giải tên miền thành địa chỉ IP để ánh xạ đến CloudFront</li>
-<li>CloudFront phân phối nội dung web tĩnh (frontend) từ Amazon S3 đến người dùng một cách nhanh chóng.</li>
-<li>API Gateway tiếp nhận, quản lý tất cả các yêu cầu API từ CloudFront.</li>
-<li>API Gateway tích hợp với Amazon Cognito để xác thực người dùng thông qua JWT token. API Gateway sẽ dùng Cognito để xác thực JWToken mà người dùng gửi kèm trong request để xác thực người dùng trước khi cho phép sử dụng API.</li>
-<li>Sau khi xác thực thành công, API Gateway kích hoạt hàm Lambda (nơi xử lý chính của ứng dụng).</li>
-<li>Nếu Lambda cần truy cập những thông tin nhạy cảm (như mật khẩu database, API key bên thứ 3), Lambda sẽ gọi đến Secret Manager để lấy những thông tin bí mật này.</li>
-<li>Hàm Lambda thực thi logic, truy vấn và lưu trữ dũ liệu vào Amazon DynamoDB (cơ sở dữ liệu NoSQL).</li>
-<li>Lambda tự động ghi lại log thực thi và gửi về CloudWatch Logs. Các log này bao gồm request, error, metrics giúp giám sát và khắc phục sự cố.</li>
+<li>Người dùng mở trình duyệt và truy cập tên miền ứng dụng.</li>
+<li><strong>Amazon Route 53</strong> phân giải tên miền thành địa chỉ IP và gửi yêu cầu tới <strong>AWS WAF</strong>.</li>
+<li><strong>AWS WAF</strong> thực hiện các bước:
+<ul>
+<li>Kiểm tra request theo các rule đã cấu hình (SQL Injection, XSS, IP blacklist, rate limiting…).</li>
+<li>Chặn request bất thường hoặc độc hại.</li>
+<li>Chỉ chuyển tiếp các request hợp lệ đến <strong>Amazon CloudFront</strong>.</li>
+</ul>
+</li>
+<li><strong>CloudFront</strong> nhận request:
+<ul>
+<li>Kiểm tra cache để trả nội dung tĩnh (HTML/CSS/JS) từ <strong>S3</strong> nếu có.</li>
+<li>Nếu nội dung chưa có trong cache, CloudFront fetch từ S3, trả lại cho user với độ trễ thấp.</li>
+</ul>
+</li>
+<li>User nhận được frontend và tương tác với giao diện, phát sinh các request API.</li>
 </ul>
 </li>
 <li>
-<p>Security Flow</p>
+<p><strong>Authentication &amp; API Handling</strong></p>
 <ul>
-<li>AWS CloudTrail ghi lại mọi hành động API trong tài khoản.</li>
-<li>AWS GuardDuty liên tục phân tích các nguồn logs như CloudTrail, VPC Flow Logs và DNS Logs từ Route 53 để phát hiện hành vi độc hại (ví dụ: IAM bị xâm nhập, IP lạ truy cập). Khi phát hiện, GuardDuty tạo Finding và kích hoạt cảnh báo hoặc phản ứng tự động qua SNS hoặc Lambda.</li>
+<li>Khi user đăng nhập:
+<ul>
+<li><strong>Amazon Cognito</strong> xác thực thông tin đăng nhập (username/password hoặc OAuth).</li>
+<li>Cognito tạo JWT token và trả về client.</li>
+</ul>
+</li>
+<li>Frontend gửi request API kèm token JWT tới <strong>API Gateway</strong>.</li>
+<li>API Gateway thực hiện:
+<ul>
+<li>Kiểm tra JWT token với Cognito.</li>
+<li>Nếu token hợp lệ, request được chuyển tới Lambda function tương ứng.</li>
+<li>Nếu token không hợp lệ, API Gateway trả về lỗi 401 Unauthorized.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p>Monitoring Flow</p>
+<p><strong>Lambda Processing &amp; Data Access</strong></p>
 <ul>
-<li>CloudWatch Logs tập trung logs từ Lambda.</li>
-<li>CloudWatch Metrics được tạo ra từ CloudWatch Logs bằng Metric Filter, CloudWatch Alarms được cấu hình từ dựa trên metric để phát hiện lỗi và gửi cảnh báo.</li>
-<li>SNS gửi thông báo tự động qua email hoặc các endpoint đăng ký khi có sự cố.</li>
-<li>CloudTrail ghi lại mọi lệnh gọi API (API calls) xảy ra trong tài khoản(ví dụ: ai đã xóa S3 bucket, ai đã truy cập Secrets Manager). Dữ liệu này được dùng để theo dõi hoạt động quản trị và truy vết sự cố bảo mật. CloudTrail hoạt động song song với CloudWatch để ghi lại toàn bộ hành động API nhằm phục vụ audit và bảo mật.</li>
+<li><strong>AWS Lambda</strong> thực thi logic nghiệp vụ:
+<ul>
+<li>Quản lý học viên, điểm danh, đăng ký khóa học, cập nhật kết quả, lịch học…</li>
+<li>Khi cần truy cập thông tin nhạy cảm (API key, mật khẩu DB), Lambda gọi <strong>AWS Secrets Manager</strong>.</li>
+</ul>
+</li>
+<li>Lambda đọc/ghi dữ liệu vào <strong>Amazon DynamoDB</strong>:
+<ul>
+<li>DynamoDB lưu dữ liệu theo mô hình NoSQL, tối ưu read/write, tự động mở rộng khi lưu lượng tăng.</li>
+<li>Hỗ trợ truy vấn theo khóa chính (PK) hoặc secondary index (GSI).</li>
+</ul>
+</li>
+<li>Lambda ghi log về <strong>CloudWatch Logs</strong>, bao gồm: request, error, execution metrics.</li>
 </ul>
 </li>
 <li>
-<p>CI/CD Flow</p>
+<p><strong>Security &amp; Threat Detection</strong></p>
 <ul>
-<li>Source code của toàn ứng dụng sẽ được lưu trên repository Github</li>
-<li>Sau khi kết nối và cấu hình Github với Code Pipeline, khi source code trên GitHub được cập nhật, CodePipeline tự động nhận event webhook để lấy mã nguồn mới nhất. Đây là trung tâm điều phối toàn bộ quá trinh CI/CD, đinh nghĩa các stage: Source - Build - Deploy.</li>
-<li>CodeBuild lấy source từ CodePipeline. CodeBuild chạy file <code>buildspec.yml</code> để cài đặt dependencies, chạy unit tests và build ứng dụng thành artifact (zip, image, v.v.).</li>
-<li>Sau khi CodeBuild hoàn tất, CodePipeline kích hoạt CloudFormation để tự động tạo hoặc cập nhật toàn bộ tài nguyên (vd: API Gateway, Lambda, DynamoDB, S3, IAM Role, v.v.) lên môi trường AWS.</li>
+<li><strong>AWS WAF</strong> bảo vệ tầng đầu, lọc các request web độc hại.</li>
+<li><strong>AWS GuardDuty</strong>:
+<ul>
+<li>Phân tích logs từ CloudTrail, VPC Flow Logs, DNS Logs.</li>
+<li>Phát hiện hành vi bất thường (IAM bị xâm nhập, IP lạ truy cập).</li>
+<li>Khi phát hiện, tạo Finding và gửi cảnh báo qua SNS hoặc kích hoạt Lambda phản ứng tự động.</li>
 </ul>
 </li>
+<li><strong>AWS CloudTrail</strong>: ghi lại toàn bộ API call, phục vụ audit và truy vết.</li>
+<li><strong>Secrets Manager</strong> bảo vệ thông tin nhạy cảm, cho phép Lambda truy cập để lấy các secret key.</li>
 </ul>
-<p><em>Dịch vụ AWS sử dụng</em></p>
+</li>
+<li>
+<p><strong>Monitoring &amp; Alerts</strong></p>
+<ul>
+<li><strong>CloudWatch Logs</strong> thu thập logs từ Lambda và API Gateway.</li>
+<li><strong>Metrics &amp; Alarms</strong>:
+<ul>
+<li>Tạo metrics từ logs (CPU, error rate, latency, request count).</li>
+<li>Cấu hình CloudWatch Alarms, khi vượt ngưỡng, kích hoạt alert.</li>
+</ul>
+</li>
+<li><strong>Amazon SNS</strong> gửi cảnh báo real-time đến team vận hành qua email hoặc endpoint HTTP/SMS.</li>
+<li>Kết hợp CloudTrail + CloudWatch để audit hành động API và bảo mật tổng thể.</li>
+</ul>
+</li>
+<li>
+<p><strong>CI/CD &amp; Deployment</strong></p>
+<ul>
+<li><strong>Github</strong>:  lưu trên GitHub Repository.</li>
+<li><strong>AWS CodePipeline</strong>:
+<ul>
+<li>Nhận webhook khi code trên GitHub thay đổi.</li>
+<li>Điều phối toàn bộ pipeline bao gồm các giai đoạn: Source → Build → Deploy.</li>
+</ul>
+</li>
+<li><strong>AWS CodeBuild</strong>:
+<ul>
+<li>Cài đặt dependencies.</li>
+<li>Chạy unit test.</li>
+<li>Build artifact (ZIP, container image…).</li>
+</ul>
+</li>
+<li><strong>AWS CloudFormation</strong>:
+<ul>
+<li>Triển khai hoặc cập nhật toàn bộ hạ tầng AWS (API Gateway, Lambda, DynamoDB, S3, IAM Role).</li>
+<li>Đảm bảo hạ tầng theo mô hình IaC, nhất quán giữa môi trường Dev/Prod.</li>
+</ul>
+</li>
+<li>CI/CD tự động, giảm lỗi, rút ngắn thời gian triển khai.</li>
+</ul>
+</li>
+<li>
+<p><strong>Summary</strong></p>
+<ul>
+<li><strong>Request Path</strong>: User → Route53 → WAF → CloudFront → API Gateway → Lambda → DynamoDB → Lambda → API Gateway → CloudFront → User.</li>
+<li><strong>Security Path</strong>: WAF chặn web attack → GuardDuty giám sát logs → CloudTrail audit → SNS alert.</li>
+<li><strong>Monitoring</strong>: CloudWatch Logs &amp; Metrics → Alarms → SNS.</li>
+<li><strong>CI/CD Path</strong>: GitHub → CodePipeline → CodeBuild → CloudFormation → AWS Resources.</li>
+</ul>
+</li>
+</ol>
+<h4 id="dịch-vụ-aws-sử-dụng">Dịch vụ AWS sử dụng</h4>
 <table>
   <thead>
       <tr>
@@ -1124,8 +1208,8 @@
       </tr>
       <tr>
           <td><strong>Security &amp; Monitoring</strong></td>
-          <td>GuardDuty, CloudWatch Logs, CloudWatch Alarms, CloudWatch Metrics, SNS, CloudTrail</td>
-          <td>Phát hiện mối đe dọa, cảnh báo, kiểm toán</td>
+          <td>WAF, GuardDuty, CloudWatch Logs, CloudWatch Alarms, CloudWatch Metrics, SNS, CloudTrail</td>
+          <td>Bảo vệ ứng dụng khỏi tấn công, phát hiện mối đe dọa, cảnh báo, kiểm toán</td>
       </tr>
       <tr>
           <td><strong>CI/CD &amp; IaC</strong></td>
@@ -1159,7 +1243,7 @@
 </ul>
 <h3 id="5-lộ-trình--mốc-triển-khai">5. Lộ trình &amp; Mốc triển khai</h3>
 <ul>
-<li>*Trước thực tập (Tuần 0): Học các dịch vụ AWS để chuẩn bị cho project. Khảo sát, phân tích yêu cầu và các bộ phận liên quan của các trung tâm thật (Nhân sự, Đào tạo, Tuyển sinh).</li>
+<li><em>Trước thực tập (Tuần 0)</em>: Học các dịch vụ AWS để chuẩn bị cho project. Khảo sát, phân tích yêu cầu và các bộ phận liên quan của các trung tâm thật (Nhân sự, Đào tạo, Tuyển sinh).</li>
 <li><em>Thực tập (Tuần 1-12):</em>
 <ul>
 <li>Tuần 1–3: Thiết kế hệ thống, giao diện, kiến trúc tổng thể và chuẩn bị tài liệu (proposal, diagram, template SAM).</li>
@@ -1171,14 +1255,15 @@
 <li><em>Sau thực tập (Định hướng mở rộng – Tuần 12 về sau): Nâng cấp hệ thống, tối ưu hiệu năng, và tích hợp công nghệ AI (phân tích học tập cá nhân hóa) cùng IoT (quản lý lớp học thông minh).</em></li>
 </ul>
 <h3 id="6-ước-tính-ngân-sách">6. Ước tính ngân sách</h3>
-<p>Có thể xem chi phí trên <a href="https://calculator.aws/#/estimate?id=5fb7f30041d4dc0a491e40534f60126aec07a177">AWS Pricing Calculator</a><br>
+<p>Có thể xem chi phí trên <a href="https://calculator.aws/#/estimate?id=124ba62af284b2bb59152497a349995d8342c2a5">AWS Pricing Calculator</a><br>
 Hoặc tải tệp ước tính ngân sách <a href="../../files/2-Proposal/project_1_estimate.pdf">pdf</a> | <a href="../../files/2-Proposal/project_1_estimate.csv">csv</a> | <a href="../../files/2-Proposal/project_1_estimate.json">json</a></p>
 <p><em>Chi phí hạ tầng</em></p>
 <ul>
 <li>S3 Standard: 0.32 USD/tháng (10 GB, 5.000 PUT requests, 100.000 GET requests).</li>
+<li>AWS WAF: 9.24 USD/Tháng (1 Web ACLs, 2 Rules added per Web ACL, 2 Managed Rule Group, 400.000 request/month)</li>
 <li>CloudFront: 1.33 USD/tháng (10 GB, Data transfer out to origin 0.1 GB, Number of requests (HTTPS) 100.000).</li>
 <li>Amazon API Gateway: 0,38 USD/tháng (300.000 request).</li>
-<li>AWS Lambda Function - Include Free Tier: 0.00 USD/tháng (100.000 request, 512 MB lưu trữ).</li>
+<li>AWS Lambda Function - Include Free Tier: 0.00 USD/tháng (400.000 request, 512 MB lưu trữ).</li>
 <li>Amazon DynamoDB: 0.62 USD/tháng (Data storage 2 GB, 50.000 Write/, 200.000 Read)</li>
 <li>Amazon Cognito Lite Tier: 0.00 USD/tháng (500 MAUs)</li>
 <li>Amazon CloudWatch: 2.10 USD/tháng (3 custom metric, Log 1GB, 1 dashboard, 2 alarms)</li>
@@ -1191,14 +1276,15 @@ Hoặc tải tệp ước tính ngân sách <a href="../../files/2-Proposal/proj
 <li>AWS CodeBuild: 0.25 USD/tháng (on-demand ec2 general1.small, 5 build/month)</li>
 <li>AWS CodePipeline: 0.0 USD/tháng (100 minute/month)</li>
 </ul>
-<p><em>Tổng</em>: 6.30 USD/tháng, 75.60 USD/12 tháng</p>
+<p><em>Tổng</em>: 15.54 USD/tháng, 186.48 USD/12 tháng</p>
 <h3 id="7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</h3>
 <p><em>Ma trận rủi ro</em></p>
 <ul>
-<li>Lỗi cấu hình AWS (IAM, Lambda, API Gateway, Cognito): Ảnh hưởng cao, xác suất trung bình</li>
+<li>Lỗi cấu hình AWS (IAM, Lambda, API Gateway, Cognito, WAF): Ảnh hưởng cao, xác suất trung bình</li>
 <li>Quá giới hạn Free Tier AWS: Ảnh hưởng trung bình, xác suất thấp.</li>
 <li>Mất dữ liệu trên S3/DynamoDB: Ảnh hưởng cao, xác suất thấp.</li>
 <li>Lỗi tích hợp giữa các dịch vụ AWS: Ảnh hưởng trung bình, xác suất thấp.</li>
+<li>Tấn công từ bên ngoài (DDoS, SQL injection, XSS): Ảnh hưởng cao, xác suất thấp đến trung bình</li>
 </ul>
 <p><em>Chiến lược giảm thiểu</em></p>
 <ul>
@@ -1206,11 +1292,13 @@ Hoặc tải tệp ước tính ngân sách <a href="../../files/2-Proposal/proj
 <li>Vượt giới hạn Free Tier: Theo dõi chi phí thường xuyên, thiết lập cảnh báo chi tiêu (Billing Alert), tối ưu tài nguyên.</li>
 <li>Mất dữ liệu: Bật S3 Versioning, sao lưu định kỳ dữ liệu DynamoDB.</li>
 <li>Lỗi tích hợp dịch vụ: Đảm bảo các dịch vụ hoạt động cùng Region, kiểm tra IAM Role và quyền truy cập chéo giữa các service.</li>
+<li>Bảo mật ứng dụng: Sử dụng WAF để lọc lưu lượng độc hại, áp dụng các rule chuẩn chống OWASP Top 10, bật CloudFront và API Gateway logging</li>
 </ul>
 <p><em>Kế hoạch dự phòng</em></p>
 <ul>
 <li>Khi gặp lỗi deploy: rollback bằng AWS SAM CLI hoặc khôi phục version Lambda trước đó.</li>
 <li>Khi vượt ngân sách: tạm dừng các dịch vụ không thiết yếu, tối ưu lại kiến trúc và tài nguyên sử dụng.</li>
+<li>Khi có sự cố bảo mật: rà soát log CloudWatch/CloudTrail, cập nhật rule WAF, cách ly endpoint bị tấn công</li>
 </ul>
 <h3 id="8-kết-quả-kỳ-vọng">8. Kết quả kỳ vọng</h3>
 <ul>
@@ -1936,19 +2024,19 @@ Hoặc tải tệp ước tính ngân sách <a href="../../files/2-Proposal/proj
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1760995065"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1760995065"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1760995065"></script>
-    <script src="../../js/jquery.sticky.js?1760995065"></script>
-    <script src="../../js/featherlight.min.js?1760995065"></script>
-    <script src="../../js/highlight.pack.js?1760995065"></script>
+    <script src="../../js/clipboard.min.js?1761047708"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1761047708"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1761047708"></script>
+    <script src="../../js/jquery.sticky.js?1761047708"></script>
+    <script src="../../js/featherlight.min.js?1761047708"></script>
+    <script src="../../js/highlight.pack.js?1761047708"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1760995065"></script>
-    <script src="../../js/learn.js?1760995065"></script>
-    <script src="../../js/hugo-learn.js?1760995065"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1761047708"></script>
+    <script src="../../js/learn.js?1761047708"></script>
+    <script src="../../js/hugo-learn.js?1761047708"></script>
 
-    <link href="../../mermaid/mermaid.css?1760995065" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1760995065"></script>
+    <link href="../../mermaid/mermaid.css?1761047708" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1761047708"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

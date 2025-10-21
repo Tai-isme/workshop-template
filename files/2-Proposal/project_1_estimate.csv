@@ -1,6 +1,6 @@
 ﻿Estimate summary
 Upfront cost,Monthly cost,Total 12 months cost,Currency
-0,6.300000000000001,75.60,USD
+0,15.540000000000001,186.48,USD
 ,,* Includes upfront cost
 
 
@@ -19,6 +19,7 @@ My Estimate,Asia Pacific (Singapore),,AWS CloudTrail,0,0,0.00,USD,,"Management e
 My Estimate,Asia Pacific (Singapore),,Standard topics,0,0,0.00,USD,,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), Requests (1 million per month), Amazon Web Services Lambda (1 million per month), HTTP/HTTPS Notifications ( million per month), EMAIL/EMAIL-JSON Notifications ( million per month), SQS Notifications (1 million per month)"
 My Estimate,Asia Pacific (Singapore),,AWS CodeBuild,0,0.25,3.00,USD,,"AWS CodeBuild Compute Type (On-Demand EC2), Number of builds in a month (5), Search Instance Type (general1.small), Operating system (Linux), Number of builds in a month (1), Number of instances (1), Number of sandboxes (1), Number of instances (1), Number of instances (1)"
 My Estimate,Asia Pacific (Singapore),,AWS CodePipeline,0,0,0.00,USD,,Number of action execution minutes used in pipeline of type V2 per account per month (100)
+My Estimate,Asia Pacific (Singapore),,AWS Web Application Firewall (WAF),0,9.24,110.88,USD,,"Number of Web Access Control Lists (Web ACLs) utilized (1 per month), Number of Rules added per Web ACL (2 per month), Number of Rule Groups per Web ACL ( per month), Number of Rules inside each Rule Group ( per month), Number of Managed Rule Groups per Web ACL (2 per month)"
 
 
 

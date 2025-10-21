@@ -1,16 +1,16 @@
 {
 	"Name": "My Estimate",
 	"Total Cost": {
-		"monthly": "6.30",
+		"monthly": "15.54",
 		"upfront": "0.00",
-		"12 months": "75.60"
+		"12 months": "186.48"
 	},
 	"Metadata": {
 		"Currency": "USD",
 		"Locale": "en_US",
 		"Created On": "10/21/2025",
 		"Legal Disclaimer": "AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",
-		"Share Url": "https://calculator.aws/#/estimate?id=cb985888955ca11196eeed8323848a63fed81bd1"
+		"Share Url": "https://calculator.aws/#/estimate?id=11903478302b7cc1fc184d6b955aa5f4286184c1"
 	},
 	"Groups": {
 		"Services": [
@@ -232,6 +232,23 @@
 				},
 				"Properties": {
 					"Number of action execution minutes used in pipeline of type V2 per account per month": "100"
+				}
+			},
+			{
+				"Service Name": "AWS Web Application Firewall (WAF)",
+				"Region": "Asia Pacific (Singapore)",
+				"Status": "",
+				"Service Cost": {
+					"monthly": "9.24",
+					"upfront": "0.00",
+					"12 months": "110.88"
+				},
+				"Properties": {
+					"Number of Web Access Control Lists (Web ACLs) utilized": "1 per month",
+					"Number of Rules added per Web ACL": "2 per month",
+					"Number of Rule Groups per Web ACL": "per month",
+					"Number of Rules inside each Rule Group": "per month",
+					"Number of Managed Rule Groups per Web ACL": "2 per month"
 				}
 			}
 		]
