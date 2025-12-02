@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head><script src="/workshop-template/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=workshop-template/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../../../images/favicon.png" type="image/png">
+
+    <title>Upload File Excel :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../../css/nucleus.css?1764656310" rel="stylesheet">
+    <link href="../../../../css/fontawesome-all.min.css?1764656310" rel="stylesheet">
+    <link href="../../../../css/hybrid.css?1764656310" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1764656310" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1764656310" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1764656310" rel="stylesheet">
+    <link href="../../../../css/atom-one-dark-reasonable.css?1764656310" rel="stylesheet">
+    <link href="../../../../css/theme.css?1764656310" rel="stylesheet">
+    <link href="../../../../css/hugo-theme.css?1764656310" rel="stylesheet">
+    
+    <link href="../../../../css/theme-workshop.css?1764656310" rel="stylesheet">
+    
+    
+
+    <script src="../../../../js/jquery-3.3.1.min.js?1764656310"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../../vi/5-workshop/5.6-test-application/5.6.2-upload-excel/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../../js/lunr.min.js?1764656310"></script>
+<script type="text/javascript" src="../../../../js/auto-complete.js?1764656310"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/workshop-template\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../../js/search.js?1764656310"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12 </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.4-blog4/"
+  title="Blog 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/3-blogstranslated/3.4-blog4/">
+     <b> 3.4. </b> Blog 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.5-blog5/"
+  title="Blog 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/3-blogstranslated/3.5-blog5/">
+     <b> 3.6. </b> Blog 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.6-blog6/"
+  title="Blog 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/3-blogstranslated/3.6-blog6/">
+     <b> 3.6. </b> Blog 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/4-eventparticipated/4.3-event3/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.4-event4/"
+  title="Event 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/4-eventparticipated/4.4-event4/">
+     <b> 4.4. </b> Event 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.5-event5/"
+  title="Event 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/4-eventparticipated/4.5-event5/">
+     <b> 4.5. </b> Event 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequisites/"
+  title="Các bước chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.2-prerequisites/">
+     <b> 5.2. </b> Các bước chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-architecture/"
+  title="Kiến trúc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.3-architecture/">
+     <b> 5.3. </b> Kiến trúc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-deploy-backend/"
+  title="Triển khai Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.4-deploy-backend/">
+     <b> 5.4. </b> Triển khai Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-deploy-backend/5.4.1-sam-build/"
+  title="SAM Build"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.4-deploy-backend/5.4.1-sam-build/">
+     <b> 5.4.1 </b> SAM Build 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-deploy-backend/5.4.2-sam-deploy/"
+  title="SAM Deploy"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.4-deploy-backend/5.4.2-sam-deploy/">
+     <b> 5.4.2 </b> SAM Deploy 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-deploy-frontend/"
+  title="Triển khai Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.5-deploy-frontend/">
+     <b> 5.5 </b> Triển khai Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-test-application/"
+  title="Test Ứng Dụng"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.6-test-application/">
+     <b> 5.6. </b> Test Ứng Dụng 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-test-application/5.6.1-register-login/"
+  title="Đăng Ký &amp; Đăng Nhập"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.6-test-application/5.6.1-register-login/">
+     <b> 5.6.1. </b> Đăng Ký &amp; Đăng Nhập 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-test-application/5.6.2-upload-excel/"
+  title="Upload File Excel"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.6-test-application/5.6.2-upload-excel/">
+     <b> 5.6.2. </b> Upload File Excel 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-test-application/5.6.3-check-results/"
+  title="Kiểm Tra Kết Quả"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.6-test-application/5.6.3-check-results/">
+     <b> 5.6.3. </b> Kiểm Tra Kết Quả 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.7-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.7-cleanup/">
+     <b> 5.7. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                         
+                <option
+                  id="vi"
+                  value="http://localhost:1313/workshop-template/vi/5-workshop/5.6-test-application/5.6.2-upload-excel/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../../vi/'>Báo cáo thực tập</a> > <a href='../../../../vi/5-workshop/'>Workshop</a> > <a href='../../../../vi/5-workshop/5.6-test-application/'>Test Ứng Dụng</a> > Upload File Excel
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Upload File Excel
+            </h1>
+          
+
+        
+
+
+
+	<h4 id="test-file-upload-flow">Test File Upload Flow</h4>
+<p>Hãy test upload file Excel và trigger Lambda processing.</p>
+<h4 id="chuẩn-bị-file-excel-mẫu">Chuẩn Bị File Excel Mẫu</h4>
+<p><strong>Option 1: Tạo file Excel thủ công</strong></p>
+<p>Tạo file <code>students.xlsx</code> với cấu trúc sau:</p>
+<table>
+  <thead>
+      <tr>
+          <th>studentCode</th>
+          <th>fullName</th>
+          <th>email</th>
+          <th>courseCode</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ST001</td>
+          <td>Nguyen Van A</td>
+          <td><a href="mailto:nguyenvana@test.com">nguyenvana@test.com</a></td>
+          <td>CS101</td>
+      </tr>
+      <tr>
+          <td>ST002</td>
+          <td>Tran Thi B</td>
+          <td><a href="mailto:tranthib@test.com">tranthib@test.com</a></td>
+          <td>CS101</td>
+      </tr>
+      <tr>
+          <td>ST003</td>
+          <td>Le Van C</td>
+          <td><a href="mailto:levanc@test.com">levanc@test.com</a></td>
+          <td>CS102</td>
+      </tr>
+      <tr>
+          <td>ST004</td>
+          <td>Pham Thi D</td>
+          <td><a href="mailto:phamthid@test.com">phamthid@test.com</a></td>
+          <td>CS102</td>
+      </tr>
+      <tr>
+          <td>ST005</td>
+          <td>Hoang Van E</td>
+          <td><a href="mailto:hoangvane@test.com">hoangvane@test.com</a></td>
+          <td>CS103</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Header row (row 1):</strong></p>
+<ul>
+<li>Column A: <code>studentCode</code></li>
+<li>Column B: <code>fullName</code></li>
+<li>Column C: <code>email</code></li>
+<li>Column D: <code>courseCode</code></li>
+</ul>
+<p><strong>Data rows (row 2-6):</strong></p>
+<ul>
+<li>Điền theo bảng trên</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Lưu file dưới format <code>.xlsx</code> (Excel 2007+), không phải <code>.xls</code> (Excel 97-2003).</p>
+</blockquote>
+<hr>
+<p><strong>Option 2: Download file mẫu (nếu có)</strong></p>
+<p>Nếu repository có file mẫu:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># File mẫu thường nằm trong examples/</span>
+</span></span><span style="display:flex;"><span>Get-ChildItem ..\examples\*.xlsx
+</span></span></code></pre></div><p>Copy file vào Desktop hoặc thư mục dễ truy cập.</p>
+<hr>
+<p><strong>Option 3: Tạo bằng PowerShell (Advanced)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Tạo CSV rồi convert sang XLSX bằng Excel COM</span>
+</span></span><span style="display:flex;"><span>$data = <span style="color:#e6db74">@&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">studentCode,fullName,email,courseCode
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ST001,Nguyen Van A,nguyenvana@test.com,CS101
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ST002,Tran Thi B,tranthib@test.com,CS101
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ST003,Le Van C,levanc@test.com,CS102
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ST004,Pham Thi D,phamthid@test.com,CS102
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">ST005,Hoang Van E,hoangvane@test.com,CS103
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;@</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$data | Out-File students.csv -Encoding UTF8
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mở Excel và save as .xlsx manually</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Hoặc dùng script với Excel COM object</span>
+</span></span></code></pre></div><hr>
+<h4 id="upload-file-trên-frontend">Upload File Trên Frontend</h4>
+<p><strong>Bước 1: Verify đã login</strong></p>
+<ul>
+<li>Đảm bảo bạn đang ở Import Page</li>
+<li>Thấy email user ở header</li>
+<li>Thấy &ldquo;Upload Excel File&rdquo; section</li>
+</ul>
+<p><strong>Bước 2: Chọn file</strong></p>
+<ol>
+<li>Click button <strong>&ldquo;Choose File&rdquo;</strong> hoặc <strong>&ldquo;Browse&rdquo;</strong></li>
+<li>Navigate đến file <code>students.xlsx</code></li>
+<li>Select và Open</li>
+<li>File name hiển thị bên cạnh button</li>
+</ol>
+<p><img src="../../../../images/6-Excel-Workshop/choose-file.png" alt="Choose File"></p>
+<p><strong>Bước 3: Click &ldquo;Upload&rdquo;</strong></p>
+<p>Process flow:</p>
+<pre tabindex="0"><code>1. Frontend validate file:
+   - Extension phải là .xlsx hoặc .xls
+   - Size không quá 10MB (configurable)
+   
+2. Frontend gọi API: POST /upload-url
+   Headers: { Authorization: Bearer {IdToken} }
+   Body: { fileName: &#34;students.xlsx&#34;, fileSize: 12345 }
+   
+3. GenerateUploadUrlFunction:
+   a. Create import job record trong DynamoDB
+   b. Generate S3 pre-signed URL (PUT)
+   c. Return: { jobId, uploadUrl, expiresIn: 900 }
+   
+4. Frontend upload file:
+   PUT {uploadUrl}
+   Body: file binary (không qua server!)
+   
+5. S3 lưu file thành công
+   
+6. S3 Event trigger ImportS3TriggerFunction
+   
+7. Lambda parse Excel và import vào DynamoDB
+</code></pre><p><strong>Expected UI feedback:</strong></p>
+<pre tabindex="0"><code>Uploading... [Progress bar: 0%]
+         ↓
+Uploading... [Progress bar: 50%]
+         ↓
+Upload successful! [Progress bar: 100%]
+         ↓
+Job created: abc-123-def-456
+Processing...
+</code></pre><p><img src="../../../../images/6-Excel-Workshop/upload-progress.png" alt="Upload Progress"></p>
+<blockquote>
+<p>⏱ Upload thường mất 2-5 giây tùy file size.</p>
+</blockquote>
+<hr>
+<h4 id="theo-dõi-import-job">Theo Dõi Import Job</h4>
+<p><strong>Sau khi upload xong:</strong></p>
+<ol>
+<li>Frontend tự động redirect đến <strong>Jobs List</strong> (hoặc refresh page)</li>
+<li>Bạn sẽ thấy job vừa tạo trong danh sách</li>
+</ol>
+<p><strong>Job List hiển thị:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Job ID</th>
+          <th>File Name</th>
+          <th>Status</th>
+          <th>Created</th>
+          <th>Actions</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>abc-123&hellip;</td>
+          <td>students.xlsx</td>
+          <td>🟡 PROCESSING</td>
+          <td>10:30 AM</td>
+          <td>View Details</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Job Status Colors:</strong></p>
+<ul>
+<li>🔵 <strong>PENDING</strong> - Đang chờ xử lý (vừa upload xong)</li>
+<li>🟡 <strong>PROCESSING</strong> - Lambda đang parse file</li>
+<li>🟢 <strong>COMPLETED</strong> - Hoàn thành thành công</li>
+<li>🔴 <strong>FAILED</strong> - Có lỗi xảy ra</li>
+</ul>
+<p><img src="../../../../images/6-Excel-Workshop/jobs-list.png" alt="Jobs List"></p>
+<p><strong>Bước 4: Wait for processing</strong></p>
+<ul>
+<li>Lambda có thể mất 5-30 giây để parse file (tùy số records)</li>
+<li>Frontend tự động refresh status mỗi 3-5 giây (polling)</li>
+<li>Quan sát status chuyển từ PENDING → PROCESSING → COMPLETED</li>
+</ul>
+<pre tabindex="0"><code>Initial:     🔵 PENDING
+After 2s:    🟡 PROCESSING
+After 10s:   🟢 COMPLETED ✅
+</code></pre><blockquote>
+<p>💡 <strong>Tip:</strong> Nếu status không tự động update, refresh browser (F5).</p>
+</blockquote>
+<hr>
+<h4 id="verify-upload-trên-s3">Verify Upload Trên S3</h4>
+<p><strong>Check file đã lên S3:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># List files trong bucket</span>
+</span></span><span style="display:flex;"><span>aws s3 ls s3<span style="color:#960050;background-color:#1e0010">:</span>//workshop-excel-imports-YOUR_ACCOUNT_ID/imports/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Output:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2025-12-01 10:30:00    12345 abc-123-def-456-students.xlsx</span>
+</span></span></code></pre></div><p>Hoặc qua Console:</p>
+<ol>
+<li>Mở <a href="https://s3.console.aws.amazon.com">S3 Console</a></li>
+<li>Bucket: <code>workshop-excel-imports-{AccountId}</code></li>
+<li>Prefix: <code>imports/</code></li>
+<li>Thấy file: <code>{jobId}-students.xlsx</code></li>
+</ol>
+<p><img src="../../../../images/6-Excel-Workshop/s3-file-uploaded.png" alt="S3 File Uploaded"></p>
+<hr>
+<h4 id="check-lambda-processing-logs">Check Lambda Processing Logs</h4>
+<p><strong>Xem logs của ImportS3TriggerFunction:</strong></p>
+<ol>
+<li>Mở <a href="https://console.aws.amazon.com/cloudwatch/home#logsV2:log-groups">CloudWatch Logs Console</a></li>
+<li>Tìm log group: <code>/aws/lambda/ImportS3Trigger</code></li>
+<li>Click vào log group</li>
+<li>Xem <strong>Latest log stream</strong></li>
+</ol>
+<p>Expected logs:</p>
+<pre tabindex="0"><code>START RequestId: abc-123-def...
+INFO: Processing file: imports/abc-123-students.xlsx
+INFO: Parsing Excel file...
+INFO: Found 5 rows (excluding header)
+INFO: Processing row 1: ST001 - Nguyen Van A
+INFO: Processing row 2: ST002 - Tran Thi B
+...
+INFO: Batch writing 5 students to DynamoDB
+INFO: Batch writing 3 courses to DynamoDB
+INFO: Updating job status to COMPLETED
+INFO: Total: 5, Processed: 5, Failed: 0
+END RequestId: abc-123-def...
+REPORT Duration: 8432.12 ms Memory Used: 256 MB
+</code></pre><p><img src="../../../../images/6-Excel-Workshop/cloudwatch-processing-logs.png" alt="CloudWatch Logs"></p>
+<blockquote>
+<p>✅ Nếu thấy &ldquo;COMPLETED&rdquo; và &ldquo;Failed: 0&rdquo; → Success!</p>
+</blockquote>
+<hr>
+<h4 id="troubleshooting">Troubleshooting</h4>
+<p><strong>Lỗi: &ldquo;File type not supported&rdquo;</strong></p>
+<p>Nguyên nhân: File không phải .xlsx/.xls</p>
+<p>Solution:</p>
+<ul>
+<li>Save lại file Excel dưới format .xlsx</li>
+<li>Không dùng .csv, .txt, hoặc format khác</li>
+</ul>
+<hr>
+<p><strong>Lỗi: &ldquo;Upload failed&rdquo; - 403 Forbidden</strong></p>
+<p>Nguyên nhân: Pre-signed URL expired hoặc CORS issue.</p>
+<p>Solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Check S3 CORS configuration</span>
+</span></span><span style="display:flex;"><span>aws s3api get-bucket-cors --bucket workshop-excel-imports-YOUR_ACCOUNT_ID
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verify Lambda có quyền S3 PutObject</span>
+</span></span></code></pre></div><p>Debug:</p>
+<ol>
+<li>F12 → Network tab</li>
+<li>Find PUT request đến s3.amazonaws.com</li>
+<li>Check response error</li>
+</ol>
+<hr>
+<p><strong>Lỗi: Job status stuck ở &ldquo;PENDING&rdquo;</strong></p>
+<p>Nguyên nhân: Lambda không được trigger, hoặc có lỗi.</p>
+<p>Solution:</p>
+<ol>
+<li>
+<p>Check S3 Event Notifications configured:</p>
+<ul>
+<li>Bucket → Properties → Event notifications</li>
+<li>Verify Lambda target đúng</li>
+</ul>
+</li>
+<li>
+<p>Check Lambda CloudWatch Logs:</p>
+<ul>
+<li>Có log mới không?</li>
+<li>Có error gì không?</li>
+</ul>
+</li>
+<li>
+<p>Manually invoke Lambda:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Test Lambda với mock event</span>
+</span></span><span style="display:flex;"><span>aws lambda invoke --function-name ImportS3Trigger --payload <span style="color:#e6db74">&#39;{&#34;Records&#34;:[{&#34;s3&#34;:{&#34;bucket&#34;:{&#34;name&#34;:&#34;YOUR_BUCKET&#34;},&#34;object&#34;:{&#34;key&#34;:&#34;imports/test.xlsx&#34;}}}]}&#39;</span> response.json
+</span></span></code></pre></div><hr>
+<p><strong>Lỗi: Job status = &ldquo;FAILED&rdquo;</strong></p>
+<p>Nguyên nhân: Lambda parse file thất bại.</p>
+<p>Debug steps:</p>
+<ol>
+<li>Click &ldquo;View Details&rdquo; của job để xem error message</li>
+<li>Check CloudWatch Logs để xem chi tiết lỗi</li>
+<li>Common errors:
+<ul>
+<li>Invalid Excel format (corrupted file)</li>
+<li>Missing required columns (studentCode, fullName, email)</li>
+<li>Invalid email format</li>
+<li>Duplicate studentCode/email</li>
+</ul>
+</li>
+</ol>
+<p>Solution:</p>
+<ul>
+<li>Fix file Excel theo đúng format</li>
+<li>Re-upload file</li>
+</ul>
+<hr>
+<p><strong>Lỗi: &ldquo;Authorization failed&rdquo; khi gọi /upload-url</strong></p>
+<p>Nguyên nhân: JWT token không valid hoặc expired.</p>
+<p>Solution:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Check token trong localStorage</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># F12 → Application → Local Storage → userTokens</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Nếu expired (1 hour), logout và login lại</span>
+</span></span></code></pre></div><hr>
+<h4 id="test-edge-cases">Test Edge Cases</h4>
+<p><strong>Test 1: Upload file lớn</strong></p>
+<p>Tạo file với 100+ rows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Generate large CSV</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>.<span style="color:#ae81ff">.100</span> | ForEach-Object {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;ST{0:D3},Student {0},student{0}@test.com,CS101&#34;</span> <span style="color:#f92672">-f</span> $_
+</span></span><span style="display:flex;"><span>} | Out-File large-students.csv
+</span></span></code></pre></div><p>Convert sang .xlsx và upload.</p>
+<p>Expected: Lambda xử lý thành công (có thể mất 20-30s).</p>
+<hr>
+<p><strong>Test 2: Upload file có lỗi</strong></p>
+<p>Tạo file với email invalid:</p>
+<table>
+  <thead>
+      <tr>
+          <th>studentCode</th>
+          <th>fullName</th>
+          <th>email</th>
+          <th>courseCode</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ST001</td>
+          <td>Test User</td>
+          <td>INVALID_EMAIL</td>
+          <td>CS101</td>
+      </tr>
+  </tbody>
+</table>
+<p>Expected:</p>
+<ul>
+<li>Job status = FAILED</li>
+<li>Error message: &ldquo;Invalid email format at row 2&rdquo;</li>
+</ul>
+<hr>
+<p><strong>Test 3: Duplicate studentCode</strong></p>
+<p>Upload file có 2 rows cùng studentCode <code>ST001</code>.</p>
+<p>Expected:</p>
+<ul>
+<li>DynamoDB overwrite record cũ (nếu không có unique constraint)</li>
+<li>Hoặc Lambda detect duplicate và skip</li>
+</ul>
+<hr>
+<h4 id="-checklist">✅ Checklist</h4>
+<p>Đảm bảo:</p>
+<ul>
+<li><input disabled="" type="checkbox"> File Excel đã tạo với đúng format</li>
+<li><input disabled="" type="checkbox"> Upload file thành công từ frontend</li>
+<li><input disabled="" type="checkbox"> Job được tạo trong danh sách</li>
+<li><input disabled="" type="checkbox"> Job status chuyển từ PENDING → PROCESSING → COMPLETED</li>
+<li><input disabled="" type="checkbox"> File xuất hiện trong S3 bucket</li>
+<li><input disabled="" type="checkbox"> CloudWatch Logs hiển thị processing success</li>
+<li><input disabled="" type="checkbox"> Không có error trong logs</li>
+</ul>
+<h4 id="-upload--processing-hoạt-động">🎉 Upload &amp; Processing Hoạt Động!</h4>
+<p>Bây giờ hãy verify dữ liệu đã được lưu vào DynamoDB!</p>
+<p><a href="../6.6.3-check-results/">➡️ Tiếp theo: Kiểm Tra Kết Quả</a></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../../vi/5-workshop/5.6-test-application/5.6.1-register-login/" title="Đăng Ký &amp; Đăng Nhập"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../../vi/5-workshop/5.6-test-application/5.6.3-check-results/" title="Kiểm Tra Kết Quả" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../../js/clipboard.min.js?1764656310"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1764656310"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1764656310"></script>
+    <script src="../../../../js/jquery.sticky.js?1764656310"></script>
+    <script src="../../../../js/featherlight.min.js?1764656310"></script>
+    <script src="../../../../js/highlight.pack.js?1764656310"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1764656310"></script>
+    <script src="../../../../js/learn.js?1764656310"></script>
+    <script src="../../../../js/hugo-learn.js?1764656310"></script>
+
+    <link href="../../../../mermaid/mermaid.css?1764656310" rel="stylesheet" />
+    <script src="../../../../mermaid/mermaid.js?1764656310"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

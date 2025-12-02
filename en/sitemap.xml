@@ -80,19 +80,6 @@
                 href="https://tai-isme.github.io/workshop-template/3-blogstranslated/3.6-blog6/"
                 />
   </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
-                />
-  </url><url>
     <loc>https://tai-isme.github.io/workshop-template/4-eventparticipated/4.1-event1/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -132,6 +119,32 @@
                 href="https://tai-isme.github.io/workshop-template/4-eventparticipated/4.3-event3/"
                 />
   </url><url>
+    <loc>https://tai-isme.github.io/workshop-template/4-eventparticipated/4.4-event4/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://tai-isme.github.io/workshop-template/vi/4-eventparticipated/4.4-event4/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tai-isme.github.io/workshop-template/4-eventparticipated/4.4-event4/"
+                />
+  </url><url>
+    <loc>https://tai-isme.github.io/workshop-template/4-eventparticipated/4.5-event5/</loc>
+    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://tai-isme.github.io/workshop-template/vi/4-eventparticipated/4.5-event5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tai-isme.github.io/workshop-template/4-eventparticipated/4.5-event5/"
+                />
+  </url><url>
     <loc>https://tai-isme.github.io/workshop-template/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -158,17 +171,17 @@
                 href="https://tai-isme.github.io/workshop-template/5-workshop/5.1-workshop-overview/"
                 />
   </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.1-prepare/</loc>
+    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.4-deploy-backend/5.4.1-sam-build/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.4-deploy-backend/5.4.1-sam-build/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+                href="https://tai-isme.github.io/workshop-template/5-workshop/5.4-deploy-backend/5.4.1-sam-build/"
                 />
   </url><url>
     <loc>https://tai-isme.github.io/workshop-template/1-worklog/1.1-week1/</loc>
@@ -301,30 +314,17 @@
                 href="https://tai-isme.github.io/workshop-template/1-worklog/"
                 />
   </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/</loc>
+    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.2-prerequisites/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.2-prerequisites/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
-                />
-  </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.2-prerequiste/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.2-prerequiste/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.2-prerequiste/"
+                href="https://tai-isme.github.io/workshop-template/5-workshop/5.2-prerequisites/"
                 />
   </url><url>
     <loc>https://tai-isme.github.io/workshop-template/2-proposal/</loc>
@@ -340,17 +340,17 @@
                 href="https://tai-isme.github.io/workshop-template/2-proposal/"
                 />
   </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/</loc>
+    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.4-deploy-backend/5.4.2-sam-deploy/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.4-deploy-backend/5.4.2-sam-deploy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
+                href="https://tai-isme.github.io/workshop-template/5-workshop/5.4-deploy-backend/5.4.2-sam-deploy/"
                 />
   </url><url>
     <loc>https://tai-isme.github.io/workshop-template/1-worklog/1.10-week10/</loc>
@@ -392,30 +392,17 @@
                 href="https://tai-isme.github.io/workshop-template/1-worklog/1.12-week12/"
                 />
   </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.3-s3-vpc/</loc>
+    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.3-architecture/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.3-s3-vpc/"
+                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.3-architecture/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.3-s3-vpc/"
-                />
-  </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+                href="https://tai-isme.github.io/workshop-template/5-workshop/5.3-architecture/"
                 />
   </url><url>
     <loc>https://tai-isme.github.io/workshop-template/3-blogstranslated/</loc>
@@ -431,17 +418,17 @@
                 href="https://tai-isme.github.io/workshop-template/3-blogstranslated/"
                 />
   </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/</loc>
+    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.4-deploy-backend/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.4-s3-onprem/"
+                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.4-deploy-backend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/"
+                href="https://tai-isme.github.io/workshop-template/5-workshop/5.4-deploy-backend/"
                 />
   </url><url>
     <loc>https://tai-isme.github.io/workshop-template/4-eventparticipated/</loc>
@@ -457,30 +444,17 @@
                 href="https://tai-isme.github.io/workshop-template/4-eventparticipated/"
                 />
   </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/</loc>
+    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.5-deploy-frontend/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
+                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.5-deploy-frontend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
-                />
-  </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.5-policy/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.5-policy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.5-policy/"
+                href="https://tai-isme.github.io/workshop-template/5-workshop/5.5-deploy-frontend/"
                 />
   </url><url>
     <loc>https://tai-isme.github.io/workshop-template/5-workshop/</loc>
@@ -496,17 +470,17 @@
                 href="https://tai-isme.github.io/workshop-template/5-workshop/"
                 />
   </url><url>
-    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.6-cleanup/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.6-test-application/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.6-cleanup/"
+                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.6-test-application/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tai-isme.github.io/workshop-template/5-workshop/5.6-cleanup/"
+                href="https://tai-isme.github.io/workshop-template/5-workshop/5.6-test-application/"
                 />
   </url><url>
     <loc>https://tai-isme.github.io/workshop-template/6-self-evaluation/</loc>
@@ -520,6 +494,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tai-isme.github.io/workshop-template/6-self-evaluation/"
+                />
+  </url><url>
+    <loc>https://tai-isme.github.io/workshop-template/5-workshop/5.7-cleanup/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://tai-isme.github.io/workshop-template/vi/5-workshop/5.7-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tai-isme.github.io/workshop-template/5-workshop/5.7-cleanup/"
                 />
   </url><url>
     <loc>https://tai-isme.github.io/workshop-template/7-feedback/</loc>
