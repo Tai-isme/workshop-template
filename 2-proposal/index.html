@@ -15,21 +15,21 @@
     <title>Proposal :: Internship Report</title>
 
     
-    <link href="../css/nucleus.css?1764687506" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1764687506" rel="stylesheet">
-    <link href="../css/hybrid.css?1764687506" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1764687506" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1764687506" rel="stylesheet">
-    <link href="../css/auto-complete.css?1764687506" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1764687506" rel="stylesheet">
-    <link href="../css/theme.css?1764687506" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1764687506" rel="stylesheet">
+    <link href="../css/nucleus.css?1764687894" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1764687894" rel="stylesheet">
+    <link href="../css/hybrid.css?1764687894" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1764687894" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1764687894" rel="stylesheet">
+    <link href="../css/auto-complete.css?1764687894" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1764687894" rel="stylesheet">
+    <link href="../css/theme.css?1764687894" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1764687894" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1764687506" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1764687894" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1764687506"></script>
+    <script src="../js/jquery-3.3.1.min.js?1764687894"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1764687506"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1764687506"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1764687894"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1764687894"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tai-isme.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1764687506"></script>
+<script type="text/javascript" src="../js/search.js?1764687894"></script>
  
   </div>
 
@@ -976,7 +976,7 @@
                     <div class="progress">
   <div class="wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#aws-serverless-solution-for-learning-center-management-project">AWS Serverless solution for learning center management project</a>
+    <li><a href="#aws-serverless-solution-for-teaching-center-management-project">AWS Serverless Solution for Teaching Center Management Project</a>
       <ul>
         <li><a href="#1-executive-summary">1. Executive Summary</a></li>
         <li><a href="#2-problem-statement">2. Problem Statement</a></li>
@@ -1013,32 +1013,35 @@
 
 
 	<h1 id="teaching-center-management-system">Teaching Center Management System</h1>
-<h2 id="aws-serverless-solution-for-learning-center-management-project">AWS Serverless solution for learning center management project</h2>
+<h2 id="aws-serverless-solution-for-teaching-center-management-project">AWS Serverless Solution for Teaching Center Management Project</h2>
 <h3 id="1-executive-summary">1. Executive Summary</h3>
-<p>To address the challenges in operating an educational center, the Teaching Center Management System is designed to integrate all core business operations: Human Resource Management (HRM), Student Information System (SIS), Customer Relationship Management (CRM), Education Payment, and parent engagement. The goal is to optimize management processes, enhance operational efficiency, and improve the overall learning experience.</p>
-<p>In the future, the system is oriented to expand with advanced technologies such as Artificial Intelligence (AI) and the Internet of Things (IoT) to personalize learning paths, develop virtual learning assistants, while modernizing infrastructure with smart classrooms and automated facility management.</p>
+<p>The project focuses on deploying an LMS (Learning Management System) platform serving core training operations, equivalent in scope to systems like lms-hcmuni.fpt.edu.vn. Specifically, the scope includes 2 main parts: academic management and authentication/identification and authorization.</p>
+<p>The goal is to provide essential LMS capabilities: managing courses and classes; class schedules; searching and enrollment using enrollKey; role-based dashboards (Admin, Teacher, Student); managing instructor/student profiles; managing course documents on S3 (creating folders, uploading, downloading with enrollment verification); and batch data import from Excel to quickly initialize academic data. The authentication/identification and authorization part ensures login/authentication with Amazon Cognito (supporting OAuth/Google), invitation/redemption of invitations, password reset/change, token refresh, user profiles, and role-based authorization mechanisms to protect academic resources.</p>
+<!-- Suggestion (not displayed in main version): Can add LMS features such as attendance, assignments, grading, announcements, quizzes/exams, class schedule export, etc. if needed for future expansion. -->
+<p>In the future, the system can gradually expand to other modules (CRM, payments, HRM, etc.) and consider integrating AI/IoT when needed, but these are not within the scope of the current deployment.</p>
 <h3 id="2-problem-statement">2. Problem Statement</h3>
 <p><strong>Current Issues</strong></p>
-<p>Educational centers today face difficulties in synchronizing management between online and offline classes. Processes such as course registration, attendance, progress tracking, or performance reporting are still mainly carried out manually or through multiple separate platforms, causing inconsistency and making data control difficult.</p>
-<p>Additionally, there is a lack of a centralized system to store and analyze learning data in real-time. Relying on third-party solutions is not only costly but also complex, and difficult to customize according to specific needs. As the number of students and classes grows, the current system lacks scalability and automation, reducing operational efficiency as well as the learner experience.</p>
+<p>In the LMS context, many training units operate in silos with discrete steps: creating courses/classes, publishing schedules, enrolling students, managing documents, and accessing profiles — typically across multiple different tools. This leads to fragmented data, difficult access control, manual enrollment processes (prone to errors), and inconsistent user experience between instructors and students.</p>
+<p>As the number of courses/classes increases, there&rsquo;s a lack of unified role-based authorization mechanisms, reliable authentication (SSO/OAuth), and clear academic APIs to support role-based dashboards. The absence of batch data import channels also causes delays when initializing new semesters.</p>
 <p><strong>Solution</strong></p>
-<p>The Teaching Center Management System is implemented based on an AWS Serverless architecture, optimizing costs, automatically scaling, and ensuring high availability.</p>
-<p>Users access the system through Amazon Route 53, with requests passing through AWS WAF to filter attacks before distribution via CloudFront, accelerating page load and protecting against DDoS. Static web content is stored on S3 and quickly distributed via CloudFront.</p>
-<p>User authentication is handled through Amazon Cognito, ensuring account security for students, instructors, parents, and administrators. After login, user requests are processed through Amazon API Gateway, triggering AWS Lambda to execute core business logic such as account management, class management, course registration, attendance, updating results, and schedule lookup. All data is stored in Amazon DynamoDB.</p>
-<p>Documents, lecture videos, and assignments are stored in Amazon S3; system logs are sent to Amazon CloudWatch Logs for monitoring. CloudWatch Alarms and Amazon SNS automatically send alerts when errors or abnormal activities are detected. AWS Secrets Manager protects sensitive information such as API keys or service connection details.</p>
-<p>The development and deployment process is automated through the AWS CodePipeline – CodeBuild – CloudFormation chain, ensuring seamless CI/CD, reducing configuration errors, and shortening deployment time. AWS CloudTrail and Amazon GuardDuty record API activity, detect threats, and protect the system from security risks.</p>
-<p>The solution provides a unified, secure, scalable, and cost-optimized platform, helping educational centers manage both online and on-site training effectively, enhancing learning experience and instructor productivity.</p>
+<p>The platform is deployed on AWS Serverless architecture, focusing on addressing two main pillars:</p>
+<ul>
+<li>Authentication/Identification and Authorization: Amazon Cognito for authentication (email/password, Google OAuth), invitations (invite/redeem), password reset/change, token refresh, user profiles; role-based authorization (ADMIN/TEACHER/STUDENT) to protect APIs and academic resources.</li>
+<li>Academic Management: APIs for managing courses/classes, unified search, enrollment using enrollKey (activating PRE_ENROLLED → ACTIVE), role-based dashboards, instructor/student profiles, and course document management on S3 (creating folders, presigned upload/download with enrollment verification). Supports Excel import for quick data initialization and full rollback on errors.</li>
+</ul>
+<!-- Suggestion (not displayed in main version): Can add descriptions for attendance, assignments, grading, announcements, quizzes to facilitate easy expansion into a full LMS in the next phase. -->
+<p>The access flow remains: Route 53 → WAF → CloudFront → S3 (static content) and API Gateway → Lambda → DynamoDB (academic/identity data) with CloudWatch/SNS/CloudTrail/GuardDuty/Secrets Manager for monitoring and security.</p>
 <p><strong>Benefits and Return on Investment (ROI)</strong></p>
 <ul>
-<li><em>Accelerated development and deployment</em>: Automated CI/CD (CodePipeline, CodeBuild, CloudFormation) reduces feature release time from several days to a few hours.</li>
-<li><em>Operational cost optimization</em>: Serverless architecture (Lambda, DynamoDB, API Gateway) charges only per request, saving 40–60% of costs compared to traditional EC2.</li>
+<li><em>Accelerated development and deployment</em>: Automated CI/CD (CodePipeline, CodeBuild, CloudFormation) reduces feature release time from days to hours.</li>
+<li><em>Optimized operational costs</em>: Serverless architecture (Lambda, DynamoDB, API Gateway) charges only per request, saving 40–60% of costs compared to traditional EC2.</li>
 <li><em>Comprehensive security</em>: AWS WAF, GuardDuty, CloudTrail, and Secrets Manager enable early risk detection, filter web attacks, and protect sensitive data.</li>
 <li><em>High access performance</em>: CloudFront CDN combined with Route 53 accelerates access, reducing latency by 50–70%, while WAF protects the system from web attacks before content distribution.</li>
 <li><em>Flexible scalability</em>: The system automatically scales according to traffic without manual intervention.</li>
 <li><em>Proactive monitoring</em>: CloudWatch + SNS provides real-time alerts, helping the technical team respond promptly to incidents.</li>
 </ul>
 <h3 id="3-solution-architecture">3. Solution Architecture</h3>
-<p><img src="../images/2-Proposal/project1_architecture_diagram_eng.png" alt="Teaching center management"></p>
+<p><img src="../images/2-Proposal/project1_architecture_diagram_vi.png" alt="Teaching center management"></p>
 <h4 id="detailed-description">Detailed Description</h4>
 <ol>
 <li>
@@ -1086,13 +1089,13 @@
 <ul>
 <li><strong>AWS Lambda</strong> executes business logic:
 <ul>
-<li>Manages students, attendance, course registration, updates results, schedules, etc.</li>
-<li>When accessing sensitive information (API key, DB password), Lambda calls <strong>AWS Secrets Manager</strong>.</li>
+<li>Manages students, attendance, course registration, updates results, schedules…</li>
+<li>When accessing sensitive information (API keys, DB passwords), Lambda calls <strong>AWS Secrets Manager</strong>.</li>
 </ul>
 </li>
 <li>Lambda reads/writes data to <strong>Amazon DynamoDB</strong>:
 <ul>
-<li>DynamoDB stores data in a NoSQL model, optimized for read/write, automatically scaling with traffic.</li>
+<li>DynamoDB stores data in a NoSQL model, optimized for read/write, automatically scaling when traffic increases.</li>
 <li>Supports queries using primary key (PK) or secondary index (GSI).</li>
 </ul>
 </li>
@@ -1230,7 +1233,7 @@
 <li>Week 12: End-to-end testing, evaluate results, complete report, and propose future development directions.</li>
 </ul>
 </li>
-<li><em>Post-Internship (Expansion Phase – Week 12 onwards)</em>: Upgrade the system, optimize performance, and integrate AI (personalized learning analytics) and IoT (smart classroom management).</li>
+<li><em>Post-Internship (Expansion Phase – Week 12 onwards): Upgrade the system, optimize performance, and integrate AI (personalized learning analytics) and IoT (smart classroom management).</em></li>
 </ul>
 <h3 id="6-budget-estimation">6. Budget Estimation</h3>
 <p>You can view costs on <a href="https://calculator.aws/#/estimate?id=124ba62af284b2bb59152497a349995d8342c2a5">AWS Pricing Calculator</a><br>
@@ -1259,9 +1262,9 @@ Or download the budget estimate files <a href="../files/2-Proposal/project_1_est
 <p><em>Risk Matrix</em></p>
 <ul>
 <li>AWS configuration errors (IAM, Lambda, API Gateway, Cognito, WAF): High impact, medium probability</li>
-<li>Exceeding AWS Free Tier limits: Medium impact, low probability</li>
-<li>Data loss on S3/DynamoDB: High impact, low probability</li>
-<li>Integration errors between AWS services: Medium impact, low probability</li>
+<li>Exceeding AWS Free Tier limits: Medium impact, low probability.</li>
+<li>Data loss on S3/DynamoDB: High impact, low probability.</li>
+<li>Integration errors between AWS services: Medium impact, low probability.</li>
 <li>External attacks (DDoS, SQL injection, XSS): High impact, low to medium probability</li>
 </ul>
 <p><em>Mitigation Strategies</em></p>
@@ -1984,19 +1987,19 @@ Or download the budget estimate files <a href="../files/2-Proposal/project_1_est
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1764687506"></script>
-    <script src="../js/perfect-scrollbar.min.js?1764687506"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1764687506"></script>
-    <script src="../js/jquery.sticky.js?1764687506"></script>
-    <script src="../js/featherlight.min.js?1764687506"></script>
-    <script src="../js/highlight.pack.js?1764687506"></script>
+    <script src="../js/clipboard.min.js?1764687894"></script>
+    <script src="../js/perfect-scrollbar.min.js?1764687894"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1764687894"></script>
+    <script src="../js/jquery.sticky.js?1764687894"></script>
+    <script src="../js/featherlight.min.js?1764687894"></script>
+    <script src="../js/highlight.pack.js?1764687894"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1764687506"></script>
-    <script src="../js/learn.js?1764687506"></script>
-    <script src="../js/hugo-learn.js?1764687506"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1764687894"></script>
+    <script src="../js/learn.js?1764687894"></script>
+    <script src="../js/hugo-learn.js?1764687894"></script>
 
-    <link href="../mermaid/mermaid.css?1764687506" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1764687506"></script>
+    <link href="../mermaid/mermaid.css?1764687894" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1764687894"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
