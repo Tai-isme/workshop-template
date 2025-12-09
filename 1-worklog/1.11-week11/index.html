@@ -15,21 +15,21 @@
     <title>Week 11 Worklog :: Internship Report</title>
 
     
-    <link href="../../css/nucleus.css?1764687894" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/hybrid.css?1764687894" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1764687894" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1764687894" rel="stylesheet">
-    <link href="../../css/theme.css?1764687894" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1764687894" rel="stylesheet">
+    <link href="../../css/nucleus.css?1765249210" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765249210" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765249210" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765249210" rel="stylesheet">
+    <link href="../../css/theme.css?1765249210" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765249210" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1764687894" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1765249210" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1764687894"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1765249210"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1764687894"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1764687894"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1765249210"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765249210"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tai-isme.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1764687894"></script>
+<script type="text/javascript" src="../../js/search.js?1765249210"></script>
  
   </div>
 
@@ -591,6 +591,42 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.6-event6/"
+  title="Event 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.6-event6/">
+     <b> 4.6. </b> Event 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.7-event7/"
+  title="Event 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.7-event7/">
+     <b> 4.7. </b> Event 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -1014,6 +1050,13 @@
 
 
 	<h3 id="week-11-objectives">Week 11 Objectives:</h3>
+<ul>
+<li>Add Import Data feature from Excel for Academic Service</li>
+<li>Deploy Academic Service to AWS</li>
+<li>Set up a complete CI/CD pipeline with GitLab Runner</li>
+<li>Configure CloudWatch monitoring and SNS alerting for the entire system</li>
+<li>Complete Infrastructure as Code with AWS SAM</li>
+</ul>
 <h3 id="tasks-to-be-completed-this-week">Tasks to be completed this week:</h3>
 <table>
   <thead>
@@ -1028,35 +1071,35 @@
   <tbody>
       <tr>
           <td>2</td>
-          <td></td>
+          <td>- Design and implement Import Data feature: <br>  + Create S3 bucket for uploading Excel files <br>  + Implement GenerateImportUploadUrlHandler (generate presigned URL) <br>  + Implement ImportS3TriggerHandler (trigger on new file) <br>  + Use Apache POI library to parse Excel <br> - Create ImportJobsTable to track import status <br> - Design import data schema for Teachers and Students</td>
           <td>17/11/2025</td>
           <td>17/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>3</td>
-          <td></td>
+          <td>- Complete Import Data handlers: <br>  + Implement GetImportJobStatusHandler (check status) <br>  + Implement ListImportJobsHandler (view history) <br>  + Parse Excel and validate data format</td>
           <td>18/11/2025</td>
           <td>18/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>4</td>
-          <td></td>
+          <td>- Deploy Academic Service to AWS<br> - Test Teacher/Student CRUD functions<br> - Test Import Data flow</td>
           <td>19/11/2025</td>
           <td>19/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>5</td>
-          <td></td>
+          <td>- Set up CI/CD pipeline with GitLab: <br>  + Create .gitlab-ci.yml file with stages: build, test, deploy <br>  + Configure GitLab OIDC to authenticate with AWS <br>  + Set up GitLab Runner (using Docker image) <br>  + Jobs: build:be:identity, build:be:academic <br>  + Jobs: test:be:identity, test:be:academic <br>  + Jobs: deploy:be:identity:dev, deploy:be:academic:dev <br> - Configure artifacts and caching <br> - Commit code to trigger CI/CD pipeline</td>
           <td>20/11/2025</td>
-          <td>21/11/2025</td>
+          <td>20/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>6</td>
-          <td></td>
+          <td>- Set up CloudWatch monitoring: <br>  + Create monitoring-alarms.yaml for Identity and Academic services <br>  + Configure alarms for Lambda  <br>  + Configure alarms for API Gateway<br>  + Configure alarms for DynamoDB<br> - Set up SNS topic and subscribe to receive emails: tcm-pipeline-notifications</td>
           <td>21/11/2025</td>
           <td>21/11/2025</td>
           <td></td>
@@ -1064,6 +1107,35 @@
   </tbody>
 </table>
 <h3 id="week-11-results">Week 11 Results:</h3>
+<ul>
+<li>
+<p>Successfully set up CI/CD pipeline with GitLab:</p>
+<ul>
+<li>.gitlab-ci.yml file with clear workflow rules and stages</li>
+<li>GitLab OIDC authentication with AWS (no Access Keys required)</li>
+<li>Parallel jobs for Identity and Academic services</li>
+<li>Build stage: Maven clean install, SAM build, SAM package</li>
+<li>Test stage: JUnit tests with Mockito, coverage reports</li>
+<li>Deploy stage: SAM deploy with samconfig.toml</li>
+<li>Stored artifacts to speed up builds (Maven .m2 repository)</li>
+<li>Environment-specific deployments: dev, staging, prod</li>
+<li>Manual approval for production deployments</li>
+</ul>
+</li>
+<li>
+<p>Comprehensive monitoring and alerting with CloudWatch:</p>
+<ul>
+<li>Created monitoring-alarms.yaml for both Identity and Academic services</li>
+<li>Lambda alerts: Errors &gt; 5%, Execution time &gt; p99, Throttles, Concurrent executions</li>
+<li>API Gateway alerts: Client errors 4XX, Server errors 5XX, Latency</li>
+<li>DynamoDB alerts: Read/Write throttles, Consumed capacity</li>
+<li>SNS topic: tcm-pipeline-notifications for sending alerts</li>
+<li>Subscribed emails for real-time notifications</li>
+<li>CloudWatch dashboard for visualizing metrics (can be added later)</li>
+<li>30-day retention policy to optimize costs</li>
+</ul>
+</li>
+</ul>
 
 
 
@@ -1542,6 +1614,38 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1763,19 +1867,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1764687894"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1764687894"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1764687894"></script>
-    <script src="../../js/jquery.sticky.js?1764687894"></script>
-    <script src="../../js/featherlight.min.js?1764687894"></script>
-    <script src="../../js/highlight.pack.js?1764687894"></script>
+    <script src="../../js/clipboard.min.js?1765249210"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765249210"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765249210"></script>
+    <script src="../../js/jquery.sticky.js?1765249210"></script>
+    <script src="../../js/featherlight.min.js?1765249210"></script>
+    <script src="../../js/highlight.pack.js?1765249210"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1764687894"></script>
-    <script src="../../js/learn.js?1764687894"></script>
-    <script src="../../js/hugo-learn.js?1764687894"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765249210"></script>
+    <script src="../../js/learn.js?1765249210"></script>
+    <script src="../../js/hugo-learn.js?1765249210"></script>
 
-    <link href="../../mermaid/mermaid.css?1764687894" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1764687894"></script>
+    <link href="../../mermaid/mermaid.css?1765249210" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765249210"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

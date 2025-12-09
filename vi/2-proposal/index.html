@@ -15,21 +15,21 @@
     <title>Bản đề xuất :: Báo cáo thực tập</title>
 
     
-    <link href="../../css/nucleus.css?1764687894" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/hybrid.css?1764687894" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1764687894" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1764687894" rel="stylesheet">
-    <link href="../../css/theme.css?1764687894" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1764687894" rel="stylesheet">
+    <link href="../../css/nucleus.css?1765249210" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765249210" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765249210" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765249210" rel="stylesheet">
+    <link href="../../css/theme.css?1765249210" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765249210" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1764687894" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1765249210" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1764687894"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1765249210"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1764687894"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1764687894"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1765249210"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765249210"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tai-isme.github.io\/workshop-template\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1764687894"></script>
+<script type="text/javascript" src="../../js/search.js?1765249210"></script>
  
   </div>
 
@@ -591,6 +591,42 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.6-event6/"
+  title="Event 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../vi/4-eventparticipated/4.6-event6/">
+     <b> 4.6. </b> Event 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.7-event7/"
+  title="Event 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../vi/4-eventparticipated/4.7-event7/">
+     <b> 4.7. </b> Event 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -1030,13 +1066,13 @@
 <li>Phần học vụ: API quản lý môn học/lớp học, tìm kiếm hợp nhất, ghi danh bằng enrollKey (kích hoạt PRE_ENROLLED → ACTIVE), dashboard theo vai trò, hồ sơ giảng viên/học viên, và quản lý tài liệu môn học trên S3 (tạo thư mục, presigned upload/download có kiểm tra ghi danh). Hỗ trợ import Excel để khởi tạo dữ liệu nhanh và rollback toàn phần khi lỗi.</li>
 </ul>
 <!-- Gợi ý (không hiển thị trong bản chính): có thể thêm mô tả dự kiến cho điểm danh, bài tập, chấm điểm, thông báo/announcements, quiz/thi để dễ dàng mở rộng thành LMS đầy đủ ở giai đoạn tiếp theo. -->
-<p>Luồng truy cập giữ nguyên: Route 53 → WAF → CloudFront → S3 (nội dung tĩnh) và API Gateway → Lambda → DynamoDB (dữ liệu học vụ/định danh) với CloudWatch/SNS/CloudTrail/GuardDuty/Secrets Manager cho giám sát và bảo mật.</p>
+<p>Luồng truy cập: CloudFront → S3 (nội dung tĩnh) và API Gateway → Lambda → DynamoDB (dữ liệu học vụ/định danh) với CloudWatch/SNS/Secrets Manager cho giám sát và bảo mật. CI/CD được thực hiện qua GitLab Runner kết hợp AWS SAM CLI.</p>
 <p><strong>Lợi ích và hoàn vốn đầu tư (ROI)</strong></p>
 <ul>
-<li><em>Tăng tốc độ phát triển và triển khai</em>: CI/CD tự động (CodePipeline, CodeBuild, CloudFormation) giúp giảm thời gian phát hành tính năng mới từ vài ngày xuống còn vài giờ.</li>
+<li><em>Tăng tốc độ phát triển và triển khai</em>: CI/CD tự động với GitLab Runner và CloudFormation giúp giảm thời gian phát hành tính năng mới từ vài ngày xuống còn vài giờ.</li>
 <li><em>Tối ưu chi phí vận hành</em>: Kiến trúc Serverless (Lambda, DynamoDB, API Gateway) chỉ tính phí khi có request, tiết kiệm 40–60% chi phí so với EC2 truyền thống.</li>
-<li><em>Bảo mật toàn diện</em>: AWS WAF, GuardDuty, CloudTrail và Secrets Manager giúp phát hiện sớm rủi ro, lọc các tấn công web, và bảo vệ dữ liệu nhạy cảm.</li>
-<li><em>Hiệu suất truy cập cao</em>: CloudFront CDN kết hợp Route 53 giúp tăng tốc độ truy cập, giảm độ trễ 50–70%, trong khi WAF bảo vệ hệ thống khỏi các tấn công web trước khi phân phối nội dung.</li>
+<li><em>Bảo mật toàn diện</em>: Secrets Manager và Cognito kết hợp IAM giúp bảo vệ dữ liệu nhạy cảm và kiểm soát truy cập chặt chẽ.</li>
+<li><em>Hiệu suất truy cập cao</em>: CloudFront CDN giúp tăng tốc độ truy cập và giảm độ trễ 50–70%.</li>
 <li><em>Khả năng mở rộng linh hoạt</em>: Hệ thống tự động mở rộng theo lưu lượng, không cần can thiệp thủ công.</li>
 <li><em>Giám sát chủ động</em>: CloudWatch + SNS cung cấp cảnh báo real-time, giúp đội ngũ kỹ thuật xử lý sự cố kịp thời.</li>
 </ul>
@@ -1047,16 +1083,8 @@
 <li>
 <p><strong>User Request Flow</strong></p>
 <ul>
-<li>Người dùng mở trình duyệt và truy cập tên miền ứng dụng.</li>
-<li><strong>Amazon Route 53</strong> phân giải tên miền thành địa chỉ IP và gửi yêu cầu tới <strong>AWS WAF</strong>.</li>
-<li><strong>AWS WAF</strong> thực hiện các bước:
-<ul>
-<li>Kiểm tra request theo các rule đã cấu hình (SQL Injection, XSS, IP blacklist, rate limiting…).</li>
-<li>Chặn request bất thường hoặc độc hại.</li>
-<li>Chỉ chuyển tiếp các request hợp lệ đến <strong>Amazon CloudFront</strong>.</li>
-</ul>
-</li>
-<li><strong>CloudFront</strong> nhận request:
+<li>Người dùng mở trình duyệt và truy cập ứng dụng thông qua tên miền.</li>
+<li><strong>Amazon CloudFront</strong> nhận request:
 <ul>
 <li>Kiểm tra cache để trả nội dung tĩnh (HTML/CSS/JS) từ <strong>S3</strong> nếu có.</li>
 <li>Nếu nội dung chưa có trong cache, CloudFront fetch từ S3, trả lại cho user với độ trễ thấp.</li>
@@ -1103,18 +1131,12 @@
 </ul>
 </li>
 <li>
-<p><strong>Security &amp; Threat Detection</strong></p>
+<p><strong>Security &amp; Access Control</strong></p>
 <ul>
-<li><strong>AWS WAF</strong> bảo vệ tầng đầu, lọc các request web độc hại.</li>
-<li><strong>AWS GuardDuty</strong>:
-<ul>
-<li>Phân tích logs từ CloudTrail, VPC Flow Logs, DNS Logs.</li>
-<li>Phát hiện hành vi bất thường (IAM bị xâm nhập, IP lạ truy cập).</li>
-<li>Khi phát hiện, tạo Finding và gửi cảnh báo qua SNS hoặc kích hoạt Lambda phản ứng tự động.</li>
-</ul>
-</li>
-<li><strong>AWS CloudTrail</strong>: ghi lại toàn bộ API call, phục vụ audit và truy vết.</li>
-<li><strong>Secrets Manager</strong> bảo vệ thông tin nhạy cảm, cho phép Lambda truy cập để lấy các secret key.</li>
+<li><strong>Amazon Cognito</strong>: xác thực người dùng và quản lý phiên làm việc, hỗ trợ OAuth/Google Sign-In.</li>
+<li><strong>IAM Roles &amp; Policies</strong>: kiểm soát quyền truy cập giữa các dịch vụ AWS (Lambda, DynamoDB, S3).</li>
+<li><strong>API Gateway Authorization</strong>: xác thực JWT token từ Cognito trước khi cho phép truy cập Lambda.</li>
+<li><strong>Secrets Manager</strong>: bảo vệ thông tin nhạy cảm (API keys, database credentials), cho phép Lambda truy cập an toàn.</li>
 </ul>
 </li>
 <li>
@@ -1134,22 +1156,18 @@
 <li>
 <p><strong>CI/CD &amp; Deployment</strong></p>
 <ul>
-<li><strong>GitLab</strong>:  lưu source code trên GitLab.</li>
-<li><strong>AWS CodePipeline</strong>:
+<li><strong>GitLab</strong>: lưu trữ source code và quản lý version control.</li>
+<li><strong>GitLab Runner</strong>:
 <ul>
-<li>Nhận webhook khi code trên GitLab thay đổi.</li>
-<li>Điều phối toàn bộ pipeline bao gồm các giai đoạn: Source → Build → Deploy.</li>
+<li>Tự động trigger khi có code push hoặc merge request.</li>
+<li>Chạy CI/CD pipeline với các stage: test, build, deploy.</li>
+<li>Cài đặt dependencies và chạy unit test.</li>
+<li>Build artifact (ZIP package cho Lambda).</li>
 </ul>
 </li>
-<li><strong>AWS CodeBuild</strong>:
+<li><strong>AWS SAM CLI / CloudFormation</strong>:
 <ul>
-<li>Cài đặt dependencies.</li>
-<li>Chạy unit test.</li>
-<li>Build artifact (ZIP, container image…).</li>
-</ul>
-</li>
-<li><strong>AWS CloudFormation</strong>:
-<ul>
+<li>GitLab Runner sử dụng AWS SAM CLI để deploy.</li>
 <li>Triển khai hoặc cập nhật toàn bộ hạ tầng AWS (API Gateway, Lambda, DynamoDB, S3, IAM Role).</li>
 <li>Đảm bảo hạ tầng theo mô hình IaC, nhất quán giữa môi trường Dev/Prod.</li>
 </ul>
@@ -1160,10 +1178,10 @@
 <li>
 <p><strong>Summary</strong></p>
 <ul>
-<li><strong>Request Path</strong>: User → Route53 → WAF → CloudFront → API Gateway → Lambda → DynamoDB → Lambda → API Gateway → CloudFront → User.</li>
-<li><strong>Security Path</strong>: WAF chặn web attack → GuardDuty giám sát logs → CloudTrail audit → SNS alert.</li>
+<li><strong>Request Path</strong>: User → CloudFront → API Gateway → Lambda (via Cognito Auth) → DynamoDB → Lambda → API Gateway → CloudFront → User.</li>
+<li><strong>Security Path</strong>: Cognito Authentication → API Gateway Authorization → IAM Policies → Secrets Manager.</li>
 <li><strong>Monitoring</strong>: CloudWatch Logs &amp; Metrics → Alarms → SNS.</li>
-<li><strong>CI/CD Path</strong>: GitLab → CodePipeline → CodeBuild → CloudFormation → AWS Resources.</li>
+<li><strong>CI/CD Path</strong>: GitLab → GitLab Runner → AWS SAM CLI → CloudFormation → AWS Resources.</li>
 </ul>
 </li>
 </ol>
@@ -1178,9 +1196,9 @@
   </thead>
   <tbody>
       <tr>
-          <td><strong>Frontend &amp; Routing</strong></td>
-          <td>Route 53, CloudFront, S3</td>
-          <td>Định tuyến tên miền, phân phối nội dung, lưu trữ tĩnh</td>
+          <td><strong>Frontend &amp; CDN</strong></td>
+          <td>CloudFront, S3</td>
+          <td>Phân phối nội dung, lưu trữ tĩnh</td>
       </tr>
       <tr>
           <td><strong>Backend &amp; Logic</strong></td>
@@ -1188,14 +1206,14 @@
           <td>Serverless logic, dữ liệu, xác thực</td>
       </tr>
       <tr>
-          <td><strong>Security &amp; Monitoring</strong></td>
-          <td>WAF, GuardDuty, CloudWatch Logs, CloudWatch Alarms, CloudWatch Metrics, SNS, CloudTrail</td>
-          <td>Bảo vệ ứng dụng khỏi tấn công, phát hiện mối đe dọa, cảnh báo, kiểm toán</td>
+          <td><strong>Monitoring</strong></td>
+          <td>CloudWatch Logs, CloudWatch Alarms, CloudWatch Metrics, SNS</td>
+          <td>Giám sát, cảnh báo, thu thập metrics</td>
       </tr>
       <tr>
           <td><strong>CI/CD &amp; IaC</strong></td>
-          <td>CodePipeline, CodeBuild, CloudFormation, SAM</td>
-          <td>Triển khai tự động và quản lý cơ sở hạ tầng</td>
+          <td>CloudFormation, SAM</td>
+          <td>Triển khai tự động và quản lý cơ sở hạ tầng (kết hợp GitLab Runner)</td>
       </tr>
   </tbody>
 </table>
@@ -1212,7 +1230,7 @@
 <li>Giai đoạn deploy:
 <ul>
 <li>Dùng AWS SAM CLI để triển khai mã và <code>template.yaml</code> lên môi trường AWS thật.</li>
-<li>Cấu hình AWS CodePipeline và AWS CodeBuild để tự động hóa quy trình CI/CD.</li>
+<li>Cấu hình GitLab CI/CD với GitLab Runner để tự động hóa quy trình build và deploy.</li>
 </ul>
 </li>
 </ul>
@@ -1236,36 +1254,31 @@
 <li><em>Sau thực tập (Định hướng mở rộng – Tuần 12 về sau): Nâng cấp hệ thống, tối ưu hiệu năng, và tích hợp công nghệ AI (phân tích học tập cá nhân hóa) cùng IoT (quản lý lớp học thông minh).</em></li>
 </ul>
 <h3 id="6-ước-tính-ngân-sách">6. Ước tính ngân sách</h3>
-<p>Có thể xem chi phí trên <a href="https://calculator.aws/#/estimate?id=124ba62af284b2bb59152497a349995d8342c2a5">AWS Pricing Calculator</a><br>
+<p>Có thể xem chi phí trên <a href="https://calculator.aws/#/estimate?id=f57937239ddc860207b2558cee7e91e96645cbc3">AWS Pricing Calculator</a><br>
 Hoặc tải tệp ước tính ngân sách <a href="../../files/2-Proposal/project_1_estimate.pdf">pdf</a> | <a href="../../files/2-Proposal/project_1_estimate.csv">csv</a> | <a href="../../files/2-Proposal/project_1_estimate.json">json</a></p>
 <p><em>Chi phí hạ tầng</em></p>
 <ul>
 <li>S3 Standard: 0.32 USD/tháng (10 GB, 5.000 PUT requests, 100.000 GET requests).</li>
-<li>AWS WAF: 9.24 USD/Tháng (1 Web ACLs, 2 Rules added per Web ACL, 2 Managed Rule Group, 400.000 request/month)</li>
 <li>CloudFront: 1.33 USD/tháng (10 GB, Data transfer out to origin 0.1 GB, Number of requests (HTTPS) 100.000).</li>
-<li>Amazon API Gateway: 0,38 USD/tháng (300.000 request).</li>
+<li>Amazon API Gateway: 0.38 USD/tháng (300.000 request).</li>
 <li>AWS Lambda Function - Include Free Tier: 0.00 USD/tháng (400.000 request, 512 MB lưu trữ).</li>
 <li>Amazon DynamoDB: 0.62 USD/tháng (Data storage 2 GB, 50.000 Write/, 200.000 Read)</li>
 <li>Amazon Cognito Lite Tier: 0.00 USD/tháng (500 MAUs)</li>
 <li>Amazon CloudWatch: 2.10 USD/tháng (3 custom metric, Log 1GB, 1 dashboard, 2 alarms)</li>
-<li>Amazon GuardDuty: 0.0 USD/tháng (Free 30days/region)</li>
-<li>Amazon Route53: 0.9 USD/tháng (1 hosted zone, 1M standard DNS queries)</li>
-<li>AWS Secrets Manager: 0.4 USD/tháng (1 secret)</li>
-<li>AWS CloudTrail: 0.0 USD/tháng (1 trail)</li>
-<li>Amazon SNS: 0.0 USD/tháng (1M request, 1M lambda deliveries)</li>
-<li>AWS CloudFormation: 0.0 USD/tháng</li>
-<li>AWS CodeBuild: 0.25 USD/tháng (on-demand ec2 general1.small, 5 build/month)</li>
-<li>AWS CodePipeline: 0.0 USD/tháng (100 minute/month)</li>
+<li>AWS Secrets Manager: 0.40 USD/tháng (1 secret)</li>
+<li>Amazon SNS: 0.00 USD/tháng (1M request, 1M lambda deliveries)</li>
+<li>AWS CloudFormation: 0.00 USD/tháng</li>
+<li>GitLab Runner: 0.00 USD/tháng (self-hosted hoặc GitLab Free Tier)</li>
 </ul>
-<p><em>Tổng</em>: 15.54 USD/tháng, 186.48 USD/12 tháng</p>
+<p><em>Tổng</em>: 5.15 USD/tháng, 61.80 USD/12 tháng</p>
 <h3 id="7-đánh-giá-rủi-ro">7. Đánh giá rủi ro</h3>
 <p><em>Ma trận rủi ro</em></p>
 <ul>
-<li>Lỗi cấu hình AWS (IAM, Lambda, API Gateway, Cognito, WAF): Ảnh hưởng cao, xác suất trung bình</li>
+<li>Lỗi cấu hình AWS (IAM, Lambda, API Gateway, Cognito): Ảnh hưởng cao, xác suất trung bình</li>
 <li>Quá giới hạn Free Tier AWS: Ảnh hưởng trung bình, xác suất thấp.</li>
 <li>Mất dữ liệu trên S3/DynamoDB: Ảnh hưởng cao, xác suất thấp.</li>
 <li>Lỗi tích hợp giữa các dịch vụ AWS: Ảnh hưởng trung bình, xác suất thấp.</li>
-<li>Tấn công từ bên ngoài (DDoS, SQL injection, XSS): Ảnh hưởng cao, xác suất thấp đến trung bình</li>
+<li>Tấn công từ bên ngoài (SQL injection, XSS, unauthorized access): Ảnh hưởng cao, xác suất thấp đến trung bình</li>
 </ul>
 <p><em>Chiến lược giảm thiểu</em></p>
 <ul>
@@ -1273,13 +1286,13 @@ Hoặc tải tệp ước tính ngân sách <a href="../../files/2-Proposal/proj
 <li>Vượt giới hạn Free Tier: Theo dõi chi phí thường xuyên, thiết lập cảnh báo chi tiêu (Billing Alert), tối ưu tài nguyên.</li>
 <li>Mất dữ liệu: Bật S3 Versioning, sao lưu định kỳ dữ liệu DynamoDB.</li>
 <li>Lỗi tích hợp dịch vụ: Đảm bảo các dịch vụ hoạt động cùng Region, kiểm tra IAM Role và quyền truy cập chéo giữa các service.</li>
-<li>Bảo mật ứng dụng: Sử dụng WAF để lọc lưu lượng độc hại, áp dụng các rule chuẩn chống OWASP Top 10, bật CloudFront và API Gateway logging</li>
+<li>Bảo mật ứng dụng: Validate input ở Lambda layer, sử dụng Cognito để xác thực chặt chẽ, cấu hình CORS đúng cách trên API Gateway, áp dụng principle of least privilege cho IAM roles, bật CloudWatch và API Gateway logging để audit</li>
 </ul>
 <p><em>Kế hoạch dự phòng</em></p>
 <ul>
-<li>Khi gặp lỗi deploy: rollback bằng AWS SAM CLI hoặc khôi phục version Lambda trước đó.</li>
+<li>Khi gặp lỗi deploy: rollback bằng AWS SAM CLI hoặc khôi phục version Lambda trước đó qua CloudFormation stack.</li>
 <li>Khi vượt ngân sách: tạm dừng các dịch vụ không thiết yếu, tối ưu lại kiến trúc và tài nguyên sử dụng.</li>
-<li>Khi có sự cố bảo mật: rà soát log CloudWatch/CloudTrail, cập nhật rule WAF, cách ly endpoint bị tấn công</li>
+<li>Khi có sự cố bảo mật: rà soát log CloudWatch, vô hiệu hóa user/token bị compromised qua Cognito, review IAM permissions, cách ly Lambda function bị ảnh hưởng</li>
 </ul>
 <h3 id="8-kết-quả-kỳ-vọng">8. Kết quả kỳ vọng</h3>
 <ul>
@@ -1766,6 +1779,38 @@ Hoặc tải tệp ước tính ngân sách <a href="../../files/2-Proposal/proj
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1987,19 +2032,19 @@ Hoặc tải tệp ước tính ngân sách <a href="../../files/2-Proposal/proj
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1764687894"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1764687894"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1764687894"></script>
-    <script src="../../js/jquery.sticky.js?1764687894"></script>
-    <script src="../../js/featherlight.min.js?1764687894"></script>
-    <script src="../../js/highlight.pack.js?1764687894"></script>
+    <script src="../../js/clipboard.min.js?1765249210"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765249210"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765249210"></script>
+    <script src="../../js/jquery.sticky.js?1765249210"></script>
+    <script src="../../js/featherlight.min.js?1765249210"></script>
+    <script src="../../js/highlight.pack.js?1765249210"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1764687894"></script>
-    <script src="../../js/learn.js?1764687894"></script>
-    <script src="../../js/hugo-learn.js?1764687894"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765249210"></script>
+    <script src="../../js/learn.js?1765249210"></script>
+    <script src="../../js/hugo-learn.js?1765249210"></script>
 
-    <link href="../../mermaid/mermaid.css?1764687894" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1764687894"></script>
+    <link href="../../mermaid/mermaid.css?1765249210" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765249210"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

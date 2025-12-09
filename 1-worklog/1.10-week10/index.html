@@ -15,21 +15,21 @@
     <title>Week 10 Worklog :: Internship Report</title>
 
     
-    <link href="../../css/nucleus.css?1764687894" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/hybrid.css?1764687894" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1764687894" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1764687894" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1764687894" rel="stylesheet">
-    <link href="../../css/theme.css?1764687894" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1764687894" rel="stylesheet">
+    <link href="../../css/nucleus.css?1765249210" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765249210" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765249210" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765249210" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765249210" rel="stylesheet">
+    <link href="../../css/theme.css?1765249210" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765249210" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1764687894" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1765249210" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1764687894"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1765249210"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1764687894"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1764687894"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1765249210"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765249210"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tai-isme.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1764687894"></script>
+<script type="text/javascript" src="../../js/search.js?1765249210"></script>
  
   </div>
 
@@ -591,6 +591,42 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.6-event6/"
+  title="Event 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.6-event6/">
+     <b> 4.6. </b> Event 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.7-event7/"
+  title="Event 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.7-event7/">
+     <b> 4.7. </b> Event 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -1014,6 +1050,11 @@
 
 
 	<h3 id="week-10-objectives">Week 10 Objectives:</h3>
+<ul>
+<li>Deploy Identity Service to AWS</li>
+<li>Deploy Academic Service with Teacher and Student Management</li>
+<li>Set up monitoring infrastructure with CloudWatch and SNS</li>
+</ul>
 <h3 id="tasks-to-be-completed-this-week">Tasks to be completed this week:</h3>
 <table>
   <thead>
@@ -1028,35 +1069,35 @@
   <tbody>
       <tr>
           <td>2</td>
-          <td></td>
+          <td>- Fix bugs and deploy Identity Service to AWS<br>- Check resources on AWS Console: Lambda, API Gateway, DynamoDB, Cognito</td>
           <td>10/11/2025</td>
           <td>10/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>3</td>
-          <td></td>
+          <td>- Test Identity Service<br> - Set up CloudWatch Logs for all Lambda functions <br> - Create monitoring-alarms.yaml for Identity Service</td>
           <td>11/11/2025</td>
           <td>11/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>4</td>
-          <td></td>
+          <td>- Deploy Academic Service<br> - Create template-academic.yaml with basic resources <br> - Set up shared module for common utilities</td>
           <td>12/11/2025</td>
           <td>12/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>5</td>
-          <td></td>
+          <td>- Implement CRUD Teacher Management<br> - Create TeacherRepository and TeachersTable</td>
           <td>13/11/2025</td>
           <td>13/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>6</td>
-          <td></td>
+          <td>- Implement Student Management</td>
           <td>14/11/2025</td>
           <td>14/11/2025</td>
           <td></td>
@@ -1064,6 +1105,19 @@
   </tbody>
 </table>
 <h3 id="week-10-results">Week 10 Results:</h3>
+<ul>
+<li>Completed and successfully deployed Identity Service with 17 Lambda handlers:
+<ul>
+<li><strong>Authentication:</strong> Register, Login, Logout, Verify Email, Resend Verification</li>
+<li><strong>Password:</strong> Forgot, Reset, Change Password</li>
+<li><strong>Profile:</strong> Get, Update User Profile</li>
+<li><strong>Admin:</strong> Invite users, Send email via SNS, Redeem invites</li>
+<li><strong>Token:</strong> Refresh token mechanism</li>
+<li><strong>Triggers:</strong> PreSignUp, PostConfirmation, PreTokenGeneration</li>
+<li>Fully implemented JWT token generation and validation</li>
+</ul>
+</li>
+</ul>
 
 
 
@@ -1542,6 +1596,38 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1763,19 +1849,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1764687894"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1764687894"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1764687894"></script>
-    <script src="../../js/jquery.sticky.js?1764687894"></script>
-    <script src="../../js/featherlight.min.js?1764687894"></script>
-    <script src="../../js/highlight.pack.js?1764687894"></script>
+    <script src="../../js/clipboard.min.js?1765249210"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765249210"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765249210"></script>
+    <script src="../../js/jquery.sticky.js?1765249210"></script>
+    <script src="../../js/featherlight.min.js?1765249210"></script>
+    <script src="../../js/highlight.pack.js?1765249210"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1764687894"></script>
-    <script src="../../js/learn.js?1764687894"></script>
-    <script src="../../js/hugo-learn.js?1764687894"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765249210"></script>
+    <script src="../../js/learn.js?1765249210"></script>
+    <script src="../../js/hugo-learn.js?1765249210"></script>
 
-    <link href="../../mermaid/mermaid.css?1764687894" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1764687894"></script>
+    <link href="../../mermaid/mermaid.css?1765249210" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765249210"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

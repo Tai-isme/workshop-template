@@ -15,21 +15,21 @@
     <title>Worklog Tuần 11 :: Báo cáo thực tập</title>
 
     
-    <link href="../../../css/nucleus.css?1764687894" rel="stylesheet">
-    <link href="../../../css/fontawesome-all.min.css?1764687894" rel="stylesheet">
-    <link href="../../../css/hybrid.css?1764687894" rel="stylesheet">
-    <link href="../../../css/featherlight.min.css?1764687894" rel="stylesheet">
-    <link href="../../../css/perfect-scrollbar.min.css?1764687894" rel="stylesheet">
-    <link href="../../../css/auto-complete.css?1764687894" rel="stylesheet">
-    <link href="../../../css/atom-one-dark-reasonable.css?1764687894" rel="stylesheet">
-    <link href="../../../css/theme.css?1764687894" rel="stylesheet">
-    <link href="../../../css/hugo-theme.css?1764687894" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1765249210" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765249210" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765249210" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765249210" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765249210" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765249210" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765249210" rel="stylesheet">
+    <link href="../../../css/theme.css?1765249210" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765249210" rel="stylesheet">
     
-    <link href="../../../css/theme-workshop.css?1764687894" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1765249210" rel="stylesheet">
     
     
 
-    <script src="../../../js/jquery-3.3.1.min.js?1764687894"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1765249210"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../js/lunr.min.js?1764687894"></script>
-<script type="text/javascript" src="../../../js/auto-complete.js?1764687894"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1765249210"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765249210"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tai-isme.github.io\/workshop-template\/\/vi";
     
 </script>
-<script type="text/javascript" src="../../../js/search.js?1764687894"></script>
+<script type="text/javascript" src="../../../js/search.js?1765249210"></script>
  
   </div>
 
@@ -591,6 +591,42 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.6-event6/"
+  title="Event 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.6-event6/">
+     <b> 4.6. </b> Event 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.7-event7/"
+  title="Event 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.7-event7/">
+     <b> 4.7. </b> Event 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -1014,6 +1050,13 @@
 
 
 	<h3 id="mục-tiêu-tuần-11">Mục tiêu tuần 11:</h3>
+<ul>
+<li>Thêm tính năng Import Data từ Excel cho Academic Service</li>
+<li>Deploy Academic Service lên AWS</li>
+<li>Thiết lập CI/CD pipeline hoàn chỉnh với GitLab Runner</li>
+<li>Setup CloudWatch monitoring và SNS alerting cho toàn bộ hệ thống</li>
+<li>Hoàn thiện Infrastructure as Code với AWS SAM</li>
+</ul>
 <h3 id="các-công-việc-cần-triển-khai-trong-tuần-này">Các công việc cần triển khai trong tuần này:</h3>
 <table>
   <thead>
@@ -1028,35 +1071,35 @@
   <tbody>
       <tr>
           <td>2</td>
-          <td></td>
+          <td>- Thiết kế và implement Import Data feature: <br>  + Tạo S3 bucket để upload Excel files <br>  + Implement GenerateImportUploadUrlHandler (tạo presigned URL) <br>  + Implement ImportS3TriggerHandler (trigger khi có file mới) <br>  + Sử dụng Apache POI library để parse Excel <br> - Tạo ImportJobsTable để track import status <br> - Design import data schema cho Teachers và Students</td>
           <td>17/11/2025</td>
           <td>17/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>3</td>
-          <td></td>
+          <td>- Hoàn thiện Import Data handlers: <br>  + Implement GetImportJobStatusHandler (check trạng thái) <br>  + Implement ListImportJobsHandler (xem lịch sử) <br>  + Parse Excel và validate data format</td>
           <td>18/11/2025</td>
           <td>18/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>4</td>
-          <td></td>
+          <td>- Deploy Academic Service lên AWS<br> - Test Teacher/Student CRUD functions<br> - Test Import Data flow</td>
           <td>19/11/2025</td>
           <td>19/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>5</td>
-          <td></td>
+          <td>- Thiết lập CI/CD pipeline với GitLab: <br>  + Tạo file .gitlab-ci.yml với stages: build, test, deploy <br>  + Cấu hình GitLab OIDC để authenticate với AWS <br>  + Setup GitLab Runner (sử dụng Docker image) <br>  + Jobs: build:be:identity, build:be:academic <br>  + Jobs: test:be:identity, test:be:academic <br>  + Jobs: deploy:be:identity:dev, deploy:be:academic:dev <br> - Cấu hình artifacts và caching <br> - Commit code để trigger CI/CD pipeline</td>
           <td>20/11/2025</td>
-          <td>21/11/2025</td>
+          <td>20/11/2025</td>
           <td></td>
       </tr>
       <tr>
           <td>6</td>
-          <td></td>
+          <td>- Setup CloudWatch monitoring : <br>  + Tạo monitoring-alarms.yaml cho Identity và Academic services <br>  + Cấu hình alarms cho Lambda  <br>  + Cấu hình alarms cho API Gateway<br>  + Cấu hình alarms cho DynamoDB<br> - Setup SNS topic và subcribe để nhận email: tcm-pipeline-notifications</td>
           <td>21/11/2025</td>
           <td>21/11/2025</td>
           <td></td>
@@ -1064,6 +1107,35 @@
   </tbody>
 </table>
 <h3 id="kết-quả-đạt-được-tuần-11">Kết quả đạt được tuần 11:</h3>
+<ul>
+<li>
+<p>Thiết lập thành công CI/CD pipeline với GitLab:</p>
+<ul>
+<li>File .gitlab-ci.yml với workflow rules và stages rõ ràng</li>
+<li>Xác thực OIDC GitLab với AWS (không cần Access Keys)</li>
+<li>Các job song song cho Identity và Academic services</li>
+<li>Giai đoạn build: Maven clean install, SAM build, SAM package</li>
+<li>Giai đoạn test: JUnit tests với Mockito, coverage reports</li>
+<li>Giai đoạn deploy: SAM deploy với samconfig.toml</li>
+<li>Lưu trữ artifacts để tăng tốc build (Maven .m2 repository)</li>
+<li>Triển khai theo môi trường cụ thể: dev, staging, prod</li>
+<li>Cổng phê duyệt thủ công cho production deployments</li>
+</ul>
+</li>
+<li>
+<p>Thiết lập monitoring và alerting toàn diện với CloudWatch:</p>
+<ul>
+<li>Tạo monitoring-alarms.yaml cho cả Identity và Academic services</li>
+<li>Cảnh báo Lambda: Lỗi &gt; 5%, Thời gian thực thi &gt; p99, Throttles, Số lượng thực thi đồng thời</li>
+<li>Cảnh báo API Gateway: Lỗi client 4XX, Lỗi server 5XX, Độ trễ</li>
+<li>Cảnh báo DynamoDB: Throttles đọc/ghi, Dung lượng tiêu thụ</li>
+<li>Chủ đề SNS: tcm-pipeline-notifications để gửi cảnh báo</li>
+<li>Đăng ký email để nhận thông báo real-time</li>
+<li>Bảng điều khiển CloudWatch để trực quan hóa metrics (có thể thêm sau)</li>
+<li>Chính sách lưu trữ 30 ngày để tối ưu chi phí</li>
+</ul>
+</li>
+</ul>
 
 
 
@@ -1542,6 +1614,38 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1763,19 +1867,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../js/clipboard.min.js?1764687894"></script>
-    <script src="../../../js/perfect-scrollbar.min.js?1764687894"></script>
-    <script src="../../../js/perfect-scrollbar.jquery.min.js?1764687894"></script>
-    <script src="../../../js/jquery.sticky.js?1764687894"></script>
-    <script src="../../../js/featherlight.min.js?1764687894"></script>
-    <script src="../../../js/highlight.pack.js?1764687894"></script>
+    <script src="../../../js/clipboard.min.js?1765249210"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765249210"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765249210"></script>
+    <script src="../../../js/jquery.sticky.js?1765249210"></script>
+    <script src="../../../js/featherlight.min.js?1765249210"></script>
+    <script src="../../../js/highlight.pack.js?1765249210"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../js/modernizr.custom-3.6.0.js?1764687894"></script>
-    <script src="../../../js/learn.js?1764687894"></script>
-    <script src="../../../js/hugo-learn.js?1764687894"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765249210"></script>
+    <script src="../../../js/learn.js?1765249210"></script>
+    <script src="../../../js/hugo-learn.js?1765249210"></script>
 
-    <link href="../../../mermaid/mermaid.css?1764687894" rel="stylesheet" />
-    <script src="../../../mermaid/mermaid.js?1764687894"></script>
+    <link href="../../../mermaid/mermaid.css?1765249210" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765249210"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

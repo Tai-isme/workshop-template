@@ -15,21 +15,21 @@
     <title>Proposal :: Internship Report</title>
 
     
-    <link href="../css/nucleus.css?1764687894" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1764687894" rel="stylesheet">
-    <link href="../css/hybrid.css?1764687894" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1764687894" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1764687894" rel="stylesheet">
-    <link href="../css/auto-complete.css?1764687894" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1764687894" rel="stylesheet">
-    <link href="../css/theme.css?1764687894" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1764687894" rel="stylesheet">
+    <link href="../css/nucleus.css?1765249210" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1765249210" rel="stylesheet">
+    <link href="../css/hybrid.css?1765249210" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1765249210" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1765249210" rel="stylesheet">
+    <link href="../css/auto-complete.css?1765249210" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1765249210" rel="stylesheet">
+    <link href="../css/theme.css?1765249210" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1765249210" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1764687894" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1765249210" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1764687894"></script>
+    <script src="../js/jquery-3.3.1.min.js?1765249210"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,14 +88,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1764687894"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1764687894"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1765249210"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1765249210"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tai-isme.github.io\/workshop-template\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1764687894"></script>
+<script type="text/javascript" src="../js/search.js?1765249210"></script>
  
   </div>
 
@@ -591,6 +591,42 @@
   </a>
    
 </li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.6-event6/"
+  title="Event 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.6-event6/">
+     <b> 4.6. </b> Event 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.7-event7/"
+  title="Event 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../4-eventparticipated/4.7-event7/">
+     <b> 4.7. </b> Event 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -1030,13 +1066,13 @@
 <li>Academic Management: APIs for managing courses/classes, unified search, enrollment using enrollKey (activating PRE_ENROLLED → ACTIVE), role-based dashboards, instructor/student profiles, and course document management on S3 (creating folders, presigned upload/download with enrollment verification). Supports Excel import for quick data initialization and full rollback on errors.</li>
 </ul>
 <!-- Suggestion (not displayed in main version): Can add descriptions for attendance, assignments, grading, announcements, quizzes to facilitate easy expansion into a full LMS in the next phase. -->
-<p>The access flow remains: Route 53 → WAF → CloudFront → S3 (static content) and API Gateway → Lambda → DynamoDB (academic/identity data) with CloudWatch/SNS/CloudTrail/GuardDuty/Secrets Manager for monitoring and security.</p>
+<p>The access flow: CloudFront → S3 (static content) and API Gateway → Lambda → DynamoDB (academic/identity data) with CloudWatch/SNS/Secrets Manager for monitoring and security. CI/CD is implemented through GitLab Runner combined with AWS SAM CLI.</p>
 <p><strong>Benefits and Return on Investment (ROI)</strong></p>
 <ul>
-<li><em>Accelerated development and deployment</em>: Automated CI/CD (CodePipeline, CodeBuild, CloudFormation) reduces feature release time from days to hours.</li>
+<li><em>Accelerated development and deployment</em>: Automated CI/CD with GitLab Runner and CloudFormation reduces feature release time from days to hours.</li>
 <li><em>Optimized operational costs</em>: Serverless architecture (Lambda, DynamoDB, API Gateway) charges only per request, saving 40–60% of costs compared to traditional EC2.</li>
-<li><em>Comprehensive security</em>: AWS WAF, GuardDuty, CloudTrail, and Secrets Manager enable early risk detection, filter web attacks, and protect sensitive data.</li>
-<li><em>High access performance</em>: CloudFront CDN combined with Route 53 accelerates access, reducing latency by 50–70%, while WAF protects the system from web attacks before content distribution.</li>
+<li><em>Comprehensive security</em>: Secrets Manager and Cognito combined with IAM provide robust protection for sensitive data and strict access control.</li>
+<li><em>High access performance</em>: CloudFront CDN accelerates access and reduces latency by 50–70%.</li>
 <li><em>Flexible scalability</em>: The system automatically scales according to traffic without manual intervention.</li>
 <li><em>Proactive monitoring</em>: CloudWatch + SNS provides real-time alerts, helping the technical team respond promptly to incidents.</li>
 </ul>
@@ -1047,16 +1083,8 @@
 <li>
 <p><strong>User Request Flow</strong></p>
 <ul>
-<li>Users open a browser and access the application domain.</li>
-<li><strong>Amazon Route 53</strong> resolves the domain to an IP address and sends the request to <strong>AWS WAF</strong>.</li>
-<li><strong>AWS WAF</strong> performs:
-<ul>
-<li>Checks requests against configured rules (SQL Injection, XSS, IP blacklist, rate limiting…).</li>
-<li>Blocks abnormal or malicious requests.</li>
-<li>Forwards only valid requests to <strong>Amazon CloudFront</strong>.</li>
-</ul>
-</li>
-<li><strong>CloudFront</strong> receives the request:
+<li>Users open a browser and access the application through a domain.</li>
+<li><strong>Amazon CloudFront</strong> receives the request:
 <ul>
 <li>Checks the cache to return static content (HTML/CSS/JS) from <strong>S3</strong> if available.</li>
 <li>If content is not in cache, CloudFront fetches from S3 and returns it to the user with low latency.</li>
@@ -1103,18 +1131,12 @@
 </ul>
 </li>
 <li>
-<p><strong>Security &amp; Threat Detection</strong></p>
+<p><strong>Security &amp; Access Control</strong></p>
 <ul>
-<li><strong>AWS WAF</strong> protects the edge layer, filtering malicious web requests.</li>
-<li><strong>AWS GuardDuty</strong>:
-<ul>
-<li>Analyzes logs from CloudTrail, VPC Flow Logs, DNS Logs.</li>
-<li>Detects abnormal behaviors (compromised IAM, unusual IP access).</li>
-<li>Creates Findings and sends alerts via SNS or triggers automatic response Lambda when threats are detected.</li>
-</ul>
-</li>
-<li><strong>AWS CloudTrail</strong>: records all API calls for audit and traceability.</li>
-<li><strong>Secrets Manager</strong> protects sensitive information and allows Lambda to access secret keys.</li>
+<li><strong>Amazon Cognito</strong>: authenticates users and manages sessions, supporting OAuth/Google Sign-In.</li>
+<li><strong>IAM Roles &amp; Policies</strong>: control access permissions between AWS services (Lambda, DynamoDB, S3).</li>
+<li><strong>API Gateway Authorization</strong>: validates JWT tokens from Cognito before allowing Lambda access.</li>
+<li><strong>Secrets Manager</strong>: protects sensitive information (API keys, database credentials), enabling secure Lambda access.</li>
 </ul>
 </li>
 <li>
@@ -1134,22 +1156,18 @@
 <li>
 <p><strong>CI/CD &amp; Deployment</strong></p>
 <ul>
-<li><strong>GitLab</strong>: source code is stored in GitLab.</li>
-<li><strong>AWS CodePipeline</strong>:
+<li><strong>GitLab</strong>: stores source code and manages version control.</li>
+<li><strong>GitLab Runner</strong>:
 <ul>
-<li>Receives webhook when code changes on GitLab.</li>
-<li>Orchestrates the entire pipeline including stages: Source → Build → Deploy.</li>
+<li>Automatically triggers on code push or merge request.</li>
+<li>Runs CI/CD pipeline with stages: test, build, deploy.</li>
+<li>Installs dependencies and runs unit tests.</li>
+<li>Builds artifacts (ZIP package for Lambda).</li>
 </ul>
 </li>
-<li><strong>AWS CodeBuild</strong>:
+<li><strong>AWS SAM CLI / CloudFormation</strong>:
 <ul>
-<li>Installs dependencies.</li>
-<li>Runs unit tests.</li>
-<li>Builds artifacts (ZIP, container image…).</li>
-</ul>
-</li>
-<li><strong>AWS CloudFormation</strong>:
-<ul>
+<li>GitLab Runner uses AWS SAM CLI for deployment.</li>
 <li>Deploys or updates the entire AWS infrastructure (API Gateway, Lambda, DynamoDB, S3, IAM Role).</li>
 <li>Ensures infrastructure follows IaC model, consistent across Dev/Prod environments.</li>
 </ul>
@@ -1160,10 +1178,10 @@
 <li>
 <p><strong>Summary</strong></p>
 <ul>
-<li><strong>Request Path</strong>: User → Route53 → WAF → CloudFront → API Gateway → Lambda → DynamoDB → Lambda → API Gateway → CloudFront → User.</li>
-<li><strong>Security Path</strong>: WAF blocks web attacks → GuardDuty monitors logs → CloudTrail audits → SNS alert.</li>
+<li><strong>Request Path</strong>: User → CloudFront → API Gateway → Lambda (via Cognito Auth) → DynamoDB → Lambda → API Gateway → CloudFront → User.</li>
+<li><strong>Security Path</strong>: Cognito Authentication → API Gateway Authorization → IAM Policies → Secrets Manager.</li>
 <li><strong>Monitoring</strong>: CloudWatch Logs &amp; Metrics → Alarms → SNS.</li>
-<li><strong>CI/CD Path</strong>: GitLab → CodePipeline → CodeBuild → CloudFormation → AWS Resources.</li>
+<li><strong>CI/CD Path</strong>: GitLab → GitLab Runner → AWS SAM CLI → CloudFormation → AWS Resources.</li>
 </ul>
 </li>
 </ol>
@@ -1178,9 +1196,9 @@
   </thead>
   <tbody>
       <tr>
-          <td><strong>Frontend &amp; Routing</strong></td>
-          <td>Route 53, CloudFront, S3</td>
-          <td>Domain routing, content distribution, static storage</td>
+          <td><strong>Frontend &amp; CDN</strong></td>
+          <td>CloudFront, S3</td>
+          <td>Content distribution, static storage</td>
       </tr>
       <tr>
           <td><strong>Backend &amp; Logic</strong></td>
@@ -1188,14 +1206,14 @@
           <td>Serverless logic, data, authentication</td>
       </tr>
       <tr>
-          <td><strong>Security &amp; Monitoring</strong></td>
-          <td>WAF, GuardDuty, CloudWatch Logs, CloudWatch Alarms, CloudWatch Metrics, SNS, CloudTrail</td>
-          <td>Protect application from attacks, threat detection, alerts, auditing</td>
+          <td><strong>Monitoring</strong></td>
+          <td>CloudWatch Logs, CloudWatch Alarms, CloudWatch Metrics, SNS</td>
+          <td>Monitoring, alerts, metrics collection</td>
       </tr>
       <tr>
           <td><strong>CI/CD &amp; IaC</strong></td>
-          <td>CodePipeline, CodeBuild, CloudFormation, SAM</td>
-          <td>Automated deployment and infrastructure management</td>
+          <td>CloudFormation, SAM</td>
+          <td>Automated deployment and infrastructure management (with GitLab Runner)</td>
       </tr>
   </tbody>
 </table>
@@ -1212,7 +1230,7 @@
 <li>Deployment Stage:
 <ul>
 <li>Use AWS SAM CLI to deploy code and <code>template.yaml</code> to the real AWS environment.</li>
-<li>Configure AWS CodePipeline and AWS CodeBuild to automate the CI/CD process.</li>
+<li>Configure GitLab CI/CD with GitLab Runner to automate the build and deployment process.</li>
 </ul>
 </li>
 </ul>
@@ -1241,31 +1259,26 @@ Or download the budget estimate files <a href="../files/2-Proposal/project_1_est
 <p><em>Infrastructure Costs</em></p>
 <ul>
 <li>S3 Standard: 0.32 USD/month (10 GB, 5,000 PUT requests, 100,000 GET requests).</li>
-<li>AWS WAF: 9.24 USD/month (1 Web ACL, 2 Rules added per Web ACL, 2 Managed Rule Groups, 400,000 requests/month)</li>
 <li>CloudFront: 1.33 USD/month (10 GB, Data transfer out to origin 0.1 GB, Number of HTTPS requests 100,000).</li>
 <li>Amazon API Gateway: 0.38 USD/month (300,000 requests).</li>
 <li>AWS Lambda Function - Include Free Tier: 0.00 USD/month (400,000 requests, 512 MB storage).</li>
 <li>Amazon DynamoDB: 0.62 USD/month (Data storage 2 GB, 50,000 Writes, 200,000 Reads)</li>
 <li>Amazon Cognito Lite Tier: 0.00 USD/month (500 MAUs)</li>
 <li>Amazon CloudWatch: 2.10 USD/month (3 custom metrics, 1 GB logs, 1 dashboard, 2 alarms)</li>
-<li>Amazon GuardDuty: 0.00 USD/month (Free 30 days/region)</li>
-<li>Amazon Route 53: 0.90 USD/month (1 hosted zone, 1M standard DNS queries)</li>
 <li>AWS Secrets Manager: 0.40 USD/month (1 secret)</li>
-<li>AWS CloudTrail: 0.00 USD/month (1 trail)</li>
 <li>Amazon SNS: 0.00 USD/month (1M requests, 1M Lambda deliveries)</li>
 <li>AWS CloudFormation: 0.00 USD/month</li>
-<li>AWS CodeBuild: 0.25 USD/month (on-demand EC2 general1.small, 5 builds/month)</li>
-<li>AWS CodePipeline: 0.00 USD/month (100 minutes/month)</li>
+<li>GitLab Runner: 0.00 USD/month (self-hosted or GitLab Free Tier)</li>
 </ul>
-<p><em>Total</em>: 15.54 USD/month, 186.48 USD/12 months</p>
+<p><em>Total</em>: 5.15 USD/month, 61.80 USD/12 months</p>
 <h3 id="7-risk-assessment">7. Risk Assessment</h3>
 <p><em>Risk Matrix</em></p>
 <ul>
-<li>AWS configuration errors (IAM, Lambda, API Gateway, Cognito, WAF): High impact, medium probability</li>
+<li>AWS configuration errors (IAM, Lambda, API Gateway, Cognito): High impact, medium probability</li>
 <li>Exceeding AWS Free Tier limits: Medium impact, low probability.</li>
 <li>Data loss on S3/DynamoDB: High impact, low probability.</li>
 <li>Integration errors between AWS services: Medium impact, low probability.</li>
-<li>External attacks (DDoS, SQL injection, XSS): High impact, low to medium probability</li>
+<li>External attacks (SQL injection, XSS, unauthorized access): High impact, low to medium probability</li>
 </ul>
 <p><em>Mitigation Strategies</em></p>
 <ul>
@@ -1273,13 +1286,13 @@ Or download the budget estimate files <a href="../files/2-Proposal/project_1_est
 <li>Free Tier Exceeding: Monitor costs regularly, set up Billing Alerts, optimize resources.</li>
 <li>Data Loss: Enable S3 Versioning, periodically backup DynamoDB data.</li>
 <li>Service Integration Errors: Ensure services operate in the same Region, verify IAM Roles and cross-service access permissions.</li>
-<li>Application Security: Use WAF to filter malicious traffic, apply standard rules against OWASP Top 10, enable CloudFront and API Gateway logging.</li>
+<li>Application Security: Validate input at Lambda layer, use Cognito for strict authentication, configure CORS properly on API Gateway, apply principle of least privilege for IAM roles, enable CloudWatch and API Gateway logging for auditing.</li>
 </ul>
 <p><em>Contingency Plan</em></p>
 <ul>
-<li>Deployment failures: Rollback using AWS SAM CLI or restore previous Lambda version.</li>
+<li>Deployment failures: Rollback using AWS SAM CLI or restore previous Lambda version through CloudFormation stack.</li>
 <li>Budget overrun: Pause non-essential services, optimize architecture and resource usage.</li>
-<li>Security incidents: Review CloudWatch/CloudTrail logs, update WAF rules, isolate affected endpoints.</li>
+<li>Security incidents: Review CloudWatch logs, disable compromised users/tokens via Cognito, review IAM permissions, isolate affected Lambda functions.</li>
 </ul>
 <h3 id="8-expected-outcomes">8. Expected Outcomes</h3>
 <ul>
@@ -1766,6 +1779,38 @@ Or download the budget estimate files <a href="../files/2-Proposal/project_1_est
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1987,19 +2032,19 @@ Or download the budget estimate files <a href="../files/2-Proposal/project_1_est
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1764687894"></script>
-    <script src="../js/perfect-scrollbar.min.js?1764687894"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1764687894"></script>
-    <script src="../js/jquery.sticky.js?1764687894"></script>
-    <script src="../js/featherlight.min.js?1764687894"></script>
-    <script src="../js/highlight.pack.js?1764687894"></script>
+    <script src="../js/clipboard.min.js?1765249210"></script>
+    <script src="../js/perfect-scrollbar.min.js?1765249210"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1765249210"></script>
+    <script src="../js/jquery.sticky.js?1765249210"></script>
+    <script src="../js/featherlight.min.js?1765249210"></script>
+    <script src="../js/highlight.pack.js?1765249210"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1764687894"></script>
-    <script src="../js/learn.js?1764687894"></script>
-    <script src="../js/hugo-learn.js?1764687894"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1765249210"></script>
+    <script src="../js/learn.js?1765249210"></script>
+    <script src="../js/hugo-learn.js?1765249210"></script>
 
-    <link href="../mermaid/mermaid.css?1764687894" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1764687894"></script>
+    <link href="../mermaid/mermaid.css?1765249210" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1765249210"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
