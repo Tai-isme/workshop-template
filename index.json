@@ -137,7 +137,7 @@
 	"title": "Worklog",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Introduction This worklog records the journey of a 12-week internship at FCJ (from 08/08/2025 to 28/11/2025), focusing on learning and implementing services on Amazon Web Services (AWS). Throughout this process, I progressed from basic AWS knowledge to deploying a serverless system with a microservices architecture.\nWeekly Content Week 1: Getting familiar with AWS and basic services (IAM, VPC, EC2)\nWeek 2: Implementing Lab exercises for backend deployment with RDS, Lightsail, S3, and CloudWatch\nWeek 3: Learning advanced services through Lab exercises: Route 53, DynamoDB, ElastiCache, CloudFront\nWeek 4: Implementing Lab exercises related to optimization: Security, Reliability, Performance, and Cost Optimization\nWeek 5: Serverless Architecture with Lambda, API Gateway, and SAM\nWeek 6: Preparing Proposal for Project 1 and attending Workshop sessions\nWeek 7: Learning Solution Architecture and preparing for midterm exam\nWeek 8: Reviewing and taking the SAA-C03 midterm exam\nWeek 9: Deploying Identity Service with Amazon Cognito\nWeek 10: Deploying Identity Service and implementing Academic Service\nWeek 11: Setting up CI/CD Pipeline and CloudWatch Monitoring\nWeek 12: Testing and completing Workshop Documentation\n"
 },
 {
 	"uri": "https://tai-isme.github.io/workshop-template/4-eventparticipated/4.2-event2/",
